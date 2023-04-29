@@ -1,0 +1,13 @@
+/commandFunctions
+node_modules
+/images
+/maps
+/utils
+config.json
+.env
+/gamemodes
+/commands/admin
+/logger
+/events
+package-lock.json
+package.json
