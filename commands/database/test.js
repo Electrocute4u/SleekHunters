@@ -6,13 +6,14 @@ let fileName = __filename.split(`\\`).slice(-1)[0]
 
 module.exports = {
     data: new SlashCommandBuilder()
-    .setName("relink")
-    .setDescription("Relink a existing Battlenet account to your Discord ID.")
+    .setName("test")
+    .setDescription("Link a Battletag to your Discord ID.")
     .addStringOption(option => option
     .setName("battletag")
-    .setDescription("The battletag to relink your Discord ID with. This is CAsE sensitive.")
+    .setDescription("The Battletag to link. Remember this is CAsE sensitive.")
     .setRequired(true)
     ),
+
     async execute(interaction, bot) {
       // Deleting and reacquiring cache of functions file
       delete require.cache[require.resolve("../../utils/functions")];

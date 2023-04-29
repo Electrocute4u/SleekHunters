@@ -1,7 +1,5 @@
 /commandFunctions
 node_modules
-/images
-/maps
 /utils
 config.json
 .env

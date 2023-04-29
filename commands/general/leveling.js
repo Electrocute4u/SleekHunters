@@ -6,22 +6,24 @@ let fileName = __filename.split(`\\`).slice(-1)[0]
 
 module.exports = {
     data: new SlashCommandBuilder()
-    .setName("career")
-    .setDescription("Get your own Career Profile stats based on connected Battletag")
+    .setName("leveling")
+    .setDescription("Find the best ways to level up your weapon fast")
     .addStringOption(option =>
-        option.setName('platform')
-          .setDescription('Which platform to display stats and competitive ranks from, defaults to both')
-          .setRequired(false)
-          .addChoices(
-            { name: 'PC', value: 'pc' },
-            { name: 'Console', value: 'console' }
-      ))
-      .addBooleanOption(option =>
-          option.setName('hide-competitive')
-          .setDescription(`Whether or not to hide your competitive stats, defaults to false.`)
-          .setRequired(false)
+      option
+      .setName("element")
+      .setDescription("If you want to level up with a specific element")
+      .setRequired(false)
+      .addChoices
+      (
+          {name: "Blaze", value: "blaze"},
+          {name: "Frost", value: "frost"},
+          {name: "Radiant", value: "radiant"},
+          {name: "Shock", value: "shock"},
+          {name: "Terra", value: "terra"},
+          {name: "Umbral", value: "umbral"},
+          {name: "Neutral", value: "neautral"}
       )
-    ,
+      ),
     async execute(interaction, bot) {
       // Deleting and reacquiring cache of functions file
       delete require.cache[require.resolve("../../utils/functions")];
@@ -33,5 +35,5 @@ module.exports = {
       // Executing the command file
       const commandFile = require(`../../commandFunctions/${dir}/${fileName}`)
       await commandFile.command(interaction, tools, bot)
-    }
+  }
 }
