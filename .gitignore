@@ -1,7 +1,7 @@
 /commandFunctions
 /commands/admin
-/commands/database/
 node_modules
+/commands/database
 /utils
 config.json
 .env
