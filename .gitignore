@@ -1,11 +1,11 @@
-/commandFunctions
-/commands/admin
+commandFunctions
+commands/admin
 node_modules
-/commands/database
-/utils
+commands/database
+utils
 config.json
 .env
-/logger
-/events
+logger
+events
 package-lock.json
 package.json
