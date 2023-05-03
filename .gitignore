@@ -1,10 +1,10 @@
 /commandFunctions
+/commands/admin
+/commands/database
 node_modules
 /utils
 config.json
 .env
-/gamemodes
-/commands/admin
 /logger
 /events
 package-lock.json
