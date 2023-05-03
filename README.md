@@ -1,1 +1,8 @@
 # RoseKnights
+
+This description is just temporary and is subject to change once the bot goes live.
+
+## What is this Discord bot?
+This Discord bot is a hobby project to be used in RoseKnights Discord server and it will host useful information about Behemoths, Hunting Grounds, Escalations and more from the video game Dauntless.
+
+*This project is a personal hobby prosject and all artwork(s) re-used/and or edited in this Discord bot belongs to their respective copyright holders. This bot is not meant to gain or populate any income, as the bot is designed to be in 1 server and sort of act as a personal hobby project. If you have any inquires about the artwork used or have a complain, please direct your complaint/question on Github or through Discord at Milim#0001*
