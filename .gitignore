@@ -1,6 +1,6 @@
 /commandFunctions
 /commands/admin
-/commands/database
+/commands/database/
 node_modules
 /utils
 config.json
