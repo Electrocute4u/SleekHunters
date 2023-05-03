@@ -1,0 +1,34 @@
+{
+    "name": "Conundrum Rocks",
+    "description": "Believed to have once been part of the Paradox Breaks, this smaller, radiant-steeped island may not be home to a Paradoxicon-but like its parent landmass, it has a unique relationship with the Infinite Radiance and the timestream it defines.",
+    "behemoths": ["Valomyr", "Lightbound Boreus", "Firebrand Charrogg", "Moonreaver Shrike", "Ragetail Gnasher"],
+    "guaranteed_behemoth": "Valomyr",
+    "level": "10-13",
+    "local_flora": [
+    {
+        "name": "Slayer's Boon",
+        "rarity": "Common"
+    },
+    {
+        "name": "Wrathwort",
+        "rarity": "Uncommon"
+    }],
+    "local_ores": [
+    {
+        "name": "Omnistone",
+        "rarity": "Common"
+    },
+    {
+        "name": "Phoenix Opal",
+        "rarity": "Uncommon"
+    }],
+    "island_events": [{
+        "name": "Aether Surge",
+        "description": "Aether surges are a common occurrence across the Hunting Grounds, attracting powerful Behemoths and other hostile creatures."
+    },
+    {
+        "name": "High Alert",
+        "description": "Extremely powerful Behemoths pose an even greater threat to the island's ecosystem. Slay it quickly."
+    }],
+    "journal_entries": []
+}

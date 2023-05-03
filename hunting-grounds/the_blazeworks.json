@@ -1,0 +1,62 @@
+{
+    "name": "The Blazeworks",
+    "description": "Technically \"Blazeworks 17\" to the Ostians, the Blazeworks were cast adrift after an industrial catastrophe tore the Ostian powerhouse from its chains. But this polluted landscape hides a burning secret Imperial Ostia will do anything to keep. Behemoths on this island are extremely powerful. Slay Behemoths and complete island events here to earn bonus weapon experience and aethersparks.",
+    "behemoths": ["Koshai (Heroic)", "Bloodshot Shrowd", "Scorchstone Hellion (Heroic)", "Bloodfire Embermane (Heroic)", "Sporestruck Charrogg", "Razorwing Kharabak (Heroic)", "Phaelanx"],
+    "guaranteed_behemoth": "none",
+    "level": "21-24",
+    "local_flora": [
+    {
+        "name": "Ironthistle",
+        "rarity": "Common"
+    },
+    {
+        "name": "Dashleaf",
+        "rarity": "Uncommon"
+    },
+    {
+        "name": "Wrathwort",
+        "rarity": "Rare"
+    }],
+    "local_ores": [
+    {
+        "name": "Phoenix Opal",
+        "rarity": "Common"
+    },
+    {
+        "name": "Omnistone",
+        "rarity": "Rare"
+    }],
+    "island_events": [
+    {
+        "name": "Poison Personality",
+        "description": "Behemoths have been infected with poisonous terra aether, making their attacks toxic."
+    },
+    {
+        "name": "Infernal Gaze",
+        "description": "The island itself ruptures and spews fire. Dodge the fireballs and slay the Behemoths."
+    },
+    {
+        "name": "The Phaelanx Forge",
+        "description": "Slay a behemoth to get empowered on the Blazeworks, then turn on 6 valves to power up the Ostian forge and draw out a Phaelanx."
+    }],
+    "journal_entries": [{
+        "name": "Abandoned Research Station",
+        "description": "Someone has created a makeshift research station using whatever they could find. It looks abandoned Amidst loose pages full of frantic notes, one legible entry jumps out: They said it couldn't be done, but it's too late to stop us now. When the forge lights, our work will be complete, and a new age will be ushered in. Praise Ostia!"
+    },
+    {
+        "name": "Ostian Enforcers",
+        "description": "No matter how hard you try, the two Ostian Enforcers refuse to acknowledge your presence. One thing is for certain: They're guarding something important below ground, and they have no time for your questions or games."
+    },
+    {
+        "name": "Disturbing Specimen",
+        "description": "This appears to be a piece of a Shrike, suspended in a glass case. All your foreknowledge says it should have dissipated to aether, but it holds firm. Oddly, it doesn't appear to have been severed from a host, but grown. It twiches now and then, clawing at an invisible foe."
+    },
+    {
+        "name": "Aether Extractor",
+        "description": "A large device hisses and clunks as it harvests aether en masse. Whatever work is happening below ground, it demands a large stores of energy. You feel the presence of machinery beneath your feet, grinding relentlessly away."    
+    },
+    {
+        "name": "Supply Shipment",
+        "description": "A large supply shipment has apparently been abandoned here, but looks recently delivered. Judging by the nearby ledger, this is just one shipment of many over the past few months. But who is receiving these shipments? The workforce present on this island must be considerable. The notes outline lab equipment, food, clothing, weapons and more."    
+    }]
+}

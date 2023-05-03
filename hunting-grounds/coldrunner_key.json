@@ -1,0 +1,41 @@
+{
+    "name": "Coldrunner Key",
+    "description": "Coldrunner Key is a tale of frigid lovers. Boreal Outpost and Coldrunner Key were once a single island; these two halves now orbit each other in an endless waltz. Every few cycles, they seek each other's cold embrace once more, fusing into a single landmass by ice and aether. Something about these brief mergers emboldens the inhabitants, amplifying their fury. Be weary of the key's embrace.",
+    "behemoths": ["Frostwülf", "Sahvyt", "Ragetail Gnasher (Heroic)", "Frostback Pangar", "Skraev", "Kaltauga"],
+    "guaranteed_behemoth": "Frostwülf",
+    "level": "11-14",
+    "local_flora": [
+    {
+        "name": "Skybloom",
+        "rarity": "Uncommon"
+    }],
+    "local_ores": [
+    {
+        "name": "Phoenix Opal",
+        "rarity": "Uncommon"
+    },
+    {
+        "name": "Omnistone",
+        "rarity": "Uncommon"
+    }],
+    "island_events": [{
+        "name": "Aether Surge",
+        "description": "Aether surges are a common occurrence across the Hunting Grounds, attracting powerful Behemoths and other hostile creatures."
+    },
+    {
+        "name": "Below Zero",
+        "description": "Radiant aether and frost aether combine for a deadly effect. Free downed Slayers from radiant prisons and avoid ice spikes."
+    },
+    {
+        "name": "High Alert",
+        "description": "Extremely powerful Behemoths pose an even greater threat to the island's ecosystem. Slay it quickly."
+    }],
+    "journal_entries": [{
+        "name": "Frozen Gruk-Gruk",
+        "description": "There's no telling how long ago this gruk-gruk shuffled off this mortal coil—the ice surrounding the corpse has preserved it perfectly. Although it may have been here for a week or a century, it's probably safe to eat if you don't mind freezerburn. And mild aether poisoning. And picking jagged, metallic pin-bones with your teeth. Really? There are easier ways to make a ham sandwich."
+    },
+    {
+        "name": "Elder States",
+        "description": "Behemoths from possible realities in which humanity has lost the war against their ancient creations, Elders display the cunning and intelligence (if not true sapience) born of lifetimes counted in centuries. Wielding the wreckage of human civilization to fight their creators, Elder Behemoths often leave behind hunks of scrap like this—strange, aether-wrought, and blunt tools torn from one of many potential futures."
+    }]
+}

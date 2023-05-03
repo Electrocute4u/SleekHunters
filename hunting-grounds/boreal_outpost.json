@@ -1,0 +1,21 @@
+{
+    "name": "Boreal Outpost",
+    "description": "When separated from its other half, Boreal Outpost drifts alone through the skies. Its Behemoths-some cast out from Coldrunner Key-are castaways vying for what little land they can. Foolish cargo haulers once sought refuge on this island when it meandered through trade routes, but soon found their ships under siege from desperate fauna. Now, captains know better than to seek shelter on this frigid waste.",
+    "behemoths": ["Lesser Boreus", "Lesser Gnasher"],
+    "guaranteed_behemoth": "Lesser Boreus",
+    "level": "1-3",
+    "local_flora": [{
+        "name": "Heart Lily",
+        "rarity": "Common"
+    },
+    {
+    "name": "Skybloom",
+    "rarity": "Uncommon"
+    }],
+    "local_ores": [],
+    "island_events": [],
+    "journal_entries": [{
+        "name": "That Snow Battlefield",
+        "description": "Nothing improves the hand-eye coordination of aspiring young Slayers like a traditional snowball fight. Maybe not every battleground is worth spending blood or treasure, but that doesn't mean the fight's not worth having."
+    }]
+}

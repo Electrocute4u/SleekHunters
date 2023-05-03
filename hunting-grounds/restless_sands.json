@@ -1,0 +1,31 @@
+{
+    "name": "Restless Sands",
+    "description": "A dry, sandy landmass with rich mineral deposits and richer archonite formations deep beneath its surface. The interplay of archonite and other materials may be what pushes so many minerals to the top. The island remains unsuitable for settlement, at least as long as Behemoths thrive here.",
+    "behemoths": ["Lesser Drask", "Lesser Embermane", "Lesser Quillshot", "Quillshot"],
+    "guaranteed_behemoth": "Lesser Drask",
+    "level": "3-5",
+    "local_flora": [{
+        "name": "Skybloom",
+        "rarity": "Common"
+    }],
+    "local_ores": [{
+        "name": "Phoenix Opal",
+        "rarity": "Common"
+    },
+    {
+        "name": "Omnistone",
+        "rarity": "Rare"
+    }],
+    "island_events": [{
+        "name": "Aether Surge",
+        "description": "Aether surges are a common occurrence across the Hunting Grounds, attracting powerful Behemoths and other hostile creatures."
+    },
+    {
+        "name": "Blast Zone",
+        "description": "Avoid surges of shock aether and slay any Behemoths and creatures."
+    }],
+    "journal_entries": [{
+        "name": "Unoccupied Slayer Camp",
+        "description": "A Slayer camp is rarely left abandoned, and it appears the Slayers who set up camp here intended to return soon. The hunting party may have run into unexpected trouble - trouble that could still be waiting elsewhere on the island of Restless Sands."
+    }]
+}

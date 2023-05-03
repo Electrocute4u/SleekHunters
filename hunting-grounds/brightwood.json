@@ -1,0 +1,45 @@
+{
+    "name": "Brightwood",
+    "description": "In this stretch of the Ram, there are precious few islands as aesthetically pleasing and which appear as welcoming as Brightwood. But the deadly Behemoths found here and the variety of elemental energy they feed on make it uniquely unwelcoming to would-be settlers.",
+    "behemoths": ["Sahvyt", "Flameborn Quillshot", "Bloodfire Embermane", "Embermane", "Nayzaga"],
+    "guaranteed_behemoth": "Sahvyt",
+    "level": "10-13",
+    "local_flora": [
+    {
+        "name": "Dashleaf",
+        "rarity": "Common"
+    },
+    {
+        "name": "Heart Lily",
+        "rarity": "Uncommon"
+    },
+    {
+        "name": "Slayer's Boon",
+        "rarity": "Uncommon"
+    },
+    {
+        "name": "Ironthistle",
+        "rarity": "Uncommon"
+    }],
+    "local_ores": [],
+    "island_events": [{
+        "name": "Aether Surge",
+        "description": "Aether surges are a common occurrence across the Hunting Grounds, attracting powerful Behemoths and other hostile creatures."
+    },
+    {
+        "name": "Firewatch",
+        "description": "The island itself ruptures nad spews fire. Dodge the fireballs and slay the Behemoths."
+    },
+    {
+        "name": "High Alert",
+        "description": "Extremely powerful Behemoths pose an even greater threat to the island's ecosystem. Slay it quickly."
+    }],
+    "journal_entries": [{
+        "name": "Fruit Pileup",
+        "description": "If there's one thing both turtles and tortoises agree on, it's that you can never eat enough fruit. The real question is, wherever did a tortoise or turtle find this much of it?"
+    },
+    {
+        "name": "Primal Instincts",
+        "description": "The past is filled with Primal Behemoths that have broken free of their enslavement and are operating on a mix of tangled instincts, brute intelligence, and predatory cunning. Hailing from an era steeped in the chaos unleashed by the Upheaval, they have the potential to overwhelm local islands if not stopped. You can see clear evidence of them here, and just being close to this much Primal aether is making your lantern sputter."
+    }]
+}

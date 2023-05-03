@@ -1,0 +1,58 @@
+{
+    "name": "Twilight Sanctuary",
+    "description": "On Twilight Sanctuary, the darkness attacks you.\nUpon setting down on its unsettling surface, the astonishing concentration of umbral aether on this shadowy isle will raise the bravest Slayer's hackles. Although it's said the Unseen cult has been spotted here, the ominous presence of the Shrowd on this island is what makes it the bête noire of every Slayer in Ramsgate.",
+    "behemoths": ["Shrowd", "Thunderdeep Drask", "Scorchstone Hellion (Heroic)", "Tempestborne Stormclaw", "Riftstalker (Heroic)", "Phaelanx"],
+    "guaranteed_behemoth": "Shrowd",
+    "level": "17-20",
+    "local_flora": [
+    {
+        "name": "Wrathwort",
+        "rarity": "Common"
+    },
+    {
+        "name": "Skybloom",
+        "rarity": "Uncommon"
+    },
+    {
+        "name": "Heart Lily",
+        "rarity": "Uncommon"
+    },
+    {
+        "name": "Ironthistle",
+        "rarity": "Rare"
+    }],
+    "local_ores": [
+    {
+        "name": "Phoenix Opal",
+        "rarity": "Rare"
+    }],
+    "island_events": [
+    {
+        "name": "Sudden Death",
+        "description": "Large quantities of aether can turn any Behemoth into a formidable force. Every Behemoth attack is fatal."
+    },
+    {
+        "name": "Aether Surge",
+        "description": "Aether surges are a common occurrence across the Hunting Grounds, attracting powerful Behemoths and other hostile creatures."
+    },
+    {
+        "name": "Ritual of Blood",
+        "description": "The Unseen have successfully summoned a far deadlier form of Shrowd."
+    }],
+    "journal_entries": [{
+        "name": "Dense Archonite Node",
+        "description": "Scholars of the Orrery have long held it is power contained within archonite—the mineralized, naturally occurring form of aether—keeping the individual Shattered Isles aloft. Usually invisible energy fields surrounding pure concentrations of the mineral act with strong antigravitational force when near other islands, keeping them aloft but weakly connected. Arkan Drew believes the theory neatly explains how spiral formations like the Ram have developed over time."
+    },
+    {
+        "name": "Floating Stone",
+        "description": "This monolith is very, very old. If your lantern readings are correct it has been floating in this place for millennia. It may therefore have been erected long before the Upheaval thrust the broken lands of the Shattered Isles into the sky. The Unseen sigil on its surface, however, is assuredly of more recent vintage. Surely there's no way the Unseen were present in the world before."
+    },
+    {
+        "name": "Unseen Summoning Stone",
+        "description": "The bizarre script engraved on this unsettling stone plinth seems to whisper in your ear, but you cannot understand the words. But you're a Slayer, and you've heard about the Unseen and their dark summoning rituals. [Granny Strega](https://dauntless.fandom.com/wiki/Granny_Strega), Ramsgate's local alchemist, seems to enjoy the Unseen cult's aesthetic if nothing else. Maybe she could tell you more about this."
+    },
+    {
+        "name": "The Shrouded Raven",
+        "description": "The legend of the Shrouded Raven is one that has even reached the Broken Blade, Ramsgate's favourite Slayer hangout, but you first heard mention of the tale from a few of the Fortunate Soul's crew who liked to hang out with Slayers. They claim [Lady Luck](https://dauntless.fandom.com/wiki/Lady_Luck)'s a bit obsessed with the legend, and the umbral obsidian from which its said to be carved, but she's never quite explained why—maybe your luck's about to change."
+    }]
+}

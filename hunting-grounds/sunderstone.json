@@ -1,0 +1,36 @@
+{
+    "name": "Sunderstone",
+    "description": "One of many rocky isles in this stretch of the Ram formation which are theorized to have formed when gravitational stresses broke up a much larger parent landmass. Sunderstone continues this disruptive process as crevices and faults crumble into dry, dusty sandfalls that will almost certainly doom the island at some point in the hopefully distant future.",
+    "behemoths": ["Skarn", "Charrogg", "Embermane", "Quillshot"],
+    "guaranteed_behemoth": "Charrogg",
+    "level": "5-8",
+    "local_flora": [
+    {
+        "name": "Ironthistle",
+        "rarity": "Common"
+    },
+    {
+        "name": "Dashleaf",
+        "rarity": "Uncommon"
+    }],
+    "local_ores": [{
+        "name": "Phoenix Opal",
+        "rarity": "Rare"
+    }],
+    "island_events": [{
+        "name": "Aether Surge",
+        "description": "Aether surges are a common occurrence across the Hunting Grounds, attracting powerful Behemoths and other hostile creatures."
+    },
+    {
+        "name": "Embermania",
+        "description": "Blaze aether surges attract hordes of Embermanes."
+    },
+    {
+        "name": "High Alert",
+        "description": "Extremely powerful Behemoths pose an even greater threat to the island's ecosystem. Slay it quickly."
+    }],
+    "journal_entries": [{
+        "name": "Wreck of the I.M.V Tarmo",
+        "description": "Once thought lost in the Maelstrom more than four decades ago, this Ostian survey ship was recently found by a team of Slayers tracking a fleeing Malkarion. The heavy earth-moving equipment within the wreck is encrusted with sand and rest. The odd sounds that occasionally echo within the Tarmo's dark hull make it sound unsettlingly like a tomb."
+    }]
+}

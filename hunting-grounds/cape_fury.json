@@ -1,0 +1,46 @@
+{
+    "name": "Cape Fury",
+    "description": "A tempest-wracked isle that serves as a vantage point from the relative \"safety\" of charted skies into the chaos surrounding the roiling Maelstrom. The Krolachi explorers who first charted it found that massive weather formations spun out from what they called \"Mother Storm\" - and then linger here, feeding on shock aether until they become mini-Maelstroms in their own right.",
+    "behemoths": ["Stormclaw", "Sahvyt", "Shadowtouched Koshai", "Dreadfrost Boreus (Heroic)", "Deepfrost Skarn", "Thunderdeep Drask"],
+    "guaranteed_behemoth": "Stormclaw",
+    "level": "14-17",
+    "local_flora": [
+    {
+        "name": "Dashleaf",
+        "rarity": "Common"
+    },
+    {
+        "name": "Ironthistle",
+        "rarity": "Uncommon"
+    }],
+    "local_ores": [
+    {
+        "name": "Omnistone",
+        "rarity": "Uncommon"
+    }
+    ],
+    "island_events": [{
+        "name": "Aether Surge",
+        "description": "Aether surges are a common occurrence across the Hunting Grounds, attracting powerful Behemoths and other hostile creatures."
+    },
+    {
+        "name": "Shards of Chaos",
+        "description": "Extremely powerful Behemoths are attracted to a rare combination of shock, frost, and umbral aether on a single island."
+    },
+    {
+        "name": "The Slumbering Thunder",
+        "description": "Something worse than lightning lurks in these gathering clouds. Slay Behemoths to reach the source of an unnatural storm!"
+    },
+    {
+        "name": "High Alert",
+        "description": "Extremely powerful Behemoths pose an even greater threat to the island's ecosystem. Slay it quickly."
+    }],
+    "journal_entries": [{
+        "name": "Big Old Skull",
+        "description": "This large, vintage headbone appears to have belonged to an ovine creature of prodigious size—perhaps an ancestor (and certainly a relative) of the ubiquitous, much smaller variety of ram found most everywhere on the frontier. A similar skull can be found in Ramsgate itself. Despite its size, it must have been an ordinary animal. Dead Behemoths don't leave skulls behind."
+    },
+    {
+        "name": "Charr-Kiln of Zaerath",
+        "description": "The Lost Charr-Kilns of the Krolach Steelwrights were made for war, and built light enough to be carried with an army or even a flotilla of airships, but blazing hot thanks to the eternal fires of an extracted Charrogg heart. Every smith worth their anvil has spent at least a few evenings at the Broken Blade sharing theories with fellow smiths about the furnaces' whereabouts and whether they'd still work for their intended purpose: forging legendary weapons and armour using trophies from the relentless Charrogg, patron Behemoth of the Krolach Archipelago. Most reliable sources claim at least two working furnaces still exist in the isles, but no dedicated effort has been made to find and retrieve them."
+    }]
+}

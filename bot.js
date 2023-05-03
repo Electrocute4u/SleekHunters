@@ -17,7 +17,7 @@ if (config.dev == true) token = devToken
 const tools = require(`./utils/functions`);
 
 const bot = new Client({
-    intents: [GatewayIntentBits.Guilds, GatewayIntentBits.DirectMessages]
+    intents: [GatewayIntentBits.Guilds, GatewayIntentBits.DirectMessages],
 })
 
 // Utilize the Hybrid Sharding instead of 
@@ -58,6 +58,6 @@ bot.handleCommands();
 bot.login(token);
 
 // Connect to the Database Cluster
-(async () => { 
-    await connect(config.dev == false ? databaseTokenPublic : databaseTokenDev).catch(console.error) 
-})();
+// (async () => { 
+//     await connect(config.dev == false ? databaseTokenPublic : databaseTokenDev).catch(console.error) 
+// })();

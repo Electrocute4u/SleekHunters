@@ -1,0 +1,34 @@
+{
+    "name": "Aulric's Peak",
+    "description": "Named for famed explorer Aulric Maas (who once planted a marker atop its highest peak) this mountainous island is home to Behemoths that don't have any fear of heights. There appear to be the remains of a Farslayer settlement here similar to Arbourhome, but if it had a name it's as mysterious as the Farslayers themselves.",
+    "behemoths": ["Shrike", "Drask", "Boreus", "Gnasher", "Raretail Gnasher"],
+    "guaranteed_behemoth": "Shrike",
+    "level": "6-9",
+    "local_flora": [
+    {
+        "name": "Skybloom",
+        "rarity": "Common"
+    },
+    {
+        "name": "Slayer's Boon",
+        "rarity": "Common"
+    },
+    {
+        "name": "Heart Lily",
+        "rarity": "Uncommon"
+    }],
+    "local_ores": [],
+    "island_events": [{
+        "name": "Aether Surge",
+        "description": "Aether surges are a common occurrence across the Hunting Grounds, attracting powerful Behemoths and other hostile creatures."
+    },
+    {
+        "name": "Shrike Strike",
+        "description": "A flock of Shrikes take roost on the island."
+    },
+    {
+        "name": "High Alert",
+        "description": "Extremely powerful Behemoths pose an even greater threat to the island's ecosystem. Slay it quickly."
+    }],
+    "journal_entries": []
+}

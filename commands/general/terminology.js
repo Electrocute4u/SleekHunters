@@ -6,8 +6,8 @@ let fileName = __filename.split(`\\`).slice(-1)[0]
 
 module.exports = {
     data: new SlashCommandBuilder()
-    .setName("commonterms")
-    .setDescription("Overwatch 2 slang/lingo/jargon/terms for new players to the game."),
+    .setName("terminology")
+    .setDescription("A paginated table with all currently known Dauntless terminologies/terms"),
     async execute(interaction, bot) {
       // Deleting and reacquiring cache of functions file
       delete require.cache[require.resolve("../../utils/functions")];

@@ -1,0 +1,46 @@
+{
+    "name": "Undervald Defile",
+    "description": "Bosun Markus Boehr calls the place \"Toxic Island\", and the name might have fit like a corrupt, poisonous, and slightly singed glove if some cartographer lost to history hadn't already hit upon \"Undervald Defile\". Suffused with conflicting frequencies of umbral, terra, and blaze aether, it's a place rich in rare resources but equally rich in ways to die.",
+    "behemoths": ["Koshai", "Riftstalker", "Shadowtouched Drask", "Firebrand Charrogg (Heroic)", "Razorwing Kharabak", "Fenroar"],
+    "guaranteed_behemoth": "Koshai",
+    "level": "13-16",
+    "local_flora": [
+    {
+        "name": "Wrathwort",
+        "rarity": "Common"
+    },
+    {
+        "name": "Dashleaf",
+        "rarity": "Uncommon"
+    },
+    {
+        "name": "Heart Lily",
+        "rarity": "Uncommon"
+    },
+    {
+        "name": "Ironthistle",
+        "rarity": "Rare"
+    }],
+    "local_ores": [
+    {
+        "name": "Phoenix Opal",
+        "rarity": "Rare"
+    }
+    ],
+    "island_events": [{
+        "name": "Aether Surge",
+        "description": "Aether surges are a common occurrence across the Hunting Grounds, attracting powerful Behemoths and other hostile creatures."
+    },
+    {
+        "name": "Toxic Behavior",
+        "description": "Behemoths have been infected with poisonous terra aether, making their attacks toxic."
+    },
+    {
+        "name": "High Alert",
+        "description": "Extremely powerful Behemoths pose an even greater threat to the island's ecosystem. Slay it quickly."
+    }],
+    "journal_entries": [{
+        "name": "Tiefland's Best",
+        "description": "These supplies and trade goods have all spoiled for the most part, but were once bound for the Regent of Ramsgate if the labels are any indication. It's too bad the contents have probably gone off—Tiefland is known as the bread basket of the Shattered Isles, and the Regent is known for having exquisite taste."
+    }]
+}

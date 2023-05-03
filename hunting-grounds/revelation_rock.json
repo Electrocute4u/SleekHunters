@@ -1,0 +1,28 @@
+{
+    "name": "Revelation Rock",
+    "description": "When separated from its other half, Boreal Outpost drifts alone through the skies. Its Behemoths-some cast out from Coldrunner Key-are castaways vying for what little land they can. Foolish cargo haulers once sought refuge on this island when it meandered through trade routes, but soon found their ships under siege from desperate fauna. Now, captains know better than to seek shelter on this frigid waste.",
+    "behemoths": ["Lesser Boreus", "Boreus", "Gnasher", "Lesser Gnasher", "Lesser Quillshot"],
+    "guaranteed_behemoth": "Lesser Quillshot",
+    "level": "2-4",
+    "local_flora": [{
+        "name": "Ironthistle",
+        "rarity": "Common"
+    },
+    {
+    "name": "Slayer's Boon",
+    "rarity": "Uncommon"
+    },
+    {
+        "name": "Dashleaf",
+        "rarity": "Rare"
+    }],
+    "local_ores": [],
+    "island_events": [{
+        "name": "Aether Surge",
+        "description": "Aether surges are a common occurrence across the Hunting Grounds, attracting powerful Behemoths and other hostile creatures."
+    }],
+    "journal_entries": [{
+        "name": "Gnasher Sign",
+        "description": "If the smell didn't give it away, the deep, axe-like markings on the wrecked trees and torn earth scattered haphazardly around this site makes it clear. A hungry Gnasher was here, feeding on scraps of aether anywhere it could find them."
+    }]
+}
