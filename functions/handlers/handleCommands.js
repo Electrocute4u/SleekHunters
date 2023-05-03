@@ -31,7 +31,7 @@ module.exports = (bot) => {
         }
         // Call a synched version of config.json
         const {dev, slashGuildID} = JSON.parse(readFileSync(`${filePathBot()}/config.json`, 'utf8'))
-        // Assign token depending on version
+        // Assign token depending on bot version
         let token = dev == false ? process.env.publicToken : process.env.devToken
   
         // Assign client ID depending on version
@@ -39,13 +39,13 @@ module.exports = (bot) => {
 
         const guildid = slashGuildID;
 
-        // Use REST Version 10.
+        // Using the REST Version 10 for stable performence.
         const rest = new REST({version: "10"}).setToken(token);
         
         try {
             
             if(dev == false){
-                    // Delete all local (/) commands from support server.
+                    // Delete all local (/) commands from the set test server.
                     // Prevents duplication of global and local (/) commands on public version.
                     rest.get(Routes.applicationGuildCommands(clientid, slashGuildID))
                     .then(data => {
@@ -56,7 +56,7 @@ module.exports = (bot) => {
                         }
                     return Promise.all(promises);
             });
-            CustomLog("Deleted all local (/) commands from Support Server", "Info")
+            CustomLog("Deleted all local (/) commands from Test Server", "Info")
             CustomLog("Started refreshing Public Application (/) Commands...", "Info")
                 // Filters out the admin commands from commandArray so only global commands remains
                 const noDevForPublic = bot.commandArray.filter(function (command) {
@@ -72,7 +72,7 @@ module.exports = (bot) => {
                 const onlyDevForSupportServer = bot.commandArray.filter(function (command) {
                     return devCommands.includes(command.name);
                 });
-                // Push only admin (/) commands locally to the public support server
+                // Push only admin (/) commands locally to the public test server
                 await rest.put(Routes.applicationGuildCommands(clientid, guildid), {
                     body: onlyDevForSupportServer
                 })

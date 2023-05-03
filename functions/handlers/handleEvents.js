@@ -12,6 +12,7 @@ module.exports = (bot) => {
 
             // Switch for event type
             switch (folder) {
+                // Bot Client
                 case "client":
                     for (const file of eventFiles) {
                         const event = require(`../../events/${folder}/${file}`)
@@ -23,7 +24,7 @@ module.exports = (bot) => {
                         );
                     }
                     break;
-
+                // Database
                 case "mongo":
                     for (const file of eventFiles) {
                         const event = require(`../../events/${folder}/${file}`);

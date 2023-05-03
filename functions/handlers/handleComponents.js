@@ -14,7 +14,7 @@ module.exports = (bot) => {
                 (file) => file.endsWith(".js")
             );
             
-            // Assign the constant buttons from bot.js file 
+            // Assign the buttons from bot.js file 
             const { buttons } = bot
             
             // Switch for different components
