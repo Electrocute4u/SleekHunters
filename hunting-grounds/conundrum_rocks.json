@@ -30,5 +30,6 @@
         "name": "High Alert",
         "description": "Extremely powerful Behemoths pose an even greater threat to the island's ecosystem. Slay it quickly."
     }],
-    "journal_entries": []
+    "journal_entries": [],
+    "journalVideoGuide" : ""
 }

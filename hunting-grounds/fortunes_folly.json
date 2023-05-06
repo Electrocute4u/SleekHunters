@@ -37,5 +37,6 @@
     "journal_entries": [{
         "name": "Corsair Anchor",
         "description": "A heavy anchor displaying the telltale metallic impurities common in frontier smithery, this rusted relic proves that corsairs once sailed these skies. Judging from the condition of the anchor itself, it's been many years since the vessel that dropped it passed this way."
-    }]
+    }],
+    "journalVideoGuide" : "https://youtu.be/VGcp2XAotWc?t=420"
 }

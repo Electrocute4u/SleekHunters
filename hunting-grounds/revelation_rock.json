@@ -24,5 +24,6 @@
     "journal_entries": [{
         "name": "Gnasher Sign",
         "description": "If the smell didn't give it away, the deep, axe-like markings on the wrecked trees and torn earth scattered haphazardly around this site makes it clear. A hungry Gnasher was here, feeding on scraps of aether anywhere it could find them."
-    }]
+    }],
+    "journalVideoGuide" : "https://youtu.be/VGcp2XAotWc?t=220"
 }

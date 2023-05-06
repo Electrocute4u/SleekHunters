@@ -39,5 +39,6 @@
     "journal_entries": [{
         "name": "Abandoned Ram Ranch",
         "description": "The ubiquitous ovines generally identified as \"rams\" are actually a hybrid species of sheep that has spread throughout the Shattered Isles, filling the roles of now-extinct animals such as cattle. Valued for their hides, milk, meat, and companionship, domesticated rams can be found in almost all frontier settlements. Both males and females of the species grow horns, both for use in mating displays and for defense—horns that are quite good for knocking down fences. The real question: Who is the shepherd trying to raise rams on an island like this one?"
-    }]
+    }],
+    "journalVideoGuide" : "https://youtu.be/VGcp2XAotWc?t=394"
 }

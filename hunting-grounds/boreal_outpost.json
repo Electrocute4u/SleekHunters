@@ -17,5 +17,6 @@
     "journal_entries": [{
         "name": "That Snow Battlefield",
         "description": "Nothing improves the hand-eye coordination of aspiring young Slayers like a traditional snowball fight. Maybe not every battleground is worth spending blood or treasure, but that doesn't mean the fight's not worth having."
-    }]
+    }],
+    "journalVideoGuide" : "https://youtu.be/VGcp2XAotWc?t=192"
 }

@@ -33,5 +33,6 @@
     "journal_entries": [{
         "name": "Cultist Mask",
         "description": "There are two ways to explain this discovery. Either it's a warning to the Unseen to stay away from this island lest they face the consequences, or it's a warning from the Unseen to stay away from this island lest you face the consequences."
-    }]
+    }],
+    "journalVideoGuide" : "https://youtu.be/VGcp2XAotWc?t=534"
 }

@@ -42,5 +42,6 @@
     "journal_entries": [{
         "name": "Tiefland's Best",
         "description": "These supplies and trade goods have all spoiled for the most part, but were once bound for the Regent of Ramsgate if the labels are any indication. It's too bad the contents have probably gone off—Tiefland is known as the bread basket of the Shattered Isles, and the Regent is known for having exquisite taste."
-    }]
+    }],
+    "journalVideoGuide" : "https://youtu.be/VGcp2XAotWc?t=557"
 }

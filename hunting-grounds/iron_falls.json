@@ -28,5 +28,6 @@
     "journal_entries": [{
         "name": "Zephyr Strike Banner",
         "description": "This banner bears the striking iconography of the Ostian commando team Zephyr Strike. It appears these intrepid military Slayers have executed missions even here, on the far side of the Ram formation."
-    }]
+    }],
+    "journalVideoGuide" : "https://youtu.be/VGcp2XAotWc?t=274"
 }

@@ -58,5 +58,6 @@
     {
         "name": "Supply Shipment",
         "description": "A large supply shipment has apparently been abandoned here, but looks recently delivered. Judging by the nearby ledger, this is just one shipment of many over the past few months. But who is receiving these shipments? The workforce present on this island must be considerable. The notes outline lab equipment, food, clothing, weapons and more."    
-    }]
+    }],
+    "journalVideoGuide" : "https://youtu.be/VGcp2XAotWc?t=918"
 }

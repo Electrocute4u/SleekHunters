@@ -32,5 +32,6 @@
     "journal_entries": [{
         "name": "Wreck of the I.M.V Tarmo",
         "description": "Once thought lost in the Maelstrom more than four decades ago, this Ostian survey ship was recently found by a team of Slayers tracking a fleeing Malkarion. The heavy earth-moving equipment within the wreck is encrusted with sand and rest. The odd sounds that occasionally echo within the Tarmo's dark hull make it sound unsettlingly like a tomb."
-    }]
+    }],
+    "journalVideoGuide" : "https://youtu.be/VGcp2XAotWc?t=291"
 }

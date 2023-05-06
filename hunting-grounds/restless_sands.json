@@ -27,5 +27,6 @@
     "journal_entries": [{
         "name": "Unoccupied Slayer Camp",
         "description": "A Slayer camp is rarely left abandoned, and it appears the Slayers who set up camp here intended to return soon. The hunting party may have run into unexpected trouble - trouble that could still be waiting elsewhere on the island of Restless Sands."
-    }]
+    }],
+    "journalVideoGuide" : "https://youtu.be/VGcp2XAotWc?t=240"
 }

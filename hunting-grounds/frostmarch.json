@@ -31,5 +31,6 @@
     "journal_entries": [{
         "name": "Unusual Helm",
         "description": "This helm is unlike most anything you've seen in Ramsgate before, and shows signs of having been worked heavily with frost archonite. It's probably best you left it in the snow where you found it. You can't be entirely certain it doesn't still contain a head."
-    }]
+    }],
+    "journalVideoGuide" : "https://youtu.be/VGcp2XAotWc?t=363"
 }

@@ -13,5 +13,6 @@
     "journal_entries": [{
         "name": "Aetheric Meteorite",
         "description": "This concentrated chunk of inert archonite plunged from the skies above and came to rest in this relatively fresh crater. It has been drained of its aetheric charge, leaving only residual traces of the power the mineral once contained. A Behemoth most likely fed here quite recently."
-    }]
+    }],
+    "journalVideoGuide" : "https://youtu.be/VGcp2XAotWc?t=167"
 }
