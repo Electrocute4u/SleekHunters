@@ -9,3 +9,6 @@ logger
 events
 package-lock.json
 package.json
+google_sheets/
+deviceAuth.json
+ticket_system.json

@@ -1,13 +1,12 @@
-
-const { Client, Collection, GatewayIntentBits } = require("discord.js")
-
+const { Collection, GatewayIntentBits } = require("discord.js")
+const discordClient = require("discord.js")
 const { readFileSync, readdirSync } = require("fs")
 const config = JSON.parse(readFileSync(`./config.json`, 'utf8'))
 const { connect } = require("mongoose")
 
 // import and require .env reference
 require('dotenv').config();
-const {publicToken, devToken, databaseTokenPublic, databaseTokenDev} = process.env;
+const {publicToken, devToken, databaseTokenPublic, databaseTokenDev, epicGamesAuth} = process.env;
 
 let token;
 if (config.dev == false) token = publicToken
@@ -16,8 +15,8 @@ if (config.dev == true) token = devToken
 // Calling in functions
 const tools = require(`./utils/functions`);
 
-const bot = new Client({
-    intents: [GatewayIntentBits.Guilds, GatewayIntentBits.DirectMessages],
+const bot = new discordClient.Client({
+    intents: [GatewayIntentBits.Guilds, GatewayIntentBits.DirectMessages, GatewayIntentBits.GuildMembers, GatewayIntentBits.GuildMessages],
 })
 
 // Utilize the Hybrid Sharding instead of 
@@ -43,6 +42,10 @@ bot.buttons = new Collection();
 // Cooldown collection
 bot.cooldown = new Collection(); 
 
+// App (ticket) ongoing deletion collection
+bot.appDeletes = new Collection();
+bot.ticketCreateCooldown = new Collection();
+
 // Require functions for handlers (commands, components and events)
 const functionFolders = readdirSync(`./functions`)
 for (const folder of functionFolders) {
@@ -56,6 +59,38 @@ bot.handleCommands();
 
 // Bot login
 bot.login(token);
+let epicClient
+
+async function signIntoEpic() {
+
+try {
+    // Login to Epic Games API
+    const { readFile, writeFile } = require('fs').promises;
+    const { Client } = require('fnbr');
+
+    let auth;
+    try {
+      auth = { deviceAuth: JSON.parse(await readFile('./deviceAuth.json')) };
+    } catch (e) {
+      auth = { authorizationCode: async () => epicGamesAuth };
+    }
+    
+    epicClient = new Client({ auth });
+    
+    epicClient.on('deviceauth:created', (da) => writeFile('./deviceAuth.json', JSON.stringify(da, null, 2)));
+    
+    await epicClient.login();
+    console.log(`Logged in as ${epicClient.user.displayName}`);
+    } catch (e) {
+        // handle error
+        console.error(e)
+    }
+}
+
+
+signIntoEpic().then(() => {
+    bot.epicClient = epicClient
+})
 
 // Connect to the Database Cluster
 // (async () => { 

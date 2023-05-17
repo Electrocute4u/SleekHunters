@@ -7,7 +7,6 @@ require('dotenv').config();
 
 module.exports = (bot) => {
     bot.handleCommands = async() => {
-
     // Deleting and reacquiring functions file
     delete require.cache[require.resolve("../../utils/functions")];
     const { filePathBot, CustomLog } = require("../../utils/functions")
