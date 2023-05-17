@@ -11,4 +11,4 @@ package-lock.json
 package.json
 google_sheets/
 deviceAuth.json
-ticket_system.json
+ticket-system.json
