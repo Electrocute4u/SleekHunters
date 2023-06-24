@@ -25,5 +25,4 @@ Slash commands below having `< >` are optional, while `[ ]` are required fields.
 - `/trials currently` - This week's Trial Behemoth
 - `/trials next` - Next week's Trial Behemoth
 
-
 *This project is a personal hobby project and all artworks re-used/and or edited in this Discord bot belongs to their respective copyright holders. This bot is not meant to gain or populate any income, as the bot is designed to be in 3 servers, where 2 are development related and the last being the official Discord server for RoseKnights. If you have any inquires about the artworks used or have a complaint, please refer your complaint/question on Github or through a Private Message on Discord at @Milim, formally known as Milim#0001*
