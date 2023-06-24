@@ -2,8 +2,9 @@ const { SlashCommandBuilder } = require("discord.js")
 
 module.exports = {
     data: new SlashCommandBuilder()
-    .setName("terminology")
-    .setDescription("A paginated table with all currently known Dauntless terminologies/terms"),
+    .setName("join")
+    .setDescription("Create a new app (ticket) to join the guild.")
+    .setDMPermission(false),
     async execute(interaction, bot) {
       const {readFileSync} = require("fs")
 

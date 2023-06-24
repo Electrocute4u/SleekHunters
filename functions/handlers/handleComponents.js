@@ -1,16 +1,17 @@
-const { readdirSync } = require("fs")
+const { readdirSync,readFileSync } = require("fs")
 
 module.exports = (bot) => {
     // Deleting and reacquiring functions file
-    delete require.cache[require.resolve("../../utils/functions")];
-    const { filePathBot } = require("../../utils/functions")
+    // 
 
     // Handle components and execute code from file (if the custom ID of an compontent equals a file name)
     bot.handleComponents = async () => {
+        const config = JSON.parse(readFileSync(`./config.json`, 'utf8'))
+        
         // Require a synched version of directory and return all .js files
-        const componentFolders = readdirSync(`${filePathBot()}/components`);
+        const componentFolders = readdirSync(`${config.provider == true ? `/home/electrocute4u/bot` : `.`}/components`);
         for (const folder of componentFolders) {
-            const componentFiles = readdirSync(`${filePathBot()}/components/${folder}`).filter(
+            const componentFiles = readdirSync(`${config.provider == true ? `/home/electrocute4u/bot` : `.`}/components/${folder}`).filter(
                 (file) => file.endsWith(".js")
             );
             
@@ -21,7 +22,7 @@ module.exports = (bot) => {
             switch (folder) {
                 case "buttons":
                     for (const file of componentFiles) {
-                    const button = require(`../../components/${folder}/${file}`)
+                    const button = require(`${config.provider == true ? `/home/electrocute4u/bot` : `../..`}/components/${folder}/${file}`)
                     buttons.set(button.data.name, button)
                     }
                 break;

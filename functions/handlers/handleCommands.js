@@ -6,22 +6,26 @@ const { readdirSync, readFileSync } = require("fs")
 require('dotenv').config();
 
 module.exports = (bot) => {
+
+
     bot.handleCommands = async() => {
-    // Deleting and reacquiring functions file
-    delete require.cache[require.resolve("../../utils/functions")];
-    const { filePathBot, CustomLog } = require("../../utils/functions")
+    // Calling config file
+    const config = JSON.parse(readFileSync(`./config.json`, 'utf8'))
+    
+    // Calling in functions
+    const tools = require(`${config.provider == true ? `/home/electrocute4u/bot` : `../..`}/utils/functions`);
 
         // Store all Owner-only functions here by name
         let devCommands = []
 
         // Find subfolders in /commands then push all .js files to commandArray in bot.js
-        const commandFolders = readdirSync(`${filePathBot()}/commands`)
+        const commandFolders = readdirSync(`${config.provider == true ? `/home/electrocute4u/bot` : `.`}/commands`)
         for (const folder of commandFolders) {
-            const commandFiles = readdirSync(`${filePathBot()}/commands/${folder}`).filter((file) => file.endsWith(".js"))
+            const commandFiles = readdirSync(`${config.provider == true ? `/home/electrocute4u/bot` : `.`}/commands/${folder}`).filter((file) => file.endsWith(".js"))
  
             const { commands, commandArray } = bot;
             for (const file of commandFiles) {
-                const command = require(`../../commands/${folder}/${file}`);
+                const command = require(`${config.provider == true ? `/home/electrocute4u/bot` : `../..`}/commands/${folder}/${file}`);
                 commands.set(command.data.name, command);
                 // Create exception for admin commands
                 if(folder.toLowerCase() == "admin") devCommands.push(command.data.name.toLowerCase())
@@ -29,7 +33,7 @@ module.exports = (bot) => {
             }
         }
         // Call a synched version of config.json
-        const {dev, slashGuildID} = JSON.parse(readFileSync(`${filePathBot()}/config.json`, 'utf8'))
+        const {dev, slashGuildID} = JSON.parse(readFileSync(`./config.json`, 'utf8'))
         // Assign token depending on bot version
         let token = dev == false ? process.env.publicToken : process.env.devToken
   
@@ -55,8 +59,8 @@ module.exports = (bot) => {
                         }
                     return Promise.all(promises);
             });
-            CustomLog("Deleted all local (/) commands from Test Server", "Info")
-            CustomLog("Started refreshing Public Application (/) Commands...", "Info")
+            tools.CustomLog("Deleted all local (/) commands from Test Server", "Info")
+            tools.CustomLog("Started refreshing Public Application (/) Commands...", "Info")
                 // Filters out the admin commands from commandArray so only global commands remains
                 const noDevForPublic = bot.commandArray.filter(function (command) {
                     return !devCommands.includes(command.name);
@@ -66,7 +70,7 @@ module.exports = (bot) => {
                 await rest.put(Routes.applicationCommands(clientid), {
                     body: noDevForPublic
                 })
-                CustomLog("Started refreshing Global Application (/) Commands...", "Info")
+                tools.CustomLog("Started refreshing Global Application (/) Commands...", "Info")
                 // Filter out all global (/) commands so only admin commands remains
                 const onlyDevForSupportServer = bot.commandArray.filter(function (command) {
                     return devCommands.includes(command.name);
@@ -79,15 +83,15 @@ module.exports = (bot) => {
 
             // Push all (/) commands in dev environment for testing
             if(dev == true){
-                CustomLog("Started refreshing Local Test Application (/) Commands...", "Info")
+                tools.CustomLog("Started refreshing Local Test Application (/) Commands...", "Info")
                 await rest.put(Routes.applicationGuildCommands(clientid, guildid), {
                     body: bot.commandArray
                 })
             }
-            CustomLog("Successfully reloaded all Application (/) commands.", "Info")
+            tools.CustomLog("Successfully reloaded all Application (/) commands.", "Info")
             
         } catch (error) {
-            console.error(error);
+            tools.CustomLog(error, "Error");
         }
     };
 }

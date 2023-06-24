@@ -1,0 +1,708 @@
+{
+  "updated_last": "1687642210",
+  "season": "5",
+  "started": "23.06.2023",
+  "ended": "10.08.2023",
+  "leaderboard": [
+    {
+      "rank": "1",
+      "guild": "SHlELDS",
+      "guildTag": "SHlELD",
+      "level": "90",
+      "timeLeft": "14:06"
+    },
+    {
+      "rank": "2",
+      "guild": "ThraxEnjoyers",
+      "guildTag": "THRAAX",
+      "level": "89",
+      "timeLeft": "12:54"
+    },
+    {
+      "rank": "3",
+      "guild": "FROGCULT",
+      "guildTag": "FRGCLT",
+      "level": "79",
+      "timeLeft": "34:06"
+    },
+    {
+      "rank": "4",
+      "guild": "AffenmitWaffen0",
+      "guildTag": "AmW0",
+      "level": "73",
+      "timeLeft": "11:29"
+    },
+    {
+      "rank": "5",
+      "guild": "AlianzaHispana",
+      "guildTag": "AzHis",
+      "level": "62",
+      "timeLeft": "15:24"
+    },
+    {
+      "rank": "6",
+      "guild": "SpaceXPyrates",
+      "guildTag": "4DABTY",
+      "level": "59",
+      "timeLeft": "14:04"
+    },
+    {
+      "rank": "7",
+      "guild": "Vaiana",
+      "guildTag": "Vaiana",
+      "level": "57",
+      "timeLeft": "16:17"
+    },
+    {
+      "rank": "8",
+      "guild": "VirtueGaming",
+      "guildTag": "xVrT",
+      "level": "55",
+      "timeLeft": "13:32"
+    },
+    {
+      "rank": "9",
+      "guild": "TheCoriators",
+      "guildTag": "CORTRS",
+      "level": "55",
+      "timeLeft": "10:19"
+    },
+    {
+      "rank": "10",
+      "guild": "HeadshotRJ",
+      "guildTag": "HSRJ",
+      "level": "53",
+      "timeLeft": "13:58"
+    },
+    {
+      "rank": "11",
+      "guild": "THEBREAKS",
+      "guildTag": "TBRKS",
+      "level": "51",
+      "timeLeft": "13:53"
+    },
+    {
+      "rank": "12",
+      "guild": "ZergSlayers",
+      "guildTag": "xZ3RGx",
+      "level": "49",
+      "timeLeft": "16:50"
+    },
+    {
+      "rank": "13",
+      "guild": "oTvTo",
+      "guildTag": "oTvTo",
+      "level": "48",
+      "timeLeft": "21:26"
+    },
+    {
+      "rank": "14",
+      "guild": "Darksoul14",
+      "guildTag": "7almas",
+      "level": "48",
+      "timeLeft": "09:57"
+    },
+    {
+      "rank": "15",
+      "guild": "Frostowls",
+      "guildTag": "Mulder",
+      "level": "44",
+      "timeLeft": "14:40"
+    },
+    {
+      "rank": "16",
+      "guild": "MothHouse",
+      "guildTag": "Mothss",
+      "level": "43",
+      "timeLeft": "22:14"
+    },
+    {
+      "rank": "17",
+      "guild": "OutLawCyberClan",
+      "guildTag": "OLCC",
+      "level": "41",
+      "timeLeft": "20:40"
+    },
+    {
+      "rank": "18",
+      "guild": "3776jp",
+      "guildTag": "3776jp",
+      "level": "38",
+      "timeLeft": "20:07"
+    },
+    {
+      "rank": "19",
+      "guild": "Hungry4thePower",
+      "guildTag": "xMDMA",
+      "level": "36",
+      "timeLeft": "21:37"
+    },
+    {
+      "rank": "20",
+      "guild": "AMAZINGksa",
+      "guildTag": "AS6ER",
+      "level": "33",
+      "timeLeft": "19:37"
+    },
+    {
+      "rank": "21",
+      "guild": "wasazzz",
+      "guildTag": "w4zza",
+      "level": "32",
+      "timeLeft": "15:55"
+    },
+    {
+      "rank": "22",
+      "guild": "BONEBREAKERS",
+      "guildTag": "UNIT8",
+      "level": "32",
+      "timeLeft": "11:02"
+    },
+    {
+      "rank": "23",
+      "guild": "TeamUpSlayers",
+      "guildTag": "TeamUp",
+      "level": "31",
+      "timeLeft": "27:19"
+    },
+    {
+      "rank": "24",
+      "guild": "RoseKnights",
+      "guildTag": "RK",
+      "level": "31",
+      "timeLeft": "26:12"
+    },
+    {
+      "rank": "25",
+      "guild": "70o0B",
+      "guildTag": "70o0B",
+      "level": "29",
+      "timeLeft": "16:53"
+    },
+    {
+      "rank": "26",
+      "guild": "PayItForward",
+      "guildTag": "PIFWD",
+      "level": "25",
+      "timeLeft": "21:37"
+    },
+    {
+      "rank": "27",
+      "guild": "xGlorianx",
+      "guildTag": "xGLAx",
+      "level": "25",
+      "timeLeft": "19:53"
+    },
+    {
+      "rank": "28",
+      "guild": "DarkPsychos",
+      "guildTag": "DkPsy",
+      "level": "25",
+      "timeLeft": "18:37"
+    },
+    {
+      "rank": "29",
+      "guild": "Ramskardiani",
+      "guildTag": "FK24",
+      "level": "24",
+      "timeLeft": "18:27"
+    },
+    {
+      "rank": "30",
+      "guild": "Giorenpas",
+      "guildTag": "Giove",
+      "level": "23",
+      "timeLeft": "19:10"
+    },
+    {
+      "rank": "31",
+      "guild": "DaWater",
+      "guildTag": "01Tap",
+      "level": "22",
+      "timeLeft": "14:46"
+    },
+    {
+      "rank": "32",
+      "guild": "D4unl3t",
+      "guildTag": "Runn3r",
+      "level": "21",
+      "timeLeft": "23:25"
+    },
+    {
+      "rank": "33",
+      "guild": "MontyxYoutube",
+      "guildTag": "Montyx",
+      "level": "20",
+      "timeLeft": "21:02"
+    },
+    {
+      "rank": "34",
+      "guild": "TribeOfDemons",
+      "guildTag": "HIOIH",
+      "level": "18",
+      "timeLeft": "20:02"
+    },
+    {
+      "rank": "35",
+      "guild": "RocketFoxBrasil",
+      "guildTag": "RFOXBR",
+      "level": "18",
+      "timeLeft": "18:27"
+    },
+    {
+      "rank": "36",
+      "guild": "LesBeliers",
+      "guildTag": "1FR",
+      "level": "17",
+      "timeLeft": "16:15"
+    },
+    {
+      "rank": "37",
+      "guild": "Ramsgardiani",
+      "guildTag": "TK24",
+      "level": "17",
+      "timeLeft": "13:47"
+    },
+    {
+      "rank": "38",
+      "guild": "Argonauts",
+      "guildTag": "Argos",
+      "level": "16",
+      "timeLeft": "19:25"
+    },
+    {
+      "rank": "39",
+      "guild": "Immortals7Bones",
+      "guildTag": "ImmBo",
+      "level": "16",
+      "timeLeft": "16:40"
+    },
+    {
+      "rank": "40",
+      "guild": "Ebejibijibijt",
+      "guildTag": "Im11",
+      "level": "16",
+      "timeLeft": "16:36"
+    },
+    {
+      "rank": "41",
+      "guild": "xHYDRAx",
+      "guildTag": "xHYDR4",
+      "level": "15",
+      "timeLeft": "29:14"
+    },
+    {
+      "rank": "42",
+      "guild": "PutosExiliados",
+      "guildTag": "PUT3X",
+      "level": "15",
+      "timeLeft": "25:48"
+    },
+    {
+      "rank": "43",
+      "guild": "LUCIDA",
+      "guildTag": "LUCIDA",
+      "level": "15",
+      "timeLeft": "25:41"
+    },
+    {
+      "rank": "44",
+      "guild": "saudix",
+      "guildTag": "1secx",
+      "level": "14",
+      "timeLeft": "20:29"
+    },
+    {
+      "rank": "45",
+      "guild": "TerraNullius22",
+      "guildTag": "TN22",
+      "level": "14",
+      "timeLeft": "18:57"
+    },
+    {
+      "rank": "46",
+      "guild": "7PIO",
+      "guildTag": "7PIO",
+      "level": "13",
+      "timeLeft": "22:12"
+    },
+    {
+      "rank": "47",
+      "guild": "ItsOver",
+      "guildTag": "Its0VR",
+      "level": "12",
+      "timeLeft": "21:19"
+    },
+    {
+      "rank": "48",
+      "guild": "Fergalicious",
+      "guildTag": "RNTFRE",
+      "level": "12",
+      "timeLeft": "20:52"
+    },
+    {
+      "rank": "49",
+      "guild": "slashGGWP",
+      "guildTag": "sGGWP",
+      "level": "12",
+      "timeLeft": "17:05"
+    },
+    {
+      "rank": "50",
+      "guild": "Tingkorea",
+      "guildTag": "Twicez",
+      "level": "10",
+      "timeLeft": "19:44"
+    },
+    {
+      "rank": "51",
+      "guild": "ONEPIECE2",
+      "guildTag": "New02",
+      "level": "10",
+      "timeLeft": "19:06"
+    },
+    {
+      "rank": "52",
+      "guild": "KonohaLeaf",
+      "guildTag": "Suik0",
+      "level": "10",
+      "timeLeft": "18:56"
+    },
+    {
+      "rank": "53",
+      "guild": "StaggerWhen",
+      "guildTag": "WenTho",
+      "level": "10",
+      "timeLeft": "18:06"
+    },
+    {
+      "rank": "54",
+      "guild": "CrimsonSand",
+      "guildTag": "CmSand",
+      "level": "10",
+      "timeLeft": "16:35"
+    },
+    {
+      "rank": "55",
+      "guild": "NoDramaHere",
+      "guildTag": "0Drama",
+      "level": "10",
+      "timeLeft": "14:26"
+    },
+    {
+      "rank": "56",
+      "guild": "kai29",
+      "guildTag": "kai29",
+      "level": "10",
+      "timeLeft": "10:11"
+    },
+    {
+      "rank": "57",
+      "guild": "MalkarionRiders",
+      "guildTag": "M4LKs",
+      "level": "9",
+      "timeLeft": "17:14"
+    },
+    {
+      "rank": "58",
+      "guild": "jinja",
+      "guildTag": "asyura",
+      "level": "8",
+      "timeLeft": "19:51"
+    },
+    {
+      "rank": "59",
+      "guild": "Shikkuza",
+      "guildTag": "Shikk",
+      "level": "8",
+      "timeLeft": "18:56"
+    },
+    {
+      "rank": "60",
+      "guild": "5lutty",
+      "guildTag": "5lutty",
+      "level": "8",
+      "timeLeft": "04:10"
+    },
+    {
+      "rank": "61",
+      "guild": "Malkyries",
+      "guildTag": "Malkys",
+      "level": "7",
+      "timeLeft": "23:32"
+    },
+    {
+      "rank": "62",
+      "guild": "Supernowa",
+      "guildTag": "19874",
+      "level": "7",
+      "timeLeft": "21:13"
+    },
+    {
+      "rank": "63",
+      "guild": "Kaiken",
+      "guildTag": "Sakaii",
+      "level": "6",
+      "timeLeft": "20:51"
+    },
+    {
+      "rank": "64",
+      "guild": "PixulonLargo",
+      "guildTag": "Pxulon",
+      "level": "6",
+      "timeLeft": "20:27"
+    },
+    {
+      "rank": "65",
+      "guild": "VigilantRaven",
+      "guildTag": "VGRN",
+      "level": "6",
+      "timeLeft": "19:04"
+    },
+    {
+      "rank": "66",
+      "guild": "IMVPI",
+      "guildTag": "IMVPI",
+      "level": "6",
+      "timeLeft": "18:10"
+    },
+    {
+      "rank": "67",
+      "guild": "MoNsTeRsCoLoRs",
+      "guildTag": "MNTCLR",
+      "level": "6",
+      "timeLeft": "17:54"
+    },
+    {
+      "rank": "68",
+      "guild": "FentoWin",
+      "guildTag": "FENTW",
+      "level": "6",
+      "timeLeft": "11:41"
+    },
+    {
+      "rank": "69",
+      "guild": "teamAONISAI",
+      "guildTag": "ao3",
+      "level": "5",
+      "timeLeft": "24:11"
+    },
+    {
+      "rank": "70",
+      "guild": "SlayersParadies",
+      "guildTag": "SLYPRD",
+      "level": "5",
+      "timeLeft": "23:30"
+    },
+    {
+      "rank": "71",
+      "guild": "ShimizuFamily",
+      "guildTag": "SMZFAM",
+      "level": "5",
+      "timeLeft": "23:17"
+    },
+    {
+      "rank": "72",
+      "guild": "KindredBlades",
+      "guildTag": "Kinn",
+      "level": "5",
+      "timeLeft": "22:23"
+    },
+    {
+      "rank": "73",
+      "guild": "4ZRO2",
+      "guildTag": "4ZRO2",
+      "level": "5",
+      "timeLeft": "21:41"
+    },
+    {
+      "rank": "74",
+      "guild": "FastLikeThunder",
+      "guildTag": "FL1T",
+      "level": "5",
+      "timeLeft": "17:45"
+    },
+    {
+      "rank": "75",
+      "guild": "CyberBioHazard",
+      "guildTag": "CyBio",
+      "level": "5",
+      "timeLeft": "16:29"
+    },
+    {
+      "rank": "76",
+      "guild": "RuTangClan804",
+      "guildTag": "PunkVA",
+      "level": "5",
+      "timeLeft": "15:57"
+    },
+    {
+      "rank": "77",
+      "guild": "ASUWHERE",
+      "guildTag": "the1nz",
+      "level": "4",
+      "timeLeft": "21:34"
+    },
+    {
+      "rank": "78",
+      "guild": "AONRecords",
+      "guildTag": "Yarroo",
+      "level": "4",
+      "timeLeft": "20:57"
+    },
+    {
+      "rank": "79",
+      "guild": "Cerbere",
+      "guildTag": "CPDE",
+      "level": "4",
+      "timeLeft": "19:48"
+    },
+    {
+      "rank": "80",
+      "guild": "IMPERlVM",
+      "guildTag": "lSPQRl",
+      "level": "4",
+      "timeLeft": "19:00"
+    },
+    {
+      "rank": "81",
+      "guild": "2theMOON",
+      "guildTag": "AMCGME",
+      "level": "4",
+      "timeLeft": "14:28"
+    },
+    {
+      "rank": "82",
+      "guild": "AnaQirjah",
+      "guildTag": "AQ40",
+      "level": "4",
+      "timeLeft": "09:20"
+    },
+    {
+      "rank": "83",
+      "guild": "Night0Wolves",
+      "guildTag": "NWolve",
+      "level": "4",
+      "timeLeft": "04:09"
+    },
+    {
+      "rank": "84",
+      "guild": "Noob87",
+      "guildTag": "NOOB87",
+      "level": "3",
+      "timeLeft": "22:39"
+    },
+    {
+      "rank": "85",
+      "guild": "SOTU",
+      "guildTag": "SOTU",
+      "level": "3",
+      "timeLeft": "22:23"
+    },
+    {
+      "rank": "86",
+      "guild": "SubOptimals",
+      "guildTag": "Sub0pt",
+      "level": "3",
+      "timeLeft": "21:06"
+    },
+    {
+      "rank": "87",
+      "guild": "AECC",
+      "guildTag": "AECC",
+      "level": "3",
+      "timeLeft": "19:44"
+    },
+    {
+      "rank": "88",
+      "guild": "PesoDoMarcelo",
+      "guildTag": "PDMRLO",
+      "level": "3",
+      "timeLeft": "16:31"
+    },
+    {
+      "rank": "89",
+      "guild": "D4RkVaMpIr3s",
+      "guildTag": "D4VA",
+      "level": "2",
+      "timeLeft": "24:45"
+    },
+    {
+      "rank": "90",
+      "guild": "Tartempion",
+      "guildTag": "Tpion",
+      "level": "2",
+      "timeLeft": "22:09"
+    },
+    {
+      "rank": "91",
+      "guild": "Westostdeutsch",
+      "guildTag": "Wodeut",
+      "level": "2",
+      "timeLeft": "21:40"
+    },
+    {
+      "rank": "92",
+      "guild": "TheIcedThieves",
+      "guildTag": "T1TSS",
+      "level": "2",
+      "timeLeft": "18:16"
+    },
+    {
+      "rank": "93",
+      "guild": "FinalBosses900",
+      "guildTag": "FB900",
+      "level": "2",
+      "timeLeft": "17:58"
+    },
+    {
+      "rank": "94",
+      "guild": "Shmudada",
+      "guildTag": "Dudada",
+      "level": "2",
+      "timeLeft": "17:45"
+    },
+    {
+      "rank": "95",
+      "guild": "Ghhllkhaaa",
+      "guildTag": "Ghjhhs",
+      "level": "1",
+      "timeLeft": "23:05"
+    },
+    {
+      "rank": "96",
+      "guild": "Nossaguildakr",
+      "guildTag": "Kravil",
+      "level": "1",
+      "timeLeft": "22:50"
+    },
+    {
+      "rank": "97",
+      "guild": "TheLivingGrace",
+      "guildTag": "iGrace",
+      "level": "1",
+      "timeLeft": "20:49"
+    },
+    {
+      "rank": "98",
+      "guild": "NNoMerCy",
+      "guildTag": "NOMRY",
+      "level": "1",
+      "timeLeft": "20:32"
+    },
+    {
+      "rank": "99",
+      "guild": "TILG",
+      "guildTag": "TILG",
+      "level": "1",
+      "timeLeft": "19:41"
+    },
+    {
+      "rank": "100",
+      "guild": "Moirai",
+      "guildTag": "Ousia",
+      "level": "1",
+      "timeLeft": "19:33"
+    }
+  ]
+}

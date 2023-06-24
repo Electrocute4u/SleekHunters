@@ -1,9 +1,12 @@
-const { SlashCommandBuilder } = require("discord.js")
+const { SlashCommandBuilder, PermissionFlagsBits } = require("discord.js")
 
 module.exports = {
     data: new SlashCommandBuilder()
-    .setName("terminology")
-    .setDescription("A paginated table with all currently known Dauntless terminologies/terms"),
+    .setName("setup")
+    .setDescription("Setup for the ticket system")
+    .setDMPermission(false)
+    .setDefaultMemberPermissions(PermissionFlagsBits.Administrator),
+    
     async execute(interaction, bot) {
       const {readFileSync} = require("fs")
 

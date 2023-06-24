@@ -1,5 +1,18 @@
 {
-    "this-week": {
-        "behemoth": "Ragetail Gnasher"
-    }
+  "this_week": {
+    "behemoth": "Riftstalker",
+    "avatar": "https://playdauntless.com/assets/media/layout/pages/trials/behemoths/riftstalker.png",
+    "modifiers": [
+      "Fury",
+      "Momentum"
+    ]
+  },
+  "next_week": {
+    "behemoth": "Drask",
+    "avatar": "https://playdauntless.com/assets/media/layout/pages/trials/behemoths/drask.png",
+    "modifiers": [
+      "Electify",
+      "Poison Blood"
+    ]
+  }
 }

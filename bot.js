@@ -1,22 +1,22 @@
 const { Collection, GatewayIntentBits } = require("discord.js")
 const discordClient = require("discord.js")
 const { readFileSync, readdirSync } = require("fs")
-const config = JSON.parse(readFileSync(`./config.json`, 'utf8'))
 const { connect } = require("mongoose")
 
 // import and require .env reference
 require('dotenv').config();
 const {publicToken, devToken, databaseTokenPublic, databaseTokenDev, epicGamesAuth} = process.env;
 
+// Calling config and utils file
+const config = JSON.parse(readFileSync(`./config.json`, 'utf8'))
+const tools = require(`${config.provider == true ? `/home/electrocute4u/bot` : `.`}/utils/functions`)
+
 let token;
 if (config.dev == false) token = publicToken
 if (config.dev == true) token = devToken
 
-// Calling in functions
-const tools = require(`./utils/functions`);
-
 const bot = new discordClient.Client({
-    intents: [GatewayIntentBits.Guilds, GatewayIntentBits.DirectMessages, GatewayIntentBits.GuildMembers, GatewayIntentBits.GuildMessages],
+    intents: [GatewayIntentBits.Guilds, GatewayIntentBits.DirectMessages, GatewayIntentBits.GuildMembers, GatewayIntentBits.GuildMessages, GatewayIntentBits.GuildMessageReactions],
 })
 
 // Utilize the Hybrid Sharding instead of 
@@ -47,11 +47,11 @@ bot.appDeletes = new Collection();
 bot.ticketCreateCooldown = new Collection();
 
 // Require functions for handlers (commands, components and events)
-const functionFolders = readdirSync(`./functions`)
+const functionFolders = readdirSync(`${config.provider == true ? `/home/electrocute4u/bot` : `.`}/functions`)
 for (const folder of functionFolders) {
-    const functionFiles = readdirSync(`./functions/${folder}`).filter((file) => file.endsWith(".js"));
+    const functionFiles = readdirSync(`${config.provider == true ? `/home/electrocute4u/bot` : `.`}/functions/${folder}`).filter((file) => file.endsWith(".js"));
     for (const file of functionFiles)
-        require(`./functions/${folder}/${file}`)(bot);
+        require(`${config.provider == true ? `/home/electrocute4u/bot` : `.`}/functions/${folder}/${file}`)(bot);
 }
 
 bot.handleEvents();
@@ -70,17 +70,17 @@ try {
 
     let auth;
     try {
-      auth = { deviceAuth: JSON.parse(await readFile('./deviceAuth.json')) };
+      auth = { deviceAuth: JSON.parse(await readFile(`./deviceAuth.json`)) };
     } catch (e) {
       auth = { authorizationCode: async () => epicGamesAuth };
     }
     
     epicClient = new Client({ auth });
     
-    epicClient.on('deviceauth:created', (da) => writeFile('./deviceAuth.json', JSON.stringify(da, null, 2)));
+    epicClient.on('deviceauth:created', (da) => writeFile(`./deviceAuth.json`, JSON.stringify(da, null, 2)));
     
     await epicClient.login();
-    console.log(`Logged in as ${epicClient.user.displayName}`);
+    console.log(`Logged into Epic Games API as ${epicClient.user.displayName}`);
     } catch (e) {
         // handle error
         console.error(e)
@@ -90,7 +90,13 @@ try {
 
 signIntoEpic().then(() => {
     bot.epicClient = epicClient
-})
+}).catch(() => null)
+
+// Handle and log rejection errors without crashing process
+// process.on('uncaughtException', (err, origin) => {
+//     console.log(err.stack)
+//     tools.CustomLog(`Caught exception: ${err}\n` + `Exception origin: ${origin}`);
+// });
 
 // Connect to the Database Cluster
 // (async () => { 

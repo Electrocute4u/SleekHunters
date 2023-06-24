@@ -1,9 +1,5 @@
 const { SlashCommandBuilder } = require("discord.js")
 
-// Acquire file name and folder name
-let dir = __dirname.split(`\\`).slice(-1)[0]
-let fileName = __filename.split(`\\`).slice(-1)[0]
-
 module.exports = {
     data: new SlashCommandBuilder()
     .setName("hunting-grounds")
@@ -38,16 +34,22 @@ module.exports = {
           {name: "The Blazeworks", value: "the_blazeworks"}
       )
       ),
-    async execute(interaction, bot) {
-      // Deleting and reacquiring cache of functions file
-      delete require.cache[require.resolve("../../utils/functions")];
-      const tools = require("../../utils/functions")
+      async execute(interaction, bot) {
+        const {readFileSync} = require("fs")
 
-      // Delete and reacquire the cache of command function
-      delete require.cache[require.resolve(`../../commandFunctions/${dir}/${fileName}`)];
-      
-      // Executing the command file
-      const commandFile = require(`../../commandFunctions/${dir}/${fileName}`)
-      await commandFile.command(interaction, tools, bot)
-    } 
+        // Calling config and utils file
+        const config = JSON.parse(readFileSync(`./config.json`, 'utf8'))
+        const tools = require(`${config.provider == true ? `/home/electrocute4u/bot` : `../..`}/utils/functions`)
+        
+        // Acquire file name and folder name
+        let dir = config.provider == true ? __dirname.split(`/`).slice(-1)[0] : __dirname.split(`\\`).slice(-1)[0]
+        let fileName = config.provider == true ? __filename.split(`/`).slice(-1)[0] : __filename.split(`\\`).slice(-1)[0]
+   
+        // Delete and reacquire the cache of command function
+        delete require.cache[require.resolve(`${config.provider == true ? `/home/electrocute4u/bot` : `../..`}/commandFunctions/${dir}/${fileName}`)];
+        
+        // Executing the command file
+        const commandFile = require(`${config.provider == true ? `/home/electrocute4u/bot` : `../..`}/commandFunctions/${dir}/${fileName}`)
+        await commandFile.command(interaction, tools, bot)
+      } 
 }
