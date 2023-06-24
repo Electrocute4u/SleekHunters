@@ -12,5 +12,4 @@ package.json
 google_sheets/
 deviceAuth.json
 ticket-system.json
-unfinished/commandFunctions
-unfinished/commands
+unfinished
