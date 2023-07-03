@@ -4,6 +4,7 @@ module.exports = {
     data: new SlashCommandBuilder()
     .setName("lookup")
     .setDescription("Finds a Epic Games profile based on ID or username, if they exists.")
+    .setDMPermission(false)
     .addStringOption(option =>
       option
       .setName("input")

@@ -3,6 +3,7 @@ const { SlashCommandBuilder } = require("discord.js")
 module.exports = {
     data: new SlashCommandBuilder()
     .setName("pick")
+    .setDMPermission(false)
     .setDescription("Let the bot pick a choice for you!")
     .addStringOption(option =>
         option

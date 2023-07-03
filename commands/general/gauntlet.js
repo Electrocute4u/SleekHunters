@@ -7,6 +7,7 @@ module.exports = {
     data: new SlashCommandBuilder()
     .setName("gauntlet")
     .setDescription("Get leaderboard, guild's rank or information about Gauntlet")
+    .setDMPermission(false)
     .addSubcommand(subcommand =>
       subcommand
         .setName('spot')

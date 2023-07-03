@@ -1,18 +1,32 @@
 {
   "this_week": {
-    "behemoth": "Riftstalker",
-    "avatar": "https://playdauntless.com/assets/media/layout/pages/trials/behemoths/riftstalker.png",
+    "behemoth": "Drask",
+    "avatar": "https://playdauntless.com/assets/media/layout/pages/trials/behemoths/drask.png",
+    "date": "NOW - Jul 6",
     "modifiers": [
-      "Fury",
-      "Momentum"
+      {
+        "name": "Electrify",
+        "description": "Behemoths' physical attacks shock Slayers."
+      },
+      {
+        "name": "Poison Blood",
+        "description": "Breaking a behemoth part spawns a pool of poison"
+      }
     ]
   },
   "next_week": {
-    "behemoth": "Drask",
-    "avatar": "https://playdauntless.com/assets/media/layout/pages/trials/behemoths/drask.png",
+    "behemoth": "Embermane",
+    "avatar": "https://playdauntless.com/assets/media/layout/pages/trials/behemoths/embermane.png",
+    "date": "Jul 6 - Jul 13",
     "modifiers": [
-      "Electify",
-      "Poison Blood"
+      {
+        "name": "Inferno",
+        "description": "Behemoth on fire effects last longer and deal more damage."
+      },
+      {
+        "name": "Combustion",
+        "description": "Behemoths' physical attacks set Slayers on fire."
+      }
     ]
   }
 }

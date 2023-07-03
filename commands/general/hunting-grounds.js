@@ -4,6 +4,7 @@ module.exports = {
     data: new SlashCommandBuilder()
     .setName("hunting-grounds")
     .setDescription("Get information about a specific hunting ground or obtain a list of all hunting grounds")
+    .setDMPermission(false)
     .addStringOption(option =>
       option
       .setName("map")

@@ -4,6 +4,7 @@ module.exports = {
     data: new SlashCommandBuilder()
     .setName("trials")
     .setDescription("Get information about Lady Luck's Trials")
+    .setDMPermission(false)
     .addSubcommand(subcommand =>
       subcommand
         .setName('info')
@@ -11,7 +12,7 @@ module.exports = {
     )
     .addSubcommand(subcommand =>
       subcommand
-        .setName('currently')
+        .setName('current')
         .setDescription(`This week's Trial Behemoth`)
     )
     .addSubcommand(subcommand =>

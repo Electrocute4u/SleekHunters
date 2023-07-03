@@ -3,7 +3,8 @@ const { SlashCommandBuilder } = require("discord.js")
 module.exports = {
     data: new SlashCommandBuilder()
     .setName("github")
-    .setDescription("Get a link to the bot's Github repository"),
+    .setDescription("Get a link to the bot's Github repository")
+    .setDMPermission(false),
     async execute(interaction, bot) {
       const {readFileSync} = require("fs")
 

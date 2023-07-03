@@ -4,6 +4,7 @@ module.exports = {
     data: new SlashCommandBuilder()
     .setName("leveling")
     .setDescription("Find the best ways to level up your weapon fast")
+    .setDMPermission(false)
     .addStringOption(option =>
       option
       .setName("element")

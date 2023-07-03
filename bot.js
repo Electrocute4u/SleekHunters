@@ -1,4 +1,4 @@
-const { Collection, GatewayIntentBits } = require("discord.js")
+const { Collection, GatewayIntentBits, ActivityType } = require("discord.js")
 const discordClient = require("discord.js")
 const { readFileSync, readdirSync } = require("fs")
 const { connect } = require("mongoose")
@@ -41,6 +41,53 @@ bot.buttons = new Collection();
 
 // Cooldown collection
 bot.cooldown = new Collection(); 
+
+// Pick presence
+bot.pickPresence = async () => {
+    const options = [
+        {
+          type: ActivityType.Competing,
+          text: "Dauntless",
+          status: "online"
+        },
+        {
+          type: ActivityType.Competing,
+          text: "Gauntlet",
+          status: "online"
+        },
+        {
+          type: ActivityType.Competing,
+          text: "Trials",
+          status: "online"
+        },
+        {
+          type: ActivityType.Playing,
+          text: "Dauntless",
+          status: "online"
+        },
+        {
+          type: ActivityType.Playing,
+          text: "Gauntlet",
+          status: "online"
+        },
+        {
+          type: ActivityType.Playing,
+          text: "Trials",
+          status: "online"
+        }
+      ];
+    
+    const option = Math.floor(Math.random() * options.length)
+
+    bot.user.setPresence({
+        activities: [
+            {
+            name: options[option].text,
+            type: options[option].type,
+            }],
+        status: options[option].status
+    })
+}
 
 // App (ticket) ongoing deletion collection
 bot.appDeletes = new Collection();

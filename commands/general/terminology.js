@@ -3,6 +3,7 @@ const { SlashCommandBuilder } = require("discord.js")
 module.exports = {
     data: new SlashCommandBuilder()
     .setName("terminology")
+    .setDMPermission(false)
     .setDescription("A paginated table with all currently known Dauntless terminologies/terms"),
     async execute(interaction, bot) {
       const {readFileSync} = require("fs")
