@@ -1,15 +1,15 @@
-![Discord Bot Github](https://github.com/Electrocute4u/RoseKnights/assets/25005864/8c677b68-c64a-4c75-be20-b9fade68a0d5)
+![Discord Bot Github](https://github.com/Electrocute4u/SleekHunters/assets/25005864/35ea6f16-8093-481e-9525-a898baaf53a2)
 
 
-# RoseKnights
+# Sleekhunters
 
 ## What is this project?
-This project was originally built to one day be added to the official Discord server for RoseKnights, a Dauntless guild. It grew from just a few Dauntless related information slash commands, to be covering Gauntlet, update Gauntlet leaderboard every 30 minutes, as long as covering Trials and scraping website after every reset, allowing users to find current week's behemoths, as long as seeing what's to come next week.
+This project was originally built to one day be added to the official Discord server for SleekHunters, a Dauntless guild. It grew from just a few Dauntless related information slash commands, to be covering Gauntlet, update Gauntlet leaderboard every 30 minutes, as long as covering Trials and scraping website after every reset, allowing users to find current week's behemoths, as long as seeing what's to come next week.
 
 ## Bot Commands
 Slash commands below having `< >` are optional, while `[ ]` are required fields.
 ### Gauntlet commands:
-- `/gauntlet spot` \<season\> - Retrieve RoseKnights's current spot or from a previous season
+- `/gauntlet spot` \<season\> - Retrieve SleekHunters's current leaderboard spot or from a previous season
 - `/gauntlet find` \[season\] \[name\] - Search for a guild by name (or tag) and retrieve their current spot
 - `/gauntlet leaderboard` \<season\> - View the Gauntlet leaderboard for this or a previous season
 - `/gauntlet info` - Get some more information about Gauntlet
@@ -25,4 +25,4 @@ Slash commands below having `< >` are optional, while `[ ]` are required fields.
 - `/trials currently` - This week's Trial Behemoth
 - `/trials next` - Next week's Trial Behemoth
 
-*This project is a personal hobby project and all artworks re-used/and or edited in this Discord bot belongs to their respective copyright holders. This bot is not meant to gain or populate any income, as the bot is designed to be in 3 servers, where 2 are development related and the last being the official Discord server for RoseKnights. If you have any inquires about the artworks used or have a complaint, please refer your complaint/question on Github or through a Private Message on Discord at @Milim, formally known as Milim#0001*
+*This project is a personal hobby project and all artworks re-used/and or edited in this Discord bot belongs to their respective copyright holders. This bot is not meant to gain or populate any income, as the bot is designed to be in 3 servers, where 2 are development related and the last being the official Discord server for SleekHunters. If you have any inquires about the artworks used or have a complaint, please refer your complaint/question on Github or through a Private Message on Discord at @Milim, formally known as Milim#0001*

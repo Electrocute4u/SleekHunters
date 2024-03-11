@@ -11,7 +11,7 @@ module.exports = {
     .addSubcommand(subcommand =>
       subcommand
         .setName('spot')
-        .setDescription('Retrieve RoseKnights\'s current spot or from a previous season')
+        .setDescription('Retrieve SleekHunters\'s current spot or from a previous season')
         .addStringOption(option =>
           option
           .setName("season")
@@ -87,6 +87,16 @@ module.exports = {
 		  const choices = seasons.length > 24 ? seasons.slice(seasons.length-1-24, seasons.length-1) : seasons
       
 		  const filtered = choices.filter(choice => choice.toLowerCase().startsWith(focusedValue.toLowerCase()));
+      filtered.sort(function (a, b) {
+        if (a.replace(/[/\d+/]/g, "$1") < b.replace(/[/\d+/]/g, "$1")) {
+          return -1;
+        }
+        if (a.replace(/[/\d+/]/g, "$1") > b.replace(/[/\d+/]/g, "$1")) {
+          return 1;
+        }
+        return 0;
+      })
+      
 		  await interaction.respond(
 		  	filtered.map(choice => ({ name: choice, value: choice.replace(/Season /gi, "").trim() })),
 		  );

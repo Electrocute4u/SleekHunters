@@ -18,7 +18,7 @@ module.exports = {
           {name: "Shock", value: "shock"},
           {name: "Terra", value: "terra"},
           {name: "Umbral", value: "umbral"},
-          {name: "Neutral", value: "neautral"}
+          {name: "Neutral", value: "neutral"}
       )
       ),
     async execute(interaction, bot) {

@@ -1,31 +1,31 @@
 {
   "this_week": {
-    "behemoth": "Drask",
-    "avatar": "https://playdauntless.com/assets/media/layout/pages/trials/behemoths/drask.png",
-    "date": "NOW - Jul 6",
+    "behemoth": "Gnasher",
+    "avatar": "https://playdauntless.com/assets/media/layout/pages/trials/behemoths/gnasher.png",
+    "date": "NOW - Mar 14",
     "modifiers": [
       {
-        "name": "Electrify",
-        "description": "Behemoths' physical attacks shock Slayers."
+        "name": "Fury",
+        "description": "Behemoth rage lasts longer, and empowers the Behemoth's defense and attack."
       },
       {
-        "name": "Poison Blood",
-        "description": "Breaking a behemoth part spawns a pool of poison"
+        "name": "Jagged",
+        "description": "Attacks that would cause wound now cause crippling wound."
       }
     ]
   },
   "next_week": {
-    "behemoth": "Embermane",
-    "avatar": "https://playdauntless.com/assets/media/layout/pages/trials/behemoths/embermane.png",
-    "date": "Jul 6 - Jul 13",
+    "behemoth": "Skraev",
+    "avatar": "https://playdauntless.com/assets/media/layout/pages/trials/behemoths/skraev.png",
+    "date": "Mar 14 - Mar 21",
     "modifiers": [
       {
-        "name": "Inferno",
-        "description": "Behemoth on fire effects last longer and deal more damage."
+        "name": "Tough Hide",
+        "description": "Behemoth parts take less damage, but wounded parts take much more damage."
       },
       {
-        "name": "Combustion",
-        "description": "Behemoths' physical attacks set Slayers on fire."
+        "name": "Icy Grave",
+        "description": "When Slayers are frozen, a deadly trap starts to spring."
       }
     ]
   }

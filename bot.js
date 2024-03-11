@@ -46,33 +46,33 @@ bot.cooldown = new Collection();
 bot.pickPresence = async () => {
     const options = [
         {
-          type: ActivityType.Competing,
-          text: "Dauntless",
-          status: "online"
-        },
-        {
-          type: ActivityType.Competing,
-          text: "Gauntlet",
+          type: ActivityType.Playing,
+          text: "🎮 Dauntless",
           status: "online"
         },
         {
           type: ActivityType.Competing,
-          text: "Trials",
+          text: "🪙 Gauntlet",
           status: "online"
         },
         {
-          type: ActivityType.Playing,
-          text: "Dauntless",
+          type: ActivityType.Competing,
+          text: "⏳ Trials",
           status: "online"
         },
         {
-          type: ActivityType.Playing,
-          text: "Gauntlet",
+          type: ActivityType.Custom,
+          text: "🌌 Gazing upon the stars in Twilight Sanctuary",
           status: "online"
         },
         {
-          type: ActivityType.Playing,
-          text: "Trials",
+          type: ActivityType.Custom,
+          text: "🏙️ Enjoying the view in Ramsgate",
+          status: "online"
+        },
+        {
+          type: ActivityType.Custom,
+          text: "🗻 Climbing the Escalation islands",
           status: "online"
         }
       ];
