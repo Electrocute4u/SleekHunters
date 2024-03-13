@@ -8,11 +8,6 @@ This project was originally built to one day be added to the official Discord se
 
 ## Bot Commands
 Slash commands below having `< >` are optional, while `[ ]` are required fields.
-### Gauntlet commands:
-- `/gauntlet spot` \<season\> - Retrieve SleekHunters's current leaderboard spot or from a previous season
-- `/gauntlet find` \[season\] \[name\] - Search for a guild by name (or tag) and retrieve their current spot
-- `/gauntlet leaderboard` \<season\> - View the Gauntlet leaderboard for this or a previous season
-- `/gauntlet info` - Get some more information about Gauntlet
 ### General commands:
 - `/github` - Get a link to the bot's Github repository
 - `/hunting-grounds` \<map\> - Get information about a specific hunting ground or obtain a list of all hunting grounds
@@ -20,6 +15,15 @@ Slash commands below having `< >` are optional, while `[ ]` are required fields.
 - `/lookup` \[input\] - Finds a Epic Games profile based on ID or username, if they exist
 - `/pick` \[choices\] - Let the bot pick a choice for you!
 - `/terminology` - A paginated table with all currently known Dauntless terminologies/terms
+### Gauntlet commands:
+- `/gauntlet spot` \<season\> - Retrieve SleekHunters's current leaderboard spot or from a previous season
+- `/gauntlet find` \[season\] \[name\] - Search for a guild by name (or tag) and retrieve their current spot
+- `/gauntlet leaderboard` \<season\> - View the Gauntlet leaderboard for this or a previous season
+- `/gauntlet info` - Get some more information about Gauntlet
+### Escalation commands:
+- `/escalation` \<element\> - Get information about a specific escalation or obtain a list of all escalations
+- `/hesca current` - This week's Heroic Escalation
+- `/hesca next` - Next week's Heroic Escalation
 ### Trials commands:
 - `/trials info` - Get some information about Trials
 - `/trials currently` - This week's Trial Behemoth
