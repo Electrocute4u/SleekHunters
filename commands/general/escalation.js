@@ -2,25 +2,24 @@ const { SlashCommandBuilder } = require("discord.js")
 
 module.exports = {
     data: new SlashCommandBuilder()
-    .setName("hesca")
-    .setDescription("Get information about Heroic Escalation")
+    .setName("escalation")
+    .setDescription("Get information about a specific escalation or obtain a list of all escalations")
     .setDMPermission(false)
-    .addSubcommand(subcommand =>
-      subcommand
-        .setName('info')
-        .setDescription('Get some information about Heroic Escalations')
-    )
-    .addSubcommand(subcommand =>
-      subcommand
-        .setName('current')
-        .setDescription(`This week's Heroic Escalation`)
-    )
-    .addSubcommand(subcommand =>
-      subcommand
-        .setName('next')
-        .setDescription(`Next week's Heroic Escalation`)
-    
-    ),
+    .addStringOption(option =>
+      option
+      .setName("element")
+      .setDescription("Get information about a specific escalation")
+      .setRequired(false)
+      .addChoices
+      (
+          {name: "Shock", value: "shock"},
+          {name: "Blaze", value: "blaze"},
+          {name: "Umbral", value: "umbral"},
+          {name: "Terra", value: "terra"},
+          {name: "Frost", value: "frost"},
+          {name: "Radiant", value: "radiant"},
+      )
+      ),
     async execute(interaction, bot) {
       const {readFileSync} = require("fs")
 

@@ -7,11 +7,6 @@ module.exports = {
     .setDMPermission(false)
     .addSubcommand(subcommand =>
       subcommand
-        .setName('info')
-        .setDescription('Get some information about Heroic Escalations')
-    )
-    .addSubcommand(subcommand =>
-      subcommand
         .setName('current')
         .setDescription(`This week's Heroic Escalation`)
     )

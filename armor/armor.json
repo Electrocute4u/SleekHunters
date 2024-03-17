@@ -1,0 +1,3548 @@
+{
+    "Adversary's Drive": {
+      "behemoth": "Urska",
+      "cells": "Insight",
+      "description": "{{typeAlt}} protection forged from {{behemoth}} trophies.",
+      "icon": "https://cdn.jsdelivr.net/gh/atomicptr/dauntless-builder/assets/icons/armours/urska/AdversarysDrive.png",
+      "name": "Adversary's Drive",
+      "perks": [
+        {
+          "name": "Guardian",
+          "powerSurged": false,
+          "value": 2
+        },
+        {
+          "name": "Guardian",
+          "powerSurged": true,
+          "value": 3
+        }
+      ],
+      "resistance": {
+        "base": 25,
+        "powerSurged": 30
+      },
+      "strength": "Frost",
+      "type": "Legs",
+      "weakness": "Blaze"
+    },
+    "Adversary's Guile": {
+      "behemoth": "Urska",
+      "cells": "Insight",
+      "description": "{{typeAlt}} protection forged from {{behemoth}} trophies.",
+      "icon": "https://cdn.jsdelivr.net/gh/atomicptr/dauntless-builder/assets/icons/armours/urska/AdversarysGuile.png",
+      "name": "Adversary's Guile",
+      "perks": [
+        {
+          "name": "Cascade",
+          "powerSurged": false,
+          "value": 2
+        },
+        {
+          "name": "Cascade",
+          "powerSurged": true,
+          "value": 3
+        }
+      ],
+      "resistance": {
+        "base": 25,
+        "powerSurged": 30
+      },
+      "strength": "Frost",
+      "type": "Head",
+      "weakness": "Blaze"
+    },
+    "Adversary's Pride": {
+      "behemoth": "Urska",
+      "cells": "Alacrity",
+      "description": "{{typeAlt}} protection forged from {{behemoth}} trophies.",
+      "icon": "https://cdn.jsdelivr.net/gh/atomicptr/dauntless-builder/assets/icons/armours/urska/AdversarysPride.png",
+      "name": "Adversary's Pride",
+      "perks": [
+        {
+          "name": "Cascade",
+          "powerSurged": false,
+          "value": 2
+        },
+        {
+          "name": "Cascade",
+          "powerSurged": true,
+          "value": 3
+        }
+      ],
+      "resistance": {
+        "base": 25,
+        "powerSurged": 30
+      },
+      "strength": "Frost",
+      "type": "Torso",
+      "weakness": "Blaze"
+    },
+    "Adversary's Wrath": {
+      "behemoth": "Urska",
+      "cells": "Finesse",
+      "description": "{{typeAlt}} protection forged from {{behemoth}} trophies.",
+      "icon": "https://cdn.jsdelivr.net/gh/atomicptr/dauntless-builder/assets/icons/armours/urska/AdversarysWrath.png",
+      "name": "Adversary's Wrath",
+      "perks": [
+        {
+          "name": "Aetheric Evasion",
+          "powerSurged": false,
+          "value": 2
+        },
+        {
+          "name": "Aetheric Evasion",
+          "powerSurged": true,
+          "value": 3
+        }
+      ],
+      "resistance": {
+        "base": 25,
+        "powerSurged": 30
+      },
+      "strength": "Frost",
+      "type": "Arms",
+      "weakness": "Blaze"
+    },
+    "Aegis of Valour": {
+      "behemoth": "Valomyr",
+      "cells": "Brutality",
+      "description": "{{typeAlt}} protection forged from {{behemoth}} trophies.",
+      "icon": "https://cdn.jsdelivr.net/gh/atomicptr/dauntless-builder/assets/icons/armours/valomyr/AegisOfValour.png",
+      "name": "Aegis of Valour",
+      "perks": [
+        {
+          "name": "Nine Lives",
+          "powerSurged": false,
+          "value": 2
+        },
+        {
+          "name": "Nine Lives",
+          "powerSurged": true,
+          "value": 3
+        }
+      ],
+      "resistance": {
+        "base": 15,
+        "powerSurged": 30
+      },
+      "strength": "Radiant",
+      "type": "Torso",
+      "weakness": "Umbral"
+    },
+    "Agaric Bole": {
+      "behemoth": "Agarus",
+      "cells": "Insight",
+      "description": "{{typeAlt}} protection forged from {{behemoth}} trophies.",
+      "icon": "https://cdn.jsdelivr.net/gh/atomicptr/dauntless-builder/assets/icons/armours/agarus/AgaricBole.png",
+      "name": "Agaric Bole",
+      "perks": [
+        {
+          "name": "Parasitic",
+          "powerSurged": false,
+          "value": 2
+        },
+        {
+          "name": "Parasitic",
+          "powerSurged": true,
+          "value": 3
+        }
+      ],
+      "resistance": {
+        "base": 25,
+        "powerSurged": 30
+      },
+      "strength": "Terra",
+      "type": "Torso",
+      "weakness": "Shock"
+    },
+    "Agaric Branches": {
+      "behemoth": "Agarus",
+      "cells": "Fortitude",
+      "description": "{{typeAlt}} protection forged from {{behemoth}} trophies.",
+      "icon": "https://cdn.jsdelivr.net/gh/atomicptr/dauntless-builder/assets/icons/armours/agarus/AgaricBranches.png",
+      "name": "Agaric Branches",
+      "perks": [
+        {
+          "name": "Sturdy",
+          "powerSurged": false,
+          "value": 2
+        },
+        {
+          "name": "Sturdy",
+          "powerSurged": true,
+          "value": 3
+        }
+      ],
+      "resistance": {
+        "base": 25,
+        "powerSurged": 30
+      },
+      "strength": "Terra",
+      "type": "Arms",
+      "weakness": "Shock"
+    },
+    "Agaric Canopy": {
+      "behemoth": "Agarus",
+      "cells": "Fortitude",
+      "description": "{{typeAlt}} protection forged from {{behemoth}} trophies.",
+      "icon": "https://cdn.jsdelivr.net/gh/atomicptr/dauntless-builder/assets/icons/armours/agarus/AgaricCanopy.png",
+      "name": "Agaric Canopy",
+      "perks": [
+        {
+          "name": "Parasitic",
+          "powerSurged": false,
+          "value": 2
+        },
+        {
+          "name": "Parasitic",
+          "powerSurged": true,
+          "value": 3
+        }
+      ],
+      "resistance": {
+        "base": 25,
+        "powerSurged": 30
+      },
+      "strength": "Terra",
+      "type": "Head",
+      "weakness": "Shock"
+    },
+    "Agaric Roots": {
+      "behemoth": "Agarus",
+      "cells": "Fortitude",
+      "description": "{{typeAlt}} protection forged from {{behemoth}} trophies.",
+      "icon": "https://cdn.jsdelivr.net/gh/atomicptr/dauntless-builder/assets/icons/armours/agarus/AgaricRoots.png",
+      "name": "Agaric Roots",
+      "perks": [
+        {
+          "name": "Fortress",
+          "powerSurged": false,
+          "value": 2
+        },
+        {
+          "name": "Fortress",
+          "powerSurged": true,
+          "value": 3
+        }
+      ],
+      "resistance": {
+        "base": 25,
+        "powerSurged": 30
+      },
+      "strength": "Terra",
+      "type": "Legs",
+      "weakness": "Shock"
+    },
+    "Arms of Ice": {
+      "behemoth": "Pangar",
+      "cells": "Fortitude",
+      "description": "{{typeAlt}} protection forged from {{behemoth}} trophies.",
+      "icon": "https://cdn.jsdelivr.net/gh/atomicptr/dauntless-builder/assets/icons/armours/pangar/ArmsOfIce.png",
+      "name": "Arms of Ice",
+      "perks": [
+        {
+          "name": "Knockout King",
+          "powerSurged": false,
+          "value": 1
+        },
+        {
+          "name": "Knockout King",
+          "powerSurged": true,
+          "value": 3
+        }
+      ],
+      "resistance": {
+        "base": 10,
+        "powerSurged": 30
+      },
+      "strength": "Frost",
+      "type": "Arms",
+      "weakness": "Blaze"
+    },
+    "Bladed Boots": {
+      "behemoth": "Sahvyt",
+      "cells": "Finesse",
+      "description": "{{typeAlt}} protection forged from {{behemoth}} trophies.",
+      "icon": "https://cdn.jsdelivr.net/gh/atomicptr/dauntless-builder/assets/icons/armours/sahvyt/BladedBoots.png",
+      "name": "Bladed Boots",
+      "perks": [
+        {
+          "name": "Assassin's Frenzy",
+          "powerSurged": false,
+          "value": 2
+        },
+        {
+          "name": "Assassin's Frenzy",
+          "powerSurged": true,
+          "value": 3
+        }
+      ],
+      "resistance": {
+        "base": 15,
+        "powerSurged": 30
+      },
+      "strength": "Shock",
+      "type": "Legs",
+      "weakness": "Terra"
+    },
+    "Bladed Gloves": {
+      "behemoth": "Sahvyt",
+      "cells": "Alacrity",
+      "description": "{{typeAlt}} protection forged from {{behemoth}} trophies.",
+      "icon": "https://cdn.jsdelivr.net/gh/atomicptr/dauntless-builder/assets/icons/armours/sahvyt/BladedGloves.png",
+      "name": "Bladed Gloves",
+      "perks": [
+        {
+          "name": "Relentless",
+          "powerSurged": false,
+          "value": 2
+        },
+        {
+          "name": "Relentless",
+          "powerSurged": true,
+          "value": 3
+        }
+      ],
+      "resistance": {
+        "base": 15,
+        "powerSurged": 30
+      },
+      "strength": "Shock",
+      "type": "Arms",
+      "weakness": "Terra"
+    },
+    "Bladed Jacket": {
+      "behemoth": "Sahvyt",
+      "cells": "Alacrity",
+      "description": "{{typeAlt}} protection forged from {{behemoth}} trophies.",
+      "icon": "https://cdn.jsdelivr.net/gh/atomicptr/dauntless-builder/assets/icons/armours/sahvyt/BladedJacket.png",
+      "name": "Bladed Jacket",
+      "perks": [
+        {
+          "name": "Tactician",
+          "powerSurged": false,
+          "value": 2
+        },
+        {
+          "name": "Tactician",
+          "powerSurged": true,
+          "value": 3
+        }
+      ],
+      "resistance": {
+        "base": 15,
+        "powerSurged": 30
+      },
+      "strength": "Shock",
+      "type": "Torso",
+      "weakness": "Terra"
+    },
+    "Bladed Mask": {
+      "behemoth": "Sahvyt",
+      "cells": "Insight",
+      "description": "{{typeAlt}} protection forged from {{behemoth}} trophies.",
+      "icon": "https://cdn.jsdelivr.net/gh/atomicptr/dauntless-builder/assets/icons/armours/sahvyt/BladedMask.png",
+      "name": "Bladed Mask",
+      "perks": [
+        {
+          "name": "Tactician",
+          "powerSurged": false,
+          "value": 2
+        },
+        {
+          "name": "Tactician",
+          "powerSurged": true,
+          "value": 3
+        }
+      ],
+      "resistance": {
+        "base": 15,
+        "powerSurged": 30
+      },
+      "strength": "Shock",
+      "type": "Head",
+      "weakness": "Terra"
+    },
+    "Boreal Epiphany": {
+      "behemoth": "Boreus",
+      "cells": "Insight",
+      "description": "{{typeAlt}} protection forged from {{behemoth}} trophies.",
+      "icon": "https://cdn.jsdelivr.net/gh/atomicptr/dauntless-builder/assets/icons/armours/boreus/BorealEpiphany.png",
+      "name": "Boreal Epiphany",
+      "perks": [
+        {
+          "name": "Conditioning",
+          "powerSurged": false,
+          "value": 1
+        },
+        {
+          "name": "Conditioning",
+          "powerSurged": true,
+          "value": 3
+        }
+      ],
+      "resistance": {
+        "base": 5,
+        "powerSurged": 30
+      },
+      "strength": "Frost",
+      "type": "Head",
+      "weakness": "Blaze"
+    },
+    "Boreal March": {
+      "behemoth": "Boreus",
+      "cells": "Finesse",
+      "description": "{{typeAlt}} protection forged from {{behemoth}} trophies.",
+      "icon": "https://cdn.jsdelivr.net/gh/atomicptr/dauntless-builder/assets/icons/armours/boreus/BorealMarch.png",
+      "name": "Boreal March",
+      "perks": [
+        {
+          "name": "Tenacious",
+          "powerSurged": false,
+          "value": 1
+        },
+        {
+          "name": "Tenacious",
+          "powerSurged": true,
+          "value": 3
+        }
+      ],
+      "resistance": {
+        "base": 5,
+        "powerSurged": 30
+      },
+      "strength": "Frost",
+      "type": "Legs",
+      "weakness": "Blaze"
+    },
+    "Boreal Might": {
+      "behemoth": "Boreus",
+      "cells": "Brutality",
+      "description": "{{typeAlt}} protection forged from {{behemoth}} trophies.",
+      "icon": "https://cdn.jsdelivr.net/gh/atomicptr/dauntless-builder/assets/icons/armours/boreus/BorealMight.png",
+      "name": "Boreal Might",
+      "perks": [
+        {
+          "name": "Tenacious",
+          "powerSurged": false,
+          "value": 1
+        },
+        {
+          "name": "Tenacious",
+          "powerSurged": true,
+          "value": 3
+        }
+      ],
+      "resistance": {
+        "base": 5,
+        "powerSurged": 30
+      },
+      "strength": "Frost",
+      "type": "Arms",
+      "weakness": "Blaze"
+    },
+    "Boreal Resolve": {
+      "behemoth": "Boreus",
+      "cells": "Fortitude",
+      "description": "{{typeAlt}} protection forged from {{behemoth}} trophies.",
+      "icon": "https://cdn.jsdelivr.net/gh/atomicptr/dauntless-builder/assets/icons/armours/boreus/BorealResolve.png",
+      "name": "Boreal Resolve",
+      "perks": [
+        {
+          "name": "Rage",
+          "powerSurged": false,
+          "value": 1
+        },
+        {
+          "name": "Rage",
+          "powerSurged": true,
+          "value": 3
+        }
+      ],
+      "resistance": {
+        "base": 5,
+        "powerSurged": 30
+      },
+      "strength": "Frost",
+      "type": "Torso",
+      "weakness": "Blaze"
+    },
+    "Brow of Ice": {
+      "behemoth": "Pangar",
+      "cells": "Brutality",
+      "description": "{{typeAlt}} protection forged from {{behemoth}} trophies.",
+      "icon": "https://cdn.jsdelivr.net/gh/atomicptr/dauntless-builder/assets/icons/armours/pangar/BrowOfIce.png",
+      "name": "Brow of Ice",
+      "perks": [
+        {
+          "name": "Knockout King",
+          "powerSurged": false,
+          "value": 1
+        },
+        {
+          "name": "Knockout King",
+          "powerSurged": true,
+          "value": 3
+        }
+      ],
+      "resistance": {
+        "base": 10,
+        "powerSurged": 30
+      },
+      "strength": "Frost",
+      "type": "Head",
+      "weakness": "Blaze"
+    },
+    "Chronogrips": {
+      "behemoth": "Chronovore",
+      "cells": "Fortitude",
+      "description": "{{typeAlt}} protection forged from {{behemoth}} trophies.",
+      "icon": "https://cdn.jsdelivr.net/gh/atomicptr/dauntless-builder/assets/icons/armours/chronovore/Chronogrips.png",
+      "name": "Chronogrips",
+      "perks": [
+        {
+          "name": "Pulse",
+          "powerSurged": false,
+          "value": 2
+        },
+        {
+          "name": "Pulse",
+          "powerSurged": true,
+          "value": 3
+        }
+      ],
+      "resistance": {
+        "base": 25,
+        "powerSurged": 30
+      },
+      "strength": "Radiant",
+      "type": "Arms",
+      "weakness": "Umbral"
+    },
+    "Chronohelm": {
+      "behemoth": "Chronovore",
+      "cells": "Brutality",
+      "description": "{{typeAlt}} protection forged from {{behemoth}} trophies.",
+      "icon": "https://cdn.jsdelivr.net/gh/atomicptr/dauntless-builder/assets/icons/armours/chronovore/Chronohelm.png",
+      "name": "Chronohelm",
+      "perks": [
+        {
+          "name": "Zeal",
+          "powerSurged": false,
+          "value": 2
+        },
+        {
+          "name": "Zeal",
+          "powerSurged": true,
+          "value": 3
+        }
+      ],
+      "resistance": {
+        "base": 25,
+        "powerSurged": 30
+      },
+      "strength": "Radiant",
+      "type": "Head",
+      "weakness": "Umbral"
+    },
+    "Chronoplate": {
+      "behemoth": "Chronovore",
+      "cells": "Finesse",
+      "description": "{{typeAlt}} protection forged from {{behemoth}} trophies.",
+      "icon": "https://cdn.jsdelivr.net/gh/atomicptr/dauntless-builder/assets/icons/armours/chronovore/Chronoplate.png",
+      "name": "Chronoplate",
+      "perks": [
+        {
+          "name": "Grace",
+          "powerSurged": false,
+          "value": 2
+        },
+        {
+          "name": "Grace",
+          "powerSurged": true,
+          "value": 3
+        }
+      ],
+      "resistance": {
+        "base": 25,
+        "powerSurged": 30
+      },
+      "strength": "Radiant",
+      "type": "Torso",
+      "weakness": "Umbral"
+    },
+    "Chronotreads": {
+      "behemoth": "Chronovore",
+      "cells": "Finesse",
+      "description": "{{typeAlt}} protection forged from {{behemoth}} trophies.",
+      "icon": "https://cdn.jsdelivr.net/gh/atomicptr/dauntless-builder/assets/icons/armours/chronovore/Chronotreads.png",
+      "name": "Chronotreads",
+      "perks": [
+        {
+          "name": "Pulse",
+          "powerSurged": false,
+          "value": 2
+        },
+        {
+          "name": "Pulse",
+          "powerSurged": true,
+          "value": 3
+        }
+      ],
+      "resistance": {
+        "base": 25,
+        "powerSurged": 30
+      },
+      "strength": "Radiant",
+      "type": "Legs",
+      "weakness": "Umbral"
+    },
+    "Clutches of the Swarm": {
+      "behemoth": "Kharabak",
+      "cells": "Alacrity",
+      "description": "{{typeAlt}} protection forged from {{behemoth}} trophies.",
+      "icon": "https://cdn.jsdelivr.net/gh/atomicptr/dauntless-builder/assets/icons/armours/kharabak/ClutchesOfTheSwarm.png",
+      "name": "Clutches of the Swarm",
+      "perks": [
+        {
+          "name": "Conditioning",
+          "powerSurged": false,
+          "value": 1
+        },
+        {
+          "name": "Conditioning",
+          "powerSurged": true,
+          "value": 3
+        }
+      ],
+      "resistance": {
+        "base": 10,
+        "powerSurged": 30
+      },
+      "strength": "Terra",
+      "type": "Arms",
+      "weakness": "Shock"
+    },
+    "Core of Ice": {
+      "behemoth": "Pangar",
+      "cells": "Brutality",
+      "description": "{{typeAlt}} protection forged from {{behemoth}} trophies.",
+      "icon": "https://cdn.jsdelivr.net/gh/atomicptr/dauntless-builder/assets/icons/armours/pangar/CoreOfIce.png",
+      "name": "Core of Ice",
+      "perks": [
+        {
+          "name": "Fortress",
+          "powerSurged": false,
+          "value": 1
+        },
+        {
+          "name": "Fortress",
+          "powerSurged": true,
+          "value": 3
+        }
+      ],
+      "resistance": {
+        "base": 10,
+        "powerSurged": 30
+      },
+      "strength": "Frost",
+      "type": "Torso",
+      "weakness": "Blaze"
+    },
+    "Crest of Valour": {
+      "behemoth": "Valomyr",
+      "cells": "Brutality",
+      "description": "{{typeAlt}} protection forged from {{behemoth}} trophies.",
+      "icon": "https://cdn.jsdelivr.net/gh/atomicptr/dauntless-builder/assets/icons/armours/valomyr/CrestOfValour.png",
+      "name": "Crest of Valour",
+      "perks": [
+        {
+          "name": "Lucent",
+          "powerSurged": false,
+          "value": 2
+        },
+        {
+          "name": "Lucent",
+          "powerSurged": true,
+          "value": 3
+        }
+      ],
+      "resistance": {
+        "base": 15,
+        "powerSurged": 30
+      },
+      "strength": "Radiant",
+      "type": "Head",
+      "weakness": "Umbral"
+    },
+    "Dance of the Swarm": {
+      "behemoth": "Kharabak",
+      "cells": "Brutality",
+      "description": "{{typeAlt}} protection forged from {{behemoth}} trophies.",
+      "icon": "https://cdn.jsdelivr.net/gh/atomicptr/dauntless-builder/assets/icons/armours/kharabak/DanceOfTheSwarm.png",
+      "name": "Dance of the Swarm",
+      "perks": [
+        {
+          "name": "Conditioning",
+          "powerSurged": false,
+          "value": 1
+        },
+        {
+          "name": "Conditioning",
+          "powerSurged": true,
+          "value": 3
+        }
+      ],
+      "resistance": {
+        "base": 10,
+        "powerSurged": 30
+      },
+      "strength": "Terra",
+      "type": "Legs",
+      "weakness": "Shock"
+    },
+    "Dark Embrace": {
+      "behemoth": "Shrowd",
+      "cells": "Insight",
+      "description": "{{typeAlt}} protection forged from {{behemoth}} trophies.",
+      "icon": "https://cdn.jsdelivr.net/gh/atomicptr/dauntless-builder/assets/icons/armours/shrowd/DarkEmbrace.png",
+      "name": "Dark Embrace",
+      "perks": [
+        {
+          "name": "Medic",
+          "powerSurged": false,
+          "value": 2
+        },
+        {
+          "name": "Medic",
+          "powerSurged": true,
+          "value": 3
+        }
+      ],
+      "resistance": {
+        "base": 20,
+        "powerSurged": 30
+      },
+      "strength": "Umbral",
+      "type": "Arms",
+      "weakness": "Radiant"
+    },
+    "Dark Marrow": {
+      "behemoth": "Shrowd",
+      "cells": "Brutality",
+      "description": "{{typeAlt}} protection forged from {{behemoth}} trophies.",
+      "icon": "https://cdn.jsdelivr.net/gh/atomicptr/dauntless-builder/assets/icons/armours/shrowd/DarkMarrow.png",
+      "name": "Dark Marrow",
+      "perks": [
+        {
+          "name": "Rage",
+          "powerSurged": false,
+          "value": 2
+        },
+        {
+          "name": "Rage",
+          "powerSurged": true,
+          "value": 3
+        }
+      ],
+      "resistance": {
+        "base": 20,
+        "powerSurged": 30
+      },
+      "strength": "Umbral",
+      "type": "Torso",
+      "weakness": "Radiant"
+    },
+    "Dark Path": {
+      "behemoth": "Shrowd",
+      "cells": "Insight",
+      "description": "{{typeAlt}} protection forged from {{behemoth}} trophies.",
+      "icon": "https://cdn.jsdelivr.net/gh/atomicptr/dauntless-builder/assets/icons/armours/shrowd/DarkPath.png",
+      "name": "Dark Path",
+      "perks": [
+        {
+          "name": "Nine Lives",
+          "powerSurged": false,
+          "value": 2
+        },
+        {
+          "name": "Nine Lives",
+          "powerSurged": true,
+          "value": 3
+        }
+      ],
+      "resistance": {
+        "base": 20,
+        "powerSurged": 30
+      },
+      "strength": "Umbral",
+      "type": "Legs",
+      "weakness": "Radiant"
+    },
+    "Dark Watch": {
+      "behemoth": "Shrowd",
+      "cells": "Brutality",
+      "description": "{{typeAlt}} protection forged from {{behemoth}} trophies.",
+      "icon": "https://cdn.jsdelivr.net/gh/atomicptr/dauntless-builder/assets/icons/armours/shrowd/DarkWatch.png",
+      "name": "Dark Watch",
+      "perks": [
+        {
+          "name": "Cunning",
+          "powerSurged": false,
+          "value": 2
+        },
+        {
+          "name": "Cunning",
+          "powerSurged": true,
+          "value": 3
+        }
+      ],
+      "resistance": {
+        "base": 20,
+        "powerSurged": 30
+      },
+      "strength": "Umbral",
+      "type": "Head",
+      "weakness": "Radiant"
+    },
+    "Draskscale Gauntlets": {
+      "behemoth": "Drask",
+      "cells": "Insight",
+      "description": "{{typeAlt}} protection forged from {{behemoth}} trophies.",
+      "icon": "https://cdn.jsdelivr.net/gh/atomicptr/dauntless-builder/assets/icons/armours/drask/DraskscaleGauntlets.png",
+      "name": "Draskscale Gauntlets",
+      "perks": [
+        {
+          "name": "Sharpened",
+          "powerSurged": false,
+          "value": 1
+        },
+        {
+          "name": "Sharpened",
+          "powerSurged": true,
+          "value": 3
+        }
+      ],
+      "resistance": {
+        "base": 5,
+        "powerSurged": 30
+      },
+      "strength": "Shock",
+      "type": "Arms",
+      "weakness": "Terra"
+    },
+    "Draskscale Greaves": {
+      "behemoth": "Drask",
+      "cells": "Insight",
+      "description": "{{typeAlt}} protection forged from {{behemoth}} trophies.",
+      "icon": "https://cdn.jsdelivr.net/gh/atomicptr/dauntless-builder/assets/icons/armours/drask/DraskscaleGreaves.png",
+      "name": "Draskscale Greaves",
+      "perks": [
+        {
+          "name": "Fleet Footed",
+          "powerSurged": false,
+          "value": 1
+        },
+        {
+          "name": "Fleet Footed",
+          "powerSurged": true,
+          "value": 3
+        }
+      ],
+      "resistance": {
+        "base": 5,
+        "powerSurged": 30
+      },
+      "strength": "Shock",
+      "type": "Legs",
+      "weakness": "Terra"
+    },
+    "Draskscale Helmet": {
+      "behemoth": "Drask",
+      "cells": "Brutality",
+      "description": "{{typeAlt}} protection forged from {{behemoth}} trophies.",
+      "icon": "https://cdn.jsdelivr.net/gh/atomicptr/dauntless-builder/assets/icons/armours/drask/DraskscaleHelmet.png",
+      "name": "Draskscale Helmet",
+      "perks": [
+        {
+          "name": "Aetheric Attunement",
+          "powerSurged": false,
+          "value": 1
+        },
+        {
+          "name": "Aetheric Attunement",
+          "powerSurged": true,
+          "value": 3
+        }
+      ],
+      "resistance": {
+        "base": 5,
+        "powerSurged": 30
+      },
+      "strength": "Shock",
+      "type": "Head",
+      "weakness": "Terra"
+    },
+    "Draskscale Plate": {
+      "behemoth": "Drask",
+      "cells": "Brutality",
+      "description": "{{typeAlt}} protection forged from {{behemoth}} trophies.",
+      "icon": "https://cdn.jsdelivr.net/gh/atomicptr/dauntless-builder/assets/icons/armours/drask/DraskscalePlate.png",
+      "name": "Draskscale Plate",
+      "perks": [
+        {
+          "name": "Aetheric Attunement",
+          "powerSurged": false,
+          "value": 1
+        },
+        {
+          "name": "Aetheric Attunement",
+          "powerSurged": true,
+          "value": 3
+        }
+      ],
+      "resistance": {
+        "base": 5,
+        "powerSurged": 30
+      },
+      "strength": "Shock",
+      "type": "Torso",
+      "weakness": "Terra"
+    },
+    "Eye of the Swarm": {
+      "behemoth": "Kharabak",
+      "cells": "Alacrity",
+      "description": "{{typeAlt}} protection forged from {{behemoth}} trophies.",
+      "icon": "https://cdn.jsdelivr.net/gh/atomicptr/dauntless-builder/assets/icons/armours/kharabak/EyeOfTheSwarm.png",
+      "name": "Eye of the Swarm",
+      "perks": [
+        {
+          "name": "Assassin's Frenzy",
+          "powerSurged": false,
+          "value": 1
+        },
+        {
+          "name": "Assassin's Frenzy",
+          "powerSurged": true,
+          "value": 3
+        }
+      ],
+      "resistance": {
+        "base": 10,
+        "powerSurged": 30
+      },
+      "strength": "Terra",
+      "type": "Head",
+      "weakness": "Shock"
+    },
+    "Feet of Ice": {
+      "behemoth": "Pangar",
+      "cells": "Fortitude",
+      "description": "{{typeAlt}} protection forged from {{behemoth}} trophies.",
+      "icon": "https://cdn.jsdelivr.net/gh/atomicptr/dauntless-builder/assets/icons/armours/pangar/FeetOfIce.png",
+      "name": "Feet of Ice",
+      "perks": [
+        {
+          "name": "Overpower",
+          "powerSurged": false,
+          "value": 1
+        },
+        {
+          "name": "Overpower",
+          "powerSurged": true,
+          "value": 3
+        }
+      ],
+      "resistance": {
+        "base": 10,
+        "powerSurged": 30
+      },
+      "strength": "Frost",
+      "type": "Legs",
+      "weakness": "Blaze"
+    },
+    "Fiery Breastplate": {
+      "behemoth": "Embermane",
+      "cells": "Alacrity",
+      "description": "{{typeAlt}} protection forged from {{behemoth}} trophies.",
+      "icon": "https://cdn.jsdelivr.net/gh/atomicptr/dauntless-builder/assets/icons/armours/embermane/FieryBreastplate.png",
+      "name": "Fiery Breastplate",
+      "perks": [
+        {
+          "name": "Evasive Fury",
+          "powerSurged": false,
+          "value": 1
+        },
+        {
+          "name": "Evasive Fury",
+          "powerSurged": true,
+          "value": 3
+        }
+      ],
+      "resistance": {
+        "base": 5,
+        "powerSurged": 30
+      },
+      "strength": "Blaze",
+      "type": "Torso",
+      "weakness": "Frost"
+    },
+    "Fiery Gauntlets": {
+      "behemoth": "Embermane",
+      "cells": "Finesse",
+      "description": "{{typeAlt}} protection forged from {{behemoth}} trophies.",
+      "icon": "https://cdn.jsdelivr.net/gh/atomicptr/dauntless-builder/assets/icons/armours/embermane/FieryGauntlets.png",
+      "name": "Fiery Gauntlets",
+      "perks": [
+        {
+          "name": "Endurance",
+          "powerSurged": false,
+          "value": 1
+        },
+        {
+          "name": "Endurance",
+          "powerSurged": true,
+          "value": 3
+        }
+      ],
+      "resistance": {
+        "base": 5,
+        "powerSurged": 30
+      },
+      "strength": "Blaze",
+      "type": "Arms",
+      "weakness": "Frost"
+    },
+    "Fiery Greaves": {
+      "behemoth": "Embermane",
+      "cells": "Fortitude",
+      "description": "{{typeAlt}} protection forged from {{behemoth}} trophies.",
+      "icon": "https://cdn.jsdelivr.net/gh/atomicptr/dauntless-builder/assets/icons/armours/embermane/FieryGreaves.png",
+      "name": "Fiery Greaves",
+      "perks": [
+        {
+          "name": "Evasion",
+          "powerSurged": false,
+          "value": 1
+        },
+        {
+          "name": "Evasion",
+          "powerSurged": true,
+          "value": 3
+        }
+      ],
+      "resistance": {
+        "base": 5,
+        "powerSurged": 30
+      },
+      "strength": "Blaze",
+      "type": "Legs",
+      "weakness": "Frost"
+    },
+    "Fiery Helm": {
+      "behemoth": "Embermane",
+      "cells": "Alacrity",
+      "description": "{{typeAlt}} protection forged from {{behemoth}} trophies.",
+      "icon": "https://cdn.jsdelivr.net/gh/atomicptr/dauntless-builder/assets/icons/armours/embermane/FieryHelm.png",
+      "name": "Fiery Helm",
+      "perks": [
+        {
+          "name": "Evasive Fury",
+          "powerSurged": false,
+          "value": 1
+        },
+        {
+          "name": "Evasive Fury",
+          "powerSurged": true,
+          "value": 3
+        }
+      ],
+      "resistance": {
+        "base": 5,
+        "powerSurged": 30
+      },
+      "strength": "Blaze",
+      "type": "Head",
+      "weakness": "Frost"
+    },
+    "Gauntlets of Valour": {
+      "behemoth": "Valomyr",
+      "cells": "Fortitude",
+      "description": "{{typeAlt}} protection forged from {{behemoth}} trophies.",
+      "icon": "https://cdn.jsdelivr.net/gh/atomicptr/dauntless-builder/assets/icons/armours/valomyr/GauntletsOfValour.png",
+      "name": "Gauntlets of Valour",
+      "perks": [
+        {
+          "name": "Lucent",
+          "powerSurged": false,
+          "value": 2
+        },
+        {
+          "name": "Lucent",
+          "powerSurged": true,
+          "value": 3
+        }
+      ],
+      "resistance": {
+        "base": 15,
+        "powerSurged": 30
+      },
+      "strength": "Radiant",
+      "type": "Arms",
+      "weakness": "Umbral"
+    },
+    "Gnasher Cap": {
+      "behemoth": "Gnasher",
+      "cells": "Fortitude",
+      "description": "{{typeAlt}} protection forged from {{behemoth}} trophies.",
+      "icon": "https://cdn.jsdelivr.net/gh/atomicptr/dauntless-builder/assets/icons/armours/gnasher/GnasherCap.png",
+      "name": "Gnasher Cap",
+      "perks": [
+        {
+          "name": "Tenacious",
+          "powerSurged": false,
+          "value": 1
+        },
+        {
+          "name": "Tenacious",
+          "powerSurged": true,
+          "value": 3
+        }
+      ],
+      "resistance": {
+        "base": 10,
+        "powerSurged": 30
+      },
+      "strength": "neutral",
+      "type": "Head",
+      "weakness": "neutral"
+    },
+    "Gnasher Cloak": {
+      "behemoth": "Gnasher",
+      "cells": "Fortitude",
+      "description": "{{typeAlt}} protection forged from {{behemoth}} trophies.",
+      "icon": "https://cdn.jsdelivr.net/gh/atomicptr/dauntless-builder/assets/icons/armours/gnasher/GnasherCloak.png",
+      "name": "Gnasher Cloak",
+      "perks": [
+        {
+          "name": "Tough",
+          "powerSurged": false,
+          "value": 1
+        },
+        {
+          "name": "Tough",
+          "powerSurged": true,
+          "value": 3
+        }
+      ],
+      "resistance": {
+        "base": 10,
+        "powerSurged": 30
+      },
+      "strength": "neutral",
+      "type": "Torso",
+      "weakness": "neutral"
+    },
+    "Gnasher Grips": {
+      "behemoth": "Gnasher",
+      "cells": "Brutality",
+      "description": "{{typeAlt}} protection forged from {{behemoth}} trophies.",
+      "icon": "https://cdn.jsdelivr.net/gh/atomicptr/dauntless-builder/assets/icons/armours/gnasher/GnasherGrips.png",
+      "name": "Gnasher Grips",
+      "perks": [
+        {
+          "name": "Ragehunter",
+          "powerSurged": false,
+          "value": 1
+        },
+        {
+          "name": "Ragehunter",
+          "powerSurged": true,
+          "value": 3
+        }
+      ],
+      "resistance": {
+        "base": 10,
+        "powerSurged": 30
+      },
+      "strength": "neutral",
+      "type": "Arms",
+      "weakness": "neutral"
+    },
+    "Gnasher Treads": {
+      "behemoth": "Gnasher",
+      "cells": "Brutality",
+      "description": "{{typeAlt}} protection forged from {{behemoth}} trophies.",
+      "icon": "https://cdn.jsdelivr.net/gh/atomicptr/dauntless-builder/assets/icons/armours/gnasher/GnasherTreads.png",
+      "name": "Gnasher Treads",
+      "perks": [
+        {
+          "name": "Tough",
+          "powerSurged": false,
+          "value": 1
+        },
+        {
+          "name": "Tough",
+          "powerSurged": true,
+          "value": 3
+        }
+      ],
+      "resistance": {
+        "base": 10,
+        "powerSurged": 30
+      },
+      "strength": "neutral",
+      "type": "Legs",
+      "weakness": "neutral"
+    },
+    "Grasp of Thorns": {
+      "behemoth": "Koshai",
+      "cells": "Brutality",
+      "description": "{{typeAlt}} protection forged from {{behemoth}} trophies.",
+      "icon": "https://cdn.jsdelivr.net/gh/atomicptr/dauntless-builder/assets/icons/armours/koshai/GraspOfThorns.png",
+      "name": "Grasp of Thorns",
+      "perks": [
+        {
+          "name": "Evasive Fury",
+          "powerSurged": false,
+          "value": 2
+        },
+        {
+          "name": "Evasive Fury",
+          "powerSurged": true,
+          "value": 3
+        }
+      ],
+      "resistance": {
+        "base": 15,
+        "powerSurged": 30
+      },
+      "strength": "Terra",
+      "type": "Arms",
+      "weakness": "Shock"
+    },
+    "Greaves of Valour": {
+      "behemoth": "Valomyr",
+      "cells": "Insight",
+      "description": "{{typeAlt}} protection forged from {{behemoth}} trophies.",
+      "icon": "https://cdn.jsdelivr.net/gh/atomicptr/dauntless-builder/assets/icons/armours/valomyr/GreavesOfValour.png",
+      "name": "Greaves of Valour",
+      "perks": [
+        {
+          "name": "Aetherhunter",
+          "powerSurged": false,
+          "value": 2
+        },
+        {
+          "name": "Aetherhunter",
+          "powerSurged": true,
+          "value": 3
+        }
+      ],
+      "resistance": {
+        "base": 15,
+        "powerSurged": 30
+      },
+      "strength": "Radiant",
+      "type": "Legs",
+      "weakness": "Umbral"
+    },
+    "Guise of the Rift": {
+      "behemoth": "Riftstalker",
+      "cells": "Insight",
+      "description": "{{typeAlt}} protection forged from {{behemoth}} trophies.",
+      "icon": "https://cdn.jsdelivr.net/gh/atomicptr/dauntless-builder/assets/icons/armours/riftstalker/GuiseOfTheRift.png",
+      "name": "Guise of the Rift",
+      "perks": [
+        {
+          "name": "Aetheric Attunement",
+          "powerSurged": false,
+          "value": 2
+        },
+        {
+          "name": "Aetheric Attunement",
+          "powerSurged": true,
+          "value": 3
+        }
+      ],
+      "resistance": {
+        "base": 15,
+        "powerSurged": 30
+      },
+      "strength": "Umbral",
+      "type": "Head",
+      "weakness": "Radiant"
+    },
+    "Hands of the Rift": {
+      "behemoth": "Riftstalker",
+      "cells": "Alacrity",
+      "description": "{{typeAlt}} protection forged from {{behemoth}} trophies.",
+      "icon": "https://cdn.jsdelivr.net/gh/atomicptr/dauntless-builder/assets/icons/armours/riftstalker/HandsOfTheRift.png",
+      "name": "Hands of the Rift",
+      "perks": [
+        {
+          "name": "Evasion",
+          "powerSurged": false,
+          "value": 2
+        },
+        {
+          "name": "Evasion",
+          "powerSurged": true,
+          "value": 3
+        }
+      ],
+      "resistance": {
+        "base": 15,
+        "powerSurged": 30
+      },
+      "strength": "Umbral",
+      "type": "Arms",
+      "weakness": "Radiant"
+    },
+    "Heart of Stone": {
+      "behemoth": "Skarn",
+      "cells": "Fortitude",
+      "description": "{{typeAlt}} protection forged from {{behemoth}} trophies.",
+      "icon": "https://cdn.jsdelivr.net/gh/atomicptr/dauntless-builder/assets/icons/armours/skarn/HeartOfStone.png",
+      "name": "Heart of Stone",
+      "perks": [
+        {
+          "name": "Guardian",
+          "powerSurged": false,
+          "value": 1
+        },
+        {
+          "name": "Guardian",
+          "powerSurged": true,
+          "value": 3
+        }
+      ],
+      "resistance": {
+        "base": 5,
+        "powerSurged": 30
+      },
+      "strength": "Terra",
+      "type": "Torso",
+      "weakness": "Shock"
+    },
+    "Hellplate Bracers": {
+      "behemoth": "Hellion",
+      "cells": "Brutality",
+      "description": "{{typeAlt}} protection forged from {{behemoth}} trophies.",
+      "icon": "https://cdn.jsdelivr.net/gh/atomicptr/dauntless-builder/assets/icons/armours/hellion/HellplateBracers.png",
+      "name": "Hellplate Bracers",
+      "perks": [
+        {
+          "name": "Molten",
+          "powerSurged": false,
+          "value": 2
+        },
+        {
+          "name": "Molten",
+          "powerSurged": true,
+          "value": 3
+        }
+      ],
+      "resistance": {
+        "base": 20,
+        "powerSurged": 30
+      },
+      "strength": "Blaze",
+      "type": "Arms",
+      "weakness": "Frost"
+    },
+    "Hellplate Casque": {
+      "behemoth": "Hellion",
+      "cells": "Finesse",
+      "description": "{{typeAlt}} protection forged from {{behemoth}} trophies.",
+      "icon": "https://cdn.jsdelivr.net/gh/atomicptr/dauntless-builder/assets/icons/armours/hellion/HellplateCasque.png",
+      "name": "Hellplate Casque",
+      "perks": [
+        {
+          "name": "Ragehunter",
+          "powerSurged": false,
+          "value": 2
+        },
+        {
+          "name": "Ragehunter",
+          "powerSurged": true,
+          "value": 3
+        }
+      ],
+      "resistance": {
+        "base": 20,
+        "powerSurged": 30
+      },
+      "strength": "Blaze",
+      "type": "Head",
+      "weakness": "Frost"
+    },
+    "Hellplate Cuirass": {
+      "behemoth": "Hellion",
+      "cells": "Finesse",
+      "description": "{{typeAlt}} protection forged from {{behemoth}} trophies.",
+      "icon": "https://cdn.jsdelivr.net/gh/atomicptr/dauntless-builder/assets/icons/armours/hellion/HellplateCuirass.png",
+      "name": "Hellplate Cuirass",
+      "perks": [
+        {
+          "name": "Molten",
+          "powerSurged": false,
+          "value": 2
+        },
+        {
+          "name": "Molten",
+          "powerSurged": true,
+          "value": 3
+        }
+      ],
+      "resistance": {
+        "base": 20,
+        "powerSurged": 30
+      },
+      "strength": "Blaze",
+      "type": "Torso",
+      "weakness": "Frost"
+    },
+    "Hellplate Greaves": {
+      "behemoth": "Hellion",
+      "cells": "Brutality",
+      "description": "{{typeAlt}} protection forged from {{behemoth}} trophies.",
+      "icon": "https://cdn.jsdelivr.net/gh/atomicptr/dauntless-builder/assets/icons/armours/hellion/HellplateGreaves.png",
+      "name": "Hellplate Greaves",
+      "perks": [
+        {
+          "name": "Fortress",
+          "powerSurged": false,
+          "value": 2
+        },
+        {
+          "name": "Fortress",
+          "powerSurged": true,
+          "value": 3
+        }
+      ],
+      "resistance": {
+        "base": 20,
+        "powerSurged": 30
+      },
+      "strength": "Blaze",
+      "type": "Legs",
+      "weakness": "Frost"
+    },
+    "Krolachi Shave": {
+      "cells": null,
+      "description": "Ready yourself for the challenges of a Krolachi Slayer.",
+      "icon": "https://cdn.jsdelivr.net/gh/atomicptr/dauntless-builder/assets/icons/armours/krolachi/KrolachiShave.png",
+      "name": "Krolachi Shave",
+      "resistance": {
+        "base": 0
+      },
+      "strength": "neutral",
+      "type": "Head",
+      "weakness": "neutral"
+    },
+    "Krolachi Shorts": {
+      "cells": null,
+      "description": "Ready yourself for the challenges of a Krolachi Slayer.",
+      "icon": "https://cdn.jsdelivr.net/gh/atomicptr/dauntless-builder/assets/icons/armours/krolachi/KrolachiShorts.png",
+      "name": "Krolachi Shorts",
+      "resistance": {
+        "base": 0
+      },
+      "strength": "neutral",
+      "type": "Legs",
+      "weakness": "neutral"
+    },
+    "Krolachi Tunic": {
+      "cells": null,
+      "description": "Ready yourself for the challenges of a Krolachi Slayer.",
+      "icon": "https://cdn.jsdelivr.net/gh/atomicptr/dauntless-builder/assets/icons/armours/krolachi/KrolachiTunic.png",
+      "name": "Krolachi Tunic",
+      "resistance": {
+        "base": 0
+      },
+      "strength": "neutral",
+      "type": "Torso",
+      "weakness": "neutral"
+    },
+    "Krolachi Wraps": {
+      "cells": null,
+      "description": "Ready yourself for the challenges of a Krolachi Slayer.",
+      "icon": "https://cdn.jsdelivr.net/gh/atomicptr/dauntless-builder/assets/icons/armours/krolachi/KrolachiWraps.png",
+      "name": "Krolachi Wraps",
+      "resistance": {
+        "base": 0
+      },
+      "strength": "neutral",
+      "type": "Arms",
+      "weakness": "neutral"
+    },
+    "Light's Crown": {
+      "behemoth": "Rezakiri",
+      "cells": "Finesse",
+      "description": "{{typeAlt}} protection forged from {{behemoth}} trophies.",
+      "icon": "https://cdn.jsdelivr.net/gh/atomicptr/dauntless-builder/assets/icons/armours/rezakiri/LightsCrown.png",
+      "name": "Light's Crown",
+      "perks": [
+        {
+          "name": "Conduit",
+          "powerSurged": false,
+          "value": 2
+        },
+        {
+          "name": "Conduit",
+          "powerSurged": true,
+          "value": 3
+        }
+      ],
+      "resistance": {
+        "base": 20,
+        "powerSurged": 30
+      },
+      "strength": "Radiant",
+      "type": "Head",
+      "weakness": "Umbral"
+    },
+    "Light's Refuge": {
+      "behemoth": "Rezakiri",
+      "cells": "Finesse",
+      "description": "{{typeAlt}} protection forged from {{behemoth}} trophies.",
+      "icon": "https://cdn.jsdelivr.net/gh/atomicptr/dauntless-builder/assets/icons/armours/rezakiri/LightsRefuge.png",
+      "name": "Light's Refuge",
+      "perks": [
+        {
+          "name": "Conduit",
+          "powerSurged": false,
+          "value": 2
+        },
+        {
+          "name": "Conduit",
+          "powerSurged": true,
+          "value": 3
+        }
+      ],
+      "resistance": {
+        "base": 20,
+        "powerSurged": 30
+      },
+      "strength": "Radiant",
+      "type": "Arms",
+      "weakness": "Umbral"
+    },
+    "Light's Virtue": {
+      "behemoth": "Rezakiri",
+      "cells": "Insight",
+      "description": "{{typeAlt}} protection forged from {{behemoth}} trophies.",
+      "icon": "https://cdn.jsdelivr.net/gh/atomicptr/dauntless-builder/assets/icons/armours/rezakiri/LightsVirtue.png",
+      "name": "Light's Virtue",
+      "perks": [
+        {
+          "name": "Cunning",
+          "powerSurged": false,
+          "value": 2
+        },
+        {
+          "name": "Cunning",
+          "powerSurged": true,
+          "value": 3
+        }
+      ],
+      "resistance": {
+        "base": 20,
+        "powerSurged": 30
+      },
+      "strength": "Radiant",
+      "type": "Torso",
+      "weakness": "Umbral"
+    },
+    "Light's Walk": {
+      "behemoth": "Rezakiri",
+      "cells": "Alacrity",
+      "description": "{{typeAlt}} protection forged from {{behemoth}} trophies.",
+      "icon": "https://cdn.jsdelivr.net/gh/atomicptr/dauntless-builder/assets/icons/armours/rezakiri/LightsWalk.png",
+      "name": "Light's Walk",
+      "perks": [
+        {
+          "name": "Agility",
+          "powerSurged": false,
+          "value": 2
+        },
+        {
+          "name": "Agility",
+          "powerSurged": true,
+          "value": 3
+        }
+      ],
+      "resistance": {
+        "base": 20,
+        "powerSurged": 30
+      },
+      "strength": "Radiant",
+      "type": "Legs",
+      "weakness": "Umbral"
+    },
+    "Lightning Boots": {
+      "behemoth": "Stormclaw",
+      "cells": "Alacrity",
+      "description": "{{typeAlt}} protection forged from {{behemoth}} trophies.",
+      "icon": "https://cdn.jsdelivr.net/gh/atomicptr/dauntless-builder/assets/icons/armours/stormclaw/LightningBoots.png",
+      "name": "Lightning Boots",
+      "perks": [
+        {
+          "name": "Aetheric Evasion",
+          "powerSurged": false,
+          "value": 2
+        },
+        {
+          "name": "Aetheric Evasion",
+          "powerSurged": true,
+          "value": 3
+        }
+      ],
+      "resistance": {
+        "base": 20,
+        "powerSurged": 30
+      },
+      "strength": "Shock",
+      "type": "Legs",
+      "weakness": "Terra"
+    },
+    "Lightning Gloves": {
+      "behemoth": "Stormclaw",
+      "cells": "Alacrity",
+      "description": "{{typeAlt}} protection forged from {{behemoth}} trophies.",
+      "icon": "https://cdn.jsdelivr.net/gh/atomicptr/dauntless-builder/assets/icons/armours/stormclaw/LightningGloves.png",
+      "name": "Lightning Gloves",
+      "perks": [
+        {
+          "name": "Catalyst",
+          "powerSurged": false,
+          "value": 2
+        },
+        {
+          "name": "Catalyst",
+          "powerSurged": true,
+          "value": 3
+        }
+      ],
+      "resistance": {
+        "base": 20,
+        "powerSurged": 30
+      },
+      "strength": "Shock",
+      "type": "Arms",
+      "weakness": "Terra"
+    },
+    "Lightning Helm": {
+      "behemoth": "Stormclaw",
+      "cells": "Finesse",
+      "description": "{{typeAlt}} protection forged from {{behemoth}} trophies.",
+      "icon": "https://cdn.jsdelivr.net/gh/atomicptr/dauntless-builder/assets/icons/armours/stormclaw/LightningHelm.png",
+      "name": "Lightning Helm",
+      "perks": [
+        {
+          "name": "Energized",
+          "powerSurged": false,
+          "value": 2
+        },
+        {
+          "name": "Energized",
+          "powerSurged": true,
+          "value": 3
+        }
+      ],
+      "resistance": {
+        "base": 20,
+        "powerSurged": 30
+      },
+      "strength": "Shock",
+      "type": "Head",
+      "weakness": "Terra"
+    },
+    "Lightning Plate": {
+      "behemoth": "Stormclaw",
+      "cells": "Alacrity",
+      "description": "{{typeAlt}} protection forged from {{behemoth}} trophies.",
+      "icon": "https://cdn.jsdelivr.net/gh/atomicptr/dauntless-builder/assets/icons/armours/stormclaw/LightningPlate.png",
+      "name": "Lightning Plate",
+      "perks": [
+        {
+          "name": "Energized",
+          "powerSurged": false,
+          "value": 2
+        },
+        {
+          "name": "Energized",
+          "powerSurged": true,
+          "value": 3
+        }
+      ],
+      "resistance": {
+        "base": 20,
+        "powerSurged": 30
+      },
+      "strength": "Shock",
+      "type": "Torso",
+      "weakness": "Terra"
+    },
+    "Malkarion's Grasp": {
+      "behemoth": "Malkarion",
+      "cells": "Finesse",
+      "description": "{{typeAlt}} protection forged from {{behemoth}} trophies.",
+      "icon": "https://cdn.jsdelivr.net/gh/atomicptr/dauntless-builder/assets/icons/armours/malkarion/MalkarionsGrasp.png",
+      "name": "Malkarion's Grasp",
+      "perks": [
+        {
+          "name": "Predator",
+          "powerSurged": false,
+          "value": 2
+        },
+        {
+          "name": "Predator",
+          "powerSurged": true,
+          "value": 3
+        }
+      ],
+      "resistance": {
+        "base": 25,
+        "powerSurged": 30
+      },
+      "strength": "Shock",
+      "type": "Arms",
+      "weakness": "Terra"
+    },
+    "Malkarion's March": {
+      "behemoth": "Malkarion",
+      "cells": "Finesse",
+      "description": "{{typeAlt}} protection forged from {{behemoth}} trophies.",
+      "icon": "https://cdn.jsdelivr.net/gh/atomicptr/dauntless-builder/assets/icons/armours/malkarion/MalkarionsMarch.png",
+      "name": "Malkarion's March",
+      "perks": [
+        {
+          "name": "Aetherhunter",
+          "powerSurged": false,
+          "value": 2
+        },
+        {
+          "name": "Aetherhunter",
+          "powerSurged": true,
+          "value": 3
+        }
+      ],
+      "resistance": {
+        "base": 25,
+        "powerSurged": 30
+      },
+      "strength": "Shock",
+      "type": "Legs",
+      "weakness": "Terra"
+    },
+    "Malkarion's Sight": {
+      "behemoth": "Malkarion",
+      "cells": "Alacrity",
+      "description": "{{typeAlt}} protection forged from {{behemoth}} trophies.",
+      "icon": "https://cdn.jsdelivr.net/gh/atomicptr/dauntless-builder/assets/icons/armours/malkarion/MalkarionsSight.png",
+      "name": "Malkarion's Sight",
+      "perks": [
+        {
+          "name": "Grace",
+          "powerSurged": false,
+          "value": 2
+        },
+        {
+          "name": "Grace",
+          "powerSurged": true,
+          "value": 3
+        }
+      ],
+      "resistance": {
+        "base": 25,
+        "powerSurged": 30
+      },
+      "strength": "Shock",
+      "type": "Head",
+      "weakness": "Terra"
+    },
+    "Malkarion's Soul": {
+      "behemoth": "Malkarion",
+      "cells": "Finesse",
+      "description": "{{typeAlt}} protection forged from {{behemoth}} trophies.",
+      "icon": "https://cdn.jsdelivr.net/gh/atomicptr/dauntless-builder/assets/icons/armours/malkarion/MalkarionsSoul.png",
+      "name": "Malkarion's Soul",
+      "perks": [
+        {
+          "name": "Aetherhunter",
+          "powerSurged": false,
+          "value": 2
+        },
+        {
+          "name": "Aetherhunter",
+          "powerSurged": true,
+          "value": 3
+        }
+      ],
+      "resistance": {
+        "base": 25,
+        "powerSurged": 30
+      },
+      "strength": "Shock",
+      "type": "Torso",
+      "weakness": "Terra"
+    },
+    "Mantle of Thorns": {
+      "behemoth": "Koshai",
+      "cells": "Insight",
+      "description": "{{typeAlt}} protection forged from {{behemoth}} trophies.",
+      "icon": "https://cdn.jsdelivr.net/gh/atomicptr/dauntless-builder/assets/icons/armours/koshai/MantleOfThorns.png",
+      "name": "Mantle of Thorns",
+      "perks": [
+        {
+          "name": "Predator",
+          "powerSurged": false,
+          "value": 2
+        },
+        {
+          "name": "Predator",
+          "powerSurged": true,
+          "value": 3
+        }
+      ],
+      "resistance": {
+        "base": 15,
+        "powerSurged": 30
+      },
+      "strength": "Terra",
+      "type": "Torso",
+      "weakness": "Shock"
+    },
+    "Mantle of the Rift": {
+      "behemoth": "Riftstalker",
+      "cells": "Insight",
+      "description": "{{typeAlt}} protection forged from {{behemoth}} trophies.",
+      "icon": "https://cdn.jsdelivr.net/gh/atomicptr/dauntless-builder/assets/icons/armours/riftstalker/MantleOfTheRift.png",
+      "name": "Mantle of the Rift",
+      "perks": [
+        {
+          "name": "Conduit",
+          "powerSurged": false,
+          "value": 2
+        },
+        {
+          "name": "Conduit",
+          "powerSurged": true,
+          "value": 3
+        }
+      ],
+      "resistance": {
+        "base": 15,
+        "powerSurged": 30
+      },
+      "strength": "Umbral",
+      "type": "Torso",
+      "weakness": "Radiant"
+    },
+    "Might of Stone": {
+      "behemoth": "Skarn",
+      "cells": "Fortitude",
+      "description": "{{typeAlt}} protection forged from {{behemoth}} trophies.",
+      "icon": "https://cdn.jsdelivr.net/gh/atomicptr/dauntless-builder/assets/icons/armours/skarn/MightOfStone.png",
+      "name": "Might of Stone",
+      "perks": [
+        {
+          "name": "Fortress",
+          "powerSurged": false,
+          "value": 1
+        },
+        {
+          "name": "Fortress",
+          "powerSurged": true,
+          "value": 3
+        }
+      ],
+      "resistance": {
+        "base": 5,
+        "powerSurged": 30
+      },
+      "strength": "Terra",
+      "type": "Arms",
+      "weakness": "Shock"
+    },
+    "Phaelanx's Firearms": {
+      "behemoth": "Phaelanx",
+      "cells": "Insight",
+      "description": "{{typeAlt}} protection forged from {{behemoth}} trophies.",
+      "icon": "https://cdn.jsdelivr.net/gh/atomicptr/dauntless-builder/assets/icons/armours/phaelanx/PhaelanxsFirearms.png",
+      "name": "Phaelanx's Firearms",
+      "perks": [
+        {
+          "name": "Omnisurge",
+          "powerSurged": false,
+          "value": 2
+        },
+        {
+          "name": "Omnisurge",
+          "powerSurged": true,
+          "value": 3
+        }
+      ],
+      "resistance": {
+        "base": 20,
+        "powerSurged": 30
+      },
+      "strength": "Blaze",
+      "type": "Arms",
+      "weakness": "Frost"
+    },
+    "Phaelanx's Heatsinks": {
+      "behemoth": "Phaelanx",
+      "cells": "Alacrity",
+      "description": "{{typeAlt}} protection forged from {{behemoth}} trophies.",
+      "icon": "https://cdn.jsdelivr.net/gh/atomicptr/dauntless-builder/assets/icons/armours/phaelanx/PhaelanxsHeatsinks.png",
+      "name": "Phaelanx's Heatsinks",
+      "perks": [
+        {
+          "name": "Fleet Footed",
+          "powerSurged": false,
+          "value": 2
+        },
+        {
+          "name": "Fleet Footed",
+          "powerSurged": true,
+          "value": 3
+        }
+      ],
+      "resistance": {
+        "base": 20,
+        "powerSurged": 30
+      },
+      "strength": "Blaze",
+      "type": "Legs",
+      "weakness": "Frost"
+    },
+    "Phaelanx's Spearhead": {
+      "behemoth": "Phaelanx",
+      "cells": "Alacrity",
+      "description": "{{typeAlt}} protection forged from {{behemoth}} trophies.",
+      "icon": "https://cdn.jsdelivr.net/gh/atomicptr/dauntless-builder/assets/icons/armours/phaelanx/PhaelanxsSpearhead.png",
+      "name": "Phaelanx's Spearhead",
+      "perks": [
+        {
+          "name": "Omnisurge",
+          "powerSurged": false,
+          "value": 2
+        },
+        {
+          "name": "Omnisurge",
+          "powerSurged": true,
+          "value": 3
+        }
+      ],
+      "resistance": {
+        "base": 20,
+        "powerSurged": 30
+      },
+      "strength": "Blaze",
+      "type": "Head",
+      "weakness": "Frost"
+    },
+    "Phaelanx's Vanguard": {
+      "behemoth": "Phaelanx",
+      "cells": "Fortitude",
+      "description": "{{typeAlt}} protection forged from {{behemoth}} trophies.",
+      "icon": "https://cdn.jsdelivr.net/gh/atomicptr/dauntless-builder/assets/icons/armours/phaelanx/PhaelanxsVanguard.png",
+      "name": "Phaelanx's Vanguard",
+      "perks": [
+        {
+          "name": "Parasitic",
+          "powerSurged": false,
+          "value": 2
+        },
+        {
+          "name": "Parasitic",
+          "powerSurged": true,
+          "value": 3
+        }
+      ],
+      "resistance": {
+        "base": 20,
+        "powerSurged": 30
+      },
+      "strength": "Blaze",
+      "type": "Torso",
+      "weakness": "Frost"
+    },
+    "Pillars of Stone": {
+      "behemoth": "Skarn",
+      "cells": "Fortitude",
+      "description": "{{typeAlt}} protection forged from {{behemoth}} trophies.",
+      "icon": "https://cdn.jsdelivr.net/gh/atomicptr/dauntless-builder/assets/icons/armours/skarn/PillarsOfStone.png",
+      "name": "Pillars of Stone",
+      "perks": [
+        {
+          "name": "Guardian",
+          "powerSurged": false,
+          "value": 1
+        },
+        {
+          "name": "Guardian",
+          "powerSurged": true,
+          "value": 3
+        }
+      ],
+      "resistance": {
+        "base": 5,
+        "powerSurged": 30
+      },
+      "strength": "Terra",
+      "type": "Legs",
+      "weakness": "Shock"
+    },
+    "Prismatic Grace": {
+      "behemoth": "Rezakiri",
+      "cells": "Finesse",
+      "description": "Prismatic Grace is a piece of craftable Exotic armour in Dauntless. It is crafted from Rezakiri reagents.",
+      "icon": "https://cdn.jsdelivr.net/gh/atomicptr/dauntless-builder/assets/icons/armours/rezakiri/PrismaticGrace.png",
+      "name": "Prismatic Grace",
+      "perks": [
+        {
+          "name": "Medic",
+          "powerSurged": false,
+          "value": 2
+        },
+        {
+          "name": "Medic",
+          "powerSurged": true,
+          "value": 3
+        }
+      ],
+      "rarity": "exotic",
+      "resistance": {
+        "base": 20,
+        "powerSurged": 30
+      },
+      "strength": "Radiant",
+      "type": "Head",
+      "unique_effects": [
+        {
+          "description": "After reviving another player, grant them a Radiant Prism that blocks incoming damage for {{prismTime}} seconds.",
+          "icon": "/assets/icons/abilities/PrismaticGraceBuff.png",
+          "name": "PrismaticGraceRevivePrism",
+          "values": {
+            "prismTime": 5
+          }
+        },
+        {
+          "description": "The first time you take lethal damage, gain a Radiant Prism that blocks incoming damage for {{prismTime}} seconds.",
+          "icon": "/assets/icons/abilities/PrismaticGraceBuff.png",
+          "name": "PrismaticGraceLethalDamagePrism",
+          "values": {
+            "prismTime": 10
+          }
+        },
+        {
+          "description": "While active, reviving another player fully restores both players but removes the Prism even at full danger.",
+          "icon": "/assets/icons/abilities/PrismaticGraceBuff.png",
+          "name": "PrismaticGraceActivePrismRevive"
+        }
+      ],
+      "weakness": "Umbral"
+    },
+    "Quillspike Boots": {
+      "behemoth": "Quillshot",
+      "cells": "Finesse",
+      "description": "{{typeAlt}} protection forged from {{behemoth}} trophies.",
+      "icon": "https://cdn.jsdelivr.net/gh/atomicptr/dauntless-builder/assets/icons/armours/quillshot/QuillspikeBoots.png",
+      "name": "Quillspike Boots",
+      "perks": [
+        {
+          "name": "Barbed",
+          "powerSurged": false,
+          "value": 1
+        },
+        {
+          "name": "Barbed",
+          "powerSurged": true,
+          "value": 3
+        }
+      ],
+      "resistance": {
+        "base": 10,
+        "powerSurged": 30
+      },
+      "strength": "neutral",
+      "type": "Legs",
+      "weakness": "neutral"
+    },
+    "Quillspike Grips": {
+      "behemoth": "Quillshot",
+      "cells": "Finesse",
+      "description": "{{typeAlt}} protection forged from {{behemoth}} trophies.",
+      "icon": "https://cdn.jsdelivr.net/gh/atomicptr/dauntless-builder/assets/icons/armours/quillshot/QuillspikeGrips.png",
+      "name": "Quillspike Grips",
+      "perks": [
+        {
+          "name": "Barbed",
+          "powerSurged": false,
+          "value": 1
+        },
+        {
+          "name": "Barbed",
+          "powerSurged": true,
+          "value": 3
+        }
+      ],
+      "resistance": {
+        "base": 10,
+        "powerSurged": 30
+      },
+      "strength": "neutral",
+      "type": "Arms",
+      "weakness": "neutral"
+    },
+    "Quillspike Jacket": {
+      "behemoth": "Quillshot",
+      "cells": "Finesse",
+      "description": "{{typeAlt}} protection forged from {{behemoth}} trophies.",
+      "icon": "https://cdn.jsdelivr.net/gh/atomicptr/dauntless-builder/assets/icons/armours/quillshot/QuillspikeJacket.png",
+      "name": "Quillspike Jacket",
+      "perks": [
+        {
+          "name": "Savagery",
+          "powerSurged": false,
+          "value": 1
+        },
+        {
+          "name": "Savagery",
+          "powerSurged": true,
+          "value": 3
+        }
+      ],
+      "resistance": {
+        "base": 10,
+        "powerSurged": 30
+      },
+      "strength": "neutral",
+      "type": "Torso",
+      "weakness": "neutral"
+    },
+    "Quillspike Mask": {
+      "behemoth": "Quillshot",
+      "cells": "Fortitude",
+      "description": "{{typeAlt}} protection forged from {{behemoth}} trophies.",
+      "icon": "https://cdn.jsdelivr.net/gh/atomicptr/dauntless-builder/assets/icons/armours/quillshot/QuillspikeMask.png",
+      "name": "Quillspike Mask",
+      "perks": [
+        {
+          "name": "Savagery",
+          "powerSurged": false,
+          "value": 1
+        },
+        {
+          "name": "Savagery",
+          "powerSurged": true,
+          "value": 3
+        }
+      ],
+      "resistance": {
+        "base": 10,
+        "powerSurged": 30
+      },
+      "strength": "neutral",
+      "type": "Head",
+      "weakness": "neutral"
+    },
+    "Recruit's Breastplate": {
+      "cells": null,
+      "description": "{{typeAlt}} protection for the novice Slayer.",
+      "icon": "https://cdn.jsdelivr.net/gh/atomicptr/dauntless-builder/assets/icons/armours/generic/RecruitsBreastplate.png",
+      "name": "Recruit's Breastplate",
+      "resistance": {
+        "base": 20
+      },
+      "strength": "neutral",
+      "type": "Torso",
+      "weakness": "neutral"
+    },
+    "Recruit's Gloves": {
+      "cells": null,
+      "description": "{{typeAlt}} protection for the novice Slayer.",
+      "icon": "https://cdn.jsdelivr.net/gh/atomicptr/dauntless-builder/assets/icons/armours/generic/RecruitsGloves.png",
+      "name": "Recruit's Gloves",
+      "resistance": {
+        "base": 20
+      },
+      "strength": "neutral",
+      "type": "Arms",
+      "weakness": "neutral"
+    },
+    "Recruit's Greaves": {
+      "cells": null,
+      "description": "{{typeAlt}} protection for the novice Slayer.",
+      "icon": "https://cdn.jsdelivr.net/gh/atomicptr/dauntless-builder/assets/icons/armours/generic/RecruitsGreaves.png",
+      "name": "Recruit's Greaves",
+      "resistance": {
+        "base": 20
+      },
+      "strength": "neutral",
+      "type": "Legs",
+      "weakness": "neutral"
+    },
+    "Recruit's Mask": {
+      "cells": null,
+      "description": "{{typeAlt}} protection for the novice Slayer.",
+      "icon": "https://cdn.jsdelivr.net/gh/atomicptr/dauntless-builder/assets/icons/armours/generic/RecruitsMask.png",
+      "name": "Recruit's Mask",
+      "resistance": {
+        "base": 20
+      },
+      "strength": "neutral",
+      "type": "Head",
+      "weakness": "neutral"
+    },
+    "Shell of the Swarm": {
+      "behemoth": "Kharabak",
+      "cells": "Finesse",
+      "description": "{{typeAlt}} protection forged from {{behemoth}} trophies.",
+      "icon": "https://cdn.jsdelivr.net/gh/atomicptr/dauntless-builder/assets/icons/armours/kharabak/ShellOfTheSwarm.png",
+      "name": "Shell of the Swarm",
+      "perks": [
+        {
+          "name": "Bladestorm",
+          "powerSurged": false,
+          "value": 1
+        },
+        {
+          "name": "Bladestorm",
+          "powerSurged": true,
+          "value": 3
+        }
+      ],
+      "resistance": {
+        "base": 10,
+        "powerSurged": 30
+      },
+      "strength": "Terra",
+      "type": "Torso",
+      "weakness": "Shock"
+    },
+    "Shocking Gaze": {
+      "behemoth": "Nayzaga",
+      "cells": "Insight",
+      "description": "{{typeAlt}} protection forged from {{behemoth}} trophies.",
+      "icon": "https://cdn.jsdelivr.net/gh/atomicptr/dauntless-builder/assets/icons/armours/nayzaga/ShockingGaze.png",
+      "name": "Shocking Gaze",
+      "perks": [
+        {
+          "name": "Medic",
+          "powerSurged": false,
+          "value": 1
+        },
+        {
+          "name": "Medic",
+          "powerSurged": true,
+          "value": 3
+        }
+      ],
+      "resistance": {
+        "base": 10,
+        "powerSurged": 30
+      },
+      "strength": "Shock",
+      "type": "Head",
+      "weakness": "Terra"
+    },
+    "Shocking Grasp": {
+      "behemoth": "Nayzaga",
+      "cells": "Insight",
+      "description": "{{typeAlt}} protection forged from {{behemoth}} trophies.",
+      "icon": "https://cdn.jsdelivr.net/gh/atomicptr/dauntless-builder/assets/icons/armours/nayzaga/ShockingGrasp.png",
+      "name": "Shocking Grasp",
+      "perks": [
+        {
+          "name": "Aetheric Attunement",
+          "powerSurged": false,
+          "value": 1
+        },
+        {
+          "name": "Aetheric Attunement",
+          "powerSurged": true,
+          "value": 3
+        }
+      ],
+      "resistance": {
+        "base": 10,
+        "powerSurged": 30
+      },
+      "strength": "Shock",
+      "type": "Arms",
+      "weakness": "Terra"
+    },
+    "Shocking Heart": {
+      "behemoth": "Nayzaga",
+      "cells": "Fortitude",
+      "description": "{{typeAlt}} protection forged from {{behemoth}} trophies.",
+      "icon": "https://cdn.jsdelivr.net/gh/atomicptr/dauntless-builder/assets/icons/armours/nayzaga/ShockingHeart.png",
+      "name": "Shocking Heart",
+      "perks": [
+        {
+          "name": "Medic",
+          "powerSurged": false,
+          "value": 1
+        },
+        {
+          "name": "Medic",
+          "powerSurged": true,
+          "value": 3
+        }
+      ],
+      "resistance": {
+        "base": 10,
+        "powerSurged": 30
+      },
+      "strength": "Shock",
+      "type": "Torso",
+      "weakness": "Terra"
+    },
+    "Shocking Stride": {
+      "behemoth": "Nayzaga",
+      "cells": "Fortitude",
+      "description": "{{typeAlt}} protection forged from {{behemoth}} trophies.",
+      "icon": "https://cdn.jsdelivr.net/gh/atomicptr/dauntless-builder/assets/icons/armours/nayzaga/ShockingStride.png",
+      "name": "Shocking Stride",
+      "perks": [
+        {
+          "name": "Energized",
+          "powerSurged": false,
+          "value": 1
+        },
+        {
+          "name": "Energized",
+          "powerSurged": true,
+          "value": 3
+        }
+      ],
+      "resistance": {
+        "base": 10,
+        "powerSurged": 30
+      },
+      "strength": "Shock",
+      "type": "Legs",
+      "weakness": "Terra"
+    },
+    "Shrikedown Gloves": {
+      "behemoth": "Shrike",
+      "cells": "Alacrity",
+      "description": "{{typeAlt}} protection forged from {{behemoth}} trophies.",
+      "icon": "https://cdn.jsdelivr.net/gh/atomicptr/dauntless-builder/assets/icons/armours/shrike/ShrikedownGloves.png",
+      "name": "Shrikedown Gloves",
+      "perks": [
+        {
+          "name": "Weighted Strikes",
+          "powerSurged": false,
+          "value": 1
+        },
+        {
+          "name": "Weighted Strikes",
+          "powerSurged": true,
+          "value": 3
+        }
+      ],
+      "resistance": {
+        "base": 10,
+        "powerSurged": 30
+      },
+      "strength": "neutral",
+      "type": "Arms",
+      "weakness": "neutral"
+    },
+    "Shrikedown Greaves": {
+      "behemoth": "Shrike",
+      "cells": "Alacrity",
+      "description": "{{typeAlt}} protection forged from {{behemoth}} trophies.",
+      "icon": "https://cdn.jsdelivr.net/gh/atomicptr/dauntless-builder/assets/icons/armours/shrike/ShrikedownGreaves.png",
+      "name": "Shrikedown Greaves",
+      "perks": [
+        {
+          "name": "Grace",
+          "powerSurged": false,
+          "value": 1
+        },
+        {
+          "name": "Grace",
+          "powerSurged": true,
+          "value": 3
+        }
+      ],
+      "resistance": {
+        "base": 10,
+        "powerSurged": 30
+      },
+      "strength": "neutral",
+      "type": "Legs",
+      "weakness": "neutral"
+    },
+    "Shrikedown Helm": {
+      "behemoth": "Shrike",
+      "cells": "Finesse",
+      "description": "{{typeAlt}} protection forged from {{behemoth}} trophies.",
+      "icon": "https://cdn.jsdelivr.net/gh/atomicptr/dauntless-builder/assets/icons/armours/shrike/ShrikedownHelm.png",
+      "name": "Shrikedown Helm",
+      "perks": [
+        {
+          "name": "Evasion",
+          "powerSurged": false,
+          "value": 1
+        },
+        {
+          "name": "Evasion",
+          "powerSurged": true,
+          "value": 3
+        }
+      ],
+      "resistance": {
+        "base": 10,
+        "powerSurged": 30
+      },
+      "strength": "neutral",
+      "type": "Head",
+      "weakness": "neutral"
+    },
+    "Shrikedown Plate": {
+      "behemoth": "Shrike",
+      "cells": "Alacrity",
+      "description": "{{typeAlt}} protection forged from {{behemoth}} trophies.",
+      "icon": "https://cdn.jsdelivr.net/gh/atomicptr/dauntless-builder/assets/icons/armours/shrike/ShrikedownPlate.png",
+      "name": "Shrikedown Plate",
+      "perks": [
+        {
+          "name": "Evasion",
+          "powerSurged": false,
+          "value": 1
+        },
+        {
+          "name": "Evasion",
+          "powerSurged": true,
+          "value": 3
+        }
+      ],
+      "resistance": {
+        "base": 10,
+        "powerSurged": 30
+      },
+      "strength": "neutral",
+      "type": "Torso",
+      "weakness": "neutral"
+    },
+    "Sight of Stone": {
+      "behemoth": "Skarn",
+      "cells": "Fortitude",
+      "description": "{{typeAlt}} protection forged from {{behemoth}} trophies.",
+      "icon": "https://cdn.jsdelivr.net/gh/atomicptr/dauntless-builder/assets/icons/armours/skarn/SightOfStone.png",
+      "name": "Sight of Stone",
+      "perks": [
+        {
+          "name": "Tough",
+          "powerSurged": false,
+          "value": 1
+        },
+        {
+          "name": "Tough",
+          "powerSurged": true,
+          "value": 3
+        }
+      ],
+      "resistance": {
+        "base": 5,
+        "powerSurged": 30
+      },
+      "strength": "Terra",
+      "type": "Head",
+      "weakness": "Shock"
+    },
+    "Skraevwing Boots": {
+      "behemoth": "Skraev",
+      "cells": "Insight",
+      "description": "{{typeAlt}} protection forged from {{behemoth}} trophies.",
+      "icon": "https://cdn.jsdelivr.net/gh/atomicptr/dauntless-builder/assets/icons/armours/skraev/SkraevwingBoots.png",
+      "name": "Skraevwing Boots",
+      "perks": [
+        {
+          "name": "Adrenaline",
+          "powerSurged": false,
+          "value": 2
+        },
+        {
+          "name": "Adrenaline",
+          "powerSurged": true,
+          "value": 3
+        }
+      ],
+      "resistance": {
+        "base": 15,
+        "powerSurged": 30
+      },
+      "strength": "Frost",
+      "type": "Legs",
+      "weakness": "Blaze"
+    },
+    "Skraevwing Gloves": {
+      "behemoth": "Skraev",
+      "cells": "Alacrity",
+      "description": "{{typeAlt}} protection forged from {{behemoth}} trophies.",
+      "icon": "https://cdn.jsdelivr.net/gh/atomicptr/dauntless-builder/assets/icons/armours/skraev/SkraevwingGloves.png",
+      "name": "Skraevwing Gloves",
+      "perks": [
+        {
+          "name": "Aetheric Evasion",
+          "powerSurged": false,
+          "value": 2
+        },
+        {
+          "name": "Aetheric Evasion",
+          "powerSurged": true,
+          "value": 3
+        }
+      ],
+      "resistance": {
+        "base": 15,
+        "powerSurged": 30
+      },
+      "strength": "Frost",
+      "type": "Arms",
+      "weakness": "Blaze"
+    },
+    "Skraevwing Helmet": {
+      "behemoth": "Skraev",
+      "cells": "Alacrity",
+      "description": "{{typeAlt}} protection forged from {{behemoth}} trophies.",
+      "icon": "https://cdn.jsdelivr.net/gh/atomicptr/dauntless-builder/assets/icons/armours/skraev/SkraevwingHelmet.png",
+      "name": "Skraevwing Helmet",
+      "perks": [
+        {
+          "name": "Fleet Footed",
+          "powerSurged": false,
+          "value": 2
+        },
+        {
+          "name": "Fleet Footed",
+          "powerSurged": true,
+          "value": 3
+        }
+      ],
+      "resistance": {
+        "base": 15,
+        "powerSurged": 30
+      },
+      "strength": "Frost",
+      "type": "Head",
+      "weakness": "Blaze"
+    },
+    "Skraevwing Jacket": {
+      "behemoth": "Skraev",
+      "cells": "Alacrity",
+      "description": "{{typeAlt}} protection forged from {{behemoth}} trophies.",
+      "icon": "https://cdn.jsdelivr.net/gh/atomicptr/dauntless-builder/assets/icons/armours/skraev/SkraevwingJacket.png",
+      "name": "Skraevwing Jacket",
+      "perks": [
+        {
+          "name": "Adrenaline",
+          "powerSurged": false,
+          "value": 2
+        },
+        {
+          "name": "Adrenaline",
+          "powerSurged": true,
+          "value": 3
+        }
+      ],
+      "resistance": {
+        "base": 15,
+        "powerSurged": 30
+      },
+      "strength": "Frost",
+      "type": "Torso",
+      "weakness": "Blaze"
+    },
+    "Spellbound Boots": {
+      "behemoth": "Alyra",
+      "cells": "Fortitude",
+      "description": "{{typeAlt}} protection forged from {{behemoth}} trophies.",
+      "icon": "https://cdn.jsdelivr.net/gh/atomicptr/dauntless-builder/assets/icons/armours/alyra/SpellboundBoots.png",
+      "name": "Spellbound Boots",
+      "perks": [
+        {
+          "name": "Swift",
+          "powerSurged": false,
+          "value": 2
+        },
+        {
+          "name": "Swift",
+          "powerSurged": true,
+          "value": 3
+        }
+      ],
+      "resistance": {
+        "base": 20,
+        "powerSurged": 30
+      },
+      "strength": "Radiant",
+      "type": "Legs",
+      "weakness": "Umbral"
+    },
+    "Spellbound Gauntlets": {
+      "behemoth": "Alyra",
+      "cells": "Insight",
+      "description": "{{typeAlt}} protection forged from {{behemoth}} trophies.",
+      "icon": "https://cdn.jsdelivr.net/gh/atomicptr/dauntless-builder/assets/icons/armours/alyra/SpellboundGauntlets.png",
+      "name": "Spellbound Gauntlets",
+      "perks": [
+        {
+          "name": "Invigorated",
+          "powerSurged": false,
+          "value": 2
+        },
+        {
+          "name": "Invigorated",
+          "powerSurged": true,
+          "value": 3
+        }
+      ],
+      "resistance": {
+        "base": 20,
+        "powerSurged": 30
+      },
+      "strength": "Radiant",
+      "type": "Arms",
+      "weakness": "Umbral"
+    },
+    "Spellbound Hood": {
+      "behemoth": "Alyra",
+      "cells": "Alacrity",
+      "description": "{{typeAlt}} protection forged from {{behemoth}} trophies.",
+      "icon": "https://cdn.jsdelivr.net/gh/atomicptr/dauntless-builder/assets/icons/armours/alyra/SpellboundHood.png",
+      "name": "Spellbound Hood",
+      "perks": [
+        {
+          "name": "Invigorated",
+          "powerSurged": false,
+          "value": 2
+        },
+        {
+          "name": "Invigorated",
+          "powerSurged": true,
+          "value": 3
+        }
+      ],
+      "resistance": {
+        "base": 20,
+        "powerSurged": 30
+      },
+      "strength": "Radiant",
+      "type": "Head",
+      "weakness": "Umbral"
+    },
+    "Spellbound Wings": {
+      "behemoth": "Alyra",
+      "cells": "Fortitude",
+      "description": "{{typeAlt}} protection forged from {{behemoth}} trophies.",
+      "icon": "https://cdn.jsdelivr.net/gh/atomicptr/dauntless-builder/assets/icons/armours/alyra/SpellboundWings.png",
+      "name": "Spellbound Wings",
+      "perks": [
+        {
+          "name": "Galvanized",
+          "powerSurged": false,
+          "value": 2
+        },
+        {
+          "name": "Galvanized",
+          "powerSurged": true,
+          "value": 3
+        }
+      ],
+      "resistance": {
+        "base": 20,
+        "powerSurged": 30
+      },
+      "strength": "Radiant",
+      "type": "Torso",
+      "weakness": "Umbral"
+    },
+    "Stonewood Boots": {
+      "behemoth": "Fenroar",
+      "cells": "Alacrity",
+      "description": "{{typeAlt}} protection forged from {{behemoth}} trophies.",
+      "icon": "https://cdn.jsdelivr.net/gh/atomicptr/dauntless-builder/assets/icons/armours/fenroar/StonewoodBoots.png",
+      "name": "Stonewood Boots",
+      "perks": [
+        {
+          "name": "Stunning Vigour",
+          "powerSurged": false,
+          "value": 2
+        },
+        {
+          "name": "Stunning Vigour",
+          "powerSurged": true,
+          "value": 3
+        }
+      ],
+      "resistance": {
+        "base": 15,
+        "powerSurged": 30
+      },
+      "strength": "Terra",
+      "type": "Legs",
+      "weakness": "Shock"
+    },
+    "Stonewood Chest Plate": {
+      "behemoth": "Fenroar",
+      "cells": "Finesse",
+      "description": "{{typeAlt}} protection forged from {{behemoth}} trophies.",
+      "icon": "https://cdn.jsdelivr.net/gh/atomicptr/dauntless-builder/assets/icons/armours/fenroar/StonewoodChestPlate.png",
+      "name": "Stonewood Chest Plate",
+      "perks": [
+        {
+          "name": "Engineer",
+          "powerSurged": false,
+          "value": 2
+        },
+        {
+          "name": "Engineer",
+          "powerSurged": true,
+          "value": 3
+        }
+      ],
+      "resistance": {
+        "base": 15,
+        "powerSurged": 30
+      },
+      "strength": "Terra",
+      "type": "Torso",
+      "weakness": "Shock"
+    },
+    "Stonewood Gauntlets": {
+      "behemoth": "Fenroar",
+      "cells": "Finesse",
+      "description": "{{typeAlt}} protection forged from {{behemoth}} trophies.",
+      "icon": "https://cdn.jsdelivr.net/gh/atomicptr/dauntless-builder/assets/icons/armours/fenroar/StonewoodGauntlets.png",
+      "name": "Stonewood Gauntlets",
+      "perks": [
+        {
+          "name": "Rushdown",
+          "powerSurged": false,
+          "value": 2
+        },
+        {
+          "name": "Rushdown",
+          "powerSurged": true,
+          "value": 3
+        }
+      ],
+      "resistance": {
+        "base": 15,
+        "powerSurged": 30
+      },
+      "strength": "Terra",
+      "type": "Arms",
+      "weakness": "Shock"
+    },
+    "Stonewood Great Helm": {
+      "behemoth": "Fenroar",
+      "cells": "Insight",
+      "description": "{{typeAlt}} protection forged from {{behemoth}} trophies.",
+      "icon": "https://cdn.jsdelivr.net/gh/atomicptr/dauntless-builder/assets/icons/armours/fenroar/StonewoodGreatHelm.png",
+      "name": "Stonewood Great Helm",
+      "perks": [
+        {
+          "name": "Stunning Vigour",
+          "powerSurged": false,
+          "value": 2
+        },
+        {
+          "name": "Stunning Vigour",
+          "powerSurged": true,
+          "value": 3
+        }
+      ],
+      "resistance": {
+        "base": 15,
+        "powerSurged": 30
+      },
+      "strength": "Terra",
+      "type": "Head",
+      "weakness": "Shock"
+    },
+    "Stride of Thorns": {
+      "behemoth": "Koshai",
+      "cells": "Insight",
+      "description": "{{typeAlt}} protection forged from {{behemoth}} trophies.",
+      "icon": "https://cdn.jsdelivr.net/gh/atomicptr/dauntless-builder/assets/icons/armours/koshai/StrideOfThorns.png",
+      "name": "Stride of Thorns",
+      "perks": [
+        {
+          "name": "Predator",
+          "powerSurged": false,
+          "value": 2
+        },
+        {
+          "name": "Predator",
+          "powerSurged": true,
+          "value": 3
+        }
+      ],
+      "resistance": {
+        "base": 15,
+        "powerSurged": 30
+      },
+      "strength": "Terra",
+      "type": "Legs",
+      "weakness": "Shock"
+    },
+    "Striders of the Rift": {
+      "behemoth": "Riftstalker",
+      "cells": "Alacrity",
+      "description": "{{typeAlt}} protection forged from {{behemoth}} trophies.",
+      "icon": "https://cdn.jsdelivr.net/gh/atomicptr/dauntless-builder/assets/icons/armours/riftstalker/StridersOfTheRift.png",
+      "name": "Striders of the Rift",
+      "perks": [
+        {
+          "name": "Conduit",
+          "powerSurged": false,
+          "value": 2
+        },
+        {
+          "name": "Conduit",
+          "powerSurged": true,
+          "value": 3
+        }
+      ],
+      "resistance": {
+        "base": 15,
+        "powerSurged": 30
+      },
+      "strength": "Umbral",
+      "type": "Legs",
+      "weakness": "Radiant"
+    },
+    "The Skullforge": {
+      "behemoth": "Charrogg",
+      "cells": "Fortitude",
+      "description": "The Skullforge is a piece of craftable Exotic armour in Dauntless. It is crafted from Firebrand Charrogg reagents.",
+      "icon": "https://cdn.jsdelivr.net/gh/atomicptr/dauntless-builder/assets/icons/armours/charrogg/TheSkullforge.png",
+      "name": "The Skullforge",
+      "perks": [
+        {
+          "name": "Molten",
+          "powerSurged": false,
+          "value": 2
+        },
+        {
+          "name": "Molten",
+          "powerSurged": true,
+          "value": 3
+        }
+      ],
+      "rarity": "exotic",
+      "resistance": {
+        "base": 10,
+        "powerSurged": 30
+      },
+      "strength": "Blaze",
+      "type": "Head",
+      "unique_effects": [
+        {
+          "description": "{{damage}}% of all damage dealt becomes a stamina shield (max {{staminaShieldMax}}) that depletes first when spending stamina. Depletes slowly after {{staminaShieldTime}} seconds not dealing damage.",
+          "name": "DamageStaminaShield",
+          "values": {
+            "damage": 1.5,
+            "staminaShieldMax": 50,
+            "staminaShieldTime": 5
+          }
+        }
+      ],
+      "weakness": "Frost"
+    },
+    "Thrax's Embrace": {
+      "behemoth": "Thrax",
+      "cells": "Brutality",
+      "description": "{{typeAlt}} protection forged from {{behemoth}} trophies.",
+      "icon": "https://cdn.jsdelivr.net/gh/atomicptr/dauntless-builder/assets/icons/armours/thrax/ThraxsEmbrace.png",
+      "name": "Thrax's Embrace",
+      "perks": [
+        {
+          "name": "Nine Lives",
+          "powerSurged": false,
+          "value": 2
+        },
+        {
+          "name": "Nine Lives",
+          "powerSurged": true,
+          "value": 3
+        }
+      ],
+      "resistance": {
+        "base": 25,
+        "powerSurged": 30
+      },
+      "strength": "Umbral",
+      "type": "Arms",
+      "weakness": "Radiant"
+    },
+    "Thrax's Guile": {
+      "behemoth": "Thrax",
+      "cells": "Finesse",
+      "description": "{{typeAlt}} protection forged from {{behemoth}} trophies.",
+      "icon": "https://cdn.jsdelivr.net/gh/atomicptr/dauntless-builder/assets/icons/armours/thrax/ThraxsGuile.png",
+      "name": "Thrax's Guile",
+      "perks": [
+        {
+          "name": "Cunning",
+          "powerSurged": false,
+          "value": 2
+        },
+        {
+          "name": "Cunning",
+          "powerSurged": true,
+          "value": 3
+        }
+      ],
+      "resistance": {
+        "base": 25,
+        "powerSurged": 30
+      },
+      "strength": "Umbral",
+      "type": "Legs",
+      "weakness": "Radiant"
+    },
+    "Thrax's Scream": {
+      "behemoth": "Thrax",
+      "cells": "Insight",
+      "description": "{{typeAlt}} protection forged from {{behemoth}} trophies.",
+      "icon": "https://cdn.jsdelivr.net/gh/atomicptr/dauntless-builder/assets/icons/armours/thrax/ThraxsScream.png",
+      "name": "Thrax's Scream",
+      "perks": [
+        {
+          "name": "Catalyst",
+          "powerSurged": false,
+          "value": 2
+        },
+        {
+          "name": "Catalyst",
+          "powerSurged": true,
+          "value": 3
+        }
+      ],
+      "resistance": {
+        "base": 25,
+        "powerSurged": 30
+      },
+      "strength": "Umbral",
+      "type": "Head",
+      "weakness": "Radiant"
+    },
+    "Thrax's Shadow": {
+      "behemoth": "Thrax",
+      "cells": "Finesse",
+      "description": "{{typeAlt}} protection forged from {{behemoth}} trophies.",
+      "icon": "https://cdn.jsdelivr.net/gh/atomicptr/dauntless-builder/assets/icons/armours/thrax/ThraxsShadow.png",
+      "name": "Thrax's Shadow",
+      "perks": [
+        {
+          "name": "Cunning",
+          "powerSurged": false,
+          "value": 2
+        },
+        {
+          "name": "Cunning",
+          "powerSurged": true,
+          "value": 3
+        }
+      ],
+      "resistance": {
+        "base": 25,
+        "powerSurged": 30
+      },
+      "strength": "Umbral",
+      "type": "Torso",
+      "weakness": "Radiant"
+    },
+    "Thunderdeep's Capacitor": {
+      "behemoth": "Thunderdeep Drask",
+      "cells": "Finesse",
+      "description": "{{typeAlt}} protection forged from {{behemoth}} trophies.",
+      "icon": "https://cdn.jsdelivr.net/gh/atomicptr/dauntless-builder/assets/icons/armours/thunderdeep/ThunderdeepsCapacitor.png",
+      "name": "Thunderdeep's Capacitor",
+      "perks": [
+        {
+          "name": "Sharpened",
+          "powerSurged": false,
+          "value": 2
+        },
+        {
+          "name": "Sharpened",
+          "powerSurged": true,
+          "value": 3
+        }
+      ],
+      "resistance": {
+        "base": 20,
+        "powerSurged": 30
+      },
+      "strength": "Shock",
+      "type": "Head",
+      "weakness": "Terra"
+    },
+    "Thunderdeep's Dynamo": {
+      "behemoth": "Thunderdeep Drask",
+      "cells": "Insight",
+      "description": "{{typeAlt}} protection forged from {{behemoth}} trophies.",
+      "icon": "https://cdn.jsdelivr.net/gh/atomicptr/dauntless-builder/assets/icons/armours/thunderdeep/ThunderdeepsDynamo.png",
+      "name": "Thunderdeep's Dynamo",
+      "perks": [
+        {
+          "name": "Aetheric Evasion",
+          "powerSurged": false,
+          "value": 2
+        },
+        {
+          "name": "Aetheric Evasion",
+          "powerSurged": true,
+          "value": 3
+        }
+      ],
+      "resistance": {
+        "base": 20,
+        "powerSurged": 30
+      },
+      "strength": "Shock",
+      "type": "Torso",
+      "weakness": "Terra"
+    },
+    "Thunderdeep's Regulators": {
+      "behemoth": "Thunderdeep Drask",
+      "cells": "Brutality",
+      "description": "{{typeAlt}} protection forged from {{behemoth}} trophies.",
+      "icon": "https://cdn.jsdelivr.net/gh/atomicptr/dauntless-builder/assets/icons/armours/thunderdeep/ThunderdeepsRegulators.png",
+      "name": "Thunderdeep's Regulators",
+      "perks": [
+        {
+          "name": "Zeal",
+          "powerSurged": false,
+          "value": 2
+        },
+        {
+          "name": "Zeal",
+          "powerSurged": true,
+          "value": 3
+        }
+      ],
+      "resistance": {
+        "base": 20,
+        "powerSurged": 30
+      },
+      "strength": "Shock",
+      "type": "Arms",
+      "weakness": "Terra"
+    },
+    "Thunderdeep's Turbines": {
+      "behemoth": "Thunderdeep Drask",
+      "cells": "Finesse",
+      "description": "{{typeAlt}} protection forged from {{behemoth}} trophies.",
+      "icon": "https://cdn.jsdelivr.net/gh/atomicptr/dauntless-builder/assets/icons/armours/thunderdeep/ThunderdeepsTurbines.png",
+      "name": "Thunderdeep's Turbines",
+      "perks": [
+        {
+          "name": "Zeal",
+          "powerSurged": false,
+          "value": 2
+        },
+        {
+          "name": "Zeal",
+          "powerSurged": true,
+          "value": 3
+        }
+      ],
+      "resistance": {
+        "base": 20,
+        "powerSurged": 30
+      },
+      "strength": "Shock",
+      "type": "Legs",
+      "weakness": "Terra"
+    },
+    "Timeweave Gauntlets": {
+      "cells": "Finesse",
+      "description": "{{typeAlt}} protection, part of the Timeweave set.",
+      "icon": "https://cdn.jsdelivr.net/gh/atomicptr/dauntless-builder/assets/icons/armours/timeweave/TimeweaveGauntlets.png",
+      "name": "Timeweave Gauntlets",
+      "perks": [
+        {
+          "name": "Overpower",
+          "powerSurged": false,
+          "value": 2
+        },
+        {
+          "name": "Overpower",
+          "powerSurged": true,
+          "value": 3
+        }
+      ],
+      "resistance": {
+        "base": 20,
+        "powerSurged": 30
+      },
+      "strength": "Radiant",
+      "type": "Arms",
+      "weakness": "Umbral"
+    },
+    "Timeweave Helm": {
+      "cells": "Finesse",
+      "description": "{{typeAlt}} protection, part of the Timeweave set.",
+      "icon": "https://cdn.jsdelivr.net/gh/atomicptr/dauntless-builder/assets/icons/armours/timeweave/TimeweaveHelm.png",
+      "name": "Timeweave Helm",
+      "perks": [
+        {
+          "name": "Predator",
+          "powerSurged": false,
+          "value": 2
+        },
+        {
+          "name": "Predator",
+          "powerSurged": true,
+          "value": 3
+        }
+      ],
+      "resistance": {
+        "base": 20,
+        "powerSurged": 30
+      },
+      "strength": "Radiant",
+      "type": "Head",
+      "weakness": "Umbral"
+    },
+    "Timeweave Leggings": {
+      "cells": "Brutality",
+      "description": "{{typeAlt}} protection, part of the Timeweave set.",
+      "icon": "https://cdn.jsdelivr.net/gh/atomicptr/dauntless-builder/assets/icons/armours/timeweave/TimeweaveLeggings.png",
+      "name": "Timeweave Leggings",
+      "perks": [
+        {
+          "name": "Catalyst",
+          "powerSurged": false,
+          "value": 2
+        },
+        {
+          "name": "Catalyst",
+          "powerSurged": true,
+          "value": 3
+        }
+      ],
+      "resistance": {
+        "base": 20,
+        "powerSurged": 30
+      },
+      "strength": "Radiant",
+      "type": "Legs",
+      "weakness": "Umbral"
+    },
+    "Timeweave Robes": {
+      "cells": "Brutality",
+      "description": "{{typeAlt}} protection, part of the Timeweave set.",
+      "icon": "https://cdn.jsdelivr.net/gh/atomicptr/dauntless-builder/assets/icons/armours/timeweave/TimeweaveRobes.png",
+      "name": "Timeweave Robes",
+      "perks": [
+        {
+          "name": "Overpower",
+          "powerSurged": false,
+          "value": 2
+        },
+        {
+          "name": "Overpower",
+          "powerSurged": true,
+          "value": 3
+        }
+      ],
+      "resistance": {
+        "base": 20,
+        "powerSurged": 30
+      },
+      "strength": "Radiant",
+      "type": "Torso",
+      "weakness": "Umbral"
+    },
+    "Torgadoro's Apex": {
+      "behemoth": "Torgadoro",
+      "cells": "Insight",
+      "description": "{{typeAlt}} protection forged from {{behemoth}} trophies.",
+      "icon": "https://cdn.jsdelivr.net/gh/atomicptr/dauntless-builder/assets/icons/armours/torgadoro/TorgadorosApex.png",
+      "name": "Torgadoro's Apex",
+      "perks": [
+        {
+          "name": "Zeal",
+          "powerSurged": false,
+          "value": 2
+        },
+        {
+          "name": "Zeal",
+          "powerSurged": true,
+          "value": 3
+        }
+      ],
+      "resistance": {
+        "base": 25,
+        "powerSurged": 30
+      },
+      "strength": "Blaze",
+      "type": "Head",
+      "weakness": "Frost"
+    },
+    "Torgadoro's Brawn": {
+      "behemoth": "Torgadoro",
+      "cells": "Brutality",
+      "description": "{{typeAlt}} protection forged from {{behemoth}} trophies.",
+      "icon": "https://cdn.jsdelivr.net/gh/atomicptr/dauntless-builder/assets/icons/armours/torgadoro/TorgadorosBrawn.png",
+      "name": "Torgadoro's Brawn",
+      "perks": [
+        {
+          "name": "Overpower",
+          "powerSurged": false,
+          "value": 2
+        },
+        {
+          "name": "Overpower",
+          "powerSurged": true,
+          "value": 3
+        }
+      ],
+      "resistance": {
+        "base": 25,
+        "powerSurged": 30
+      },
+      "strength": "Blaze",
+      "type": "Arms",
+      "weakness": "Frost"
+    },
+    "Torgadoro's Core": {
+      "behemoth": "Torgadoro",
+      "cells": "Brutality",
+      "description": "{{typeAlt}} protection forged from {{behemoth}} trophies.",
+      "icon": "https://cdn.jsdelivr.net/gh/atomicptr/dauntless-builder/assets/icons/armours/torgadoro/TorgadorosCore.png",
+      "name": "Torgadoro's Core",
+      "perks": [
+        {
+          "name": "Knockout King",
+          "powerSurged": false,
+          "value": 2
+        },
+        {
+          "name": "Knockout King",
+          "powerSurged": true,
+          "value": 3
+        }
+      ],
+      "resistance": {
+        "base": 25,
+        "powerSurged": 30
+      },
+      "strength": "Blaze",
+      "type": "Torso",
+      "weakness": "Frost"
+    },
+    "Torgadoro's Gait": {
+      "behemoth": "Torgadoro",
+      "cells": "Brutality",
+      "description": "{{typeAlt}} protection forged from {{behemoth}} trophies.",
+      "icon": "https://cdn.jsdelivr.net/gh/atomicptr/dauntless-builder/assets/icons/armours/torgadoro/TorgadorosGait.png",
+      "name": "Torgadoro's Gait",
+      "perks": [
+        {
+          "name": "Knockout King",
+          "powerSurged": false,
+          "value": 2
+        },
+        {
+          "name": "Knockout King",
+          "powerSurged": true,
+          "value": 3
+        }
+      ],
+      "resistance": {
+        "base": 25,
+        "powerSurged": 30
+      },
+      "strength": "Blaze",
+      "type": "Legs",
+      "weakness": "Frost"
+    },
+    "Tragic Echo": {
+      "behemoth": "Shrowd",
+      "cells": "Brutality",
+      "description": "Tragic Echo is a piece of craftable Exotic armour in Dauntless. It is crafted from Shrowd reagents.",
+      "icon": "https://cdn.jsdelivr.net/gh/atomicptr/dauntless-builder/assets/icons/armours/shrowd/TragicEcho.png",
+      "name": "Tragic Echo",
+      "perks": [
+        {
+          "name": "Rage",
+          "powerSurged": false,
+          "value": 2
+        },
+        {
+          "name": "Rage",
+          "powerSurged": true,
+          "value": 3
+        }
+      ],
+      "rarity": "exotic",
+      "resistance": {
+        "base": 20,
+        "powerSurged": 30
+      },
+      "strength": "Umbral",
+      "type": "Head",
+      "unique_effects": [
+        {
+          "description": "Upon your first death, become a shadow clone that deals {{damage}}% increased damage for {{damageTime}} seconds.",
+          "icon": "/assets/icons/abilities/TragicEchoBuff.png",
+          "name": "TragicEchoDamageIncrease",
+          "values": {
+            "damage": 100,
+            "damageTime": 15
+          }
+        }
+      ],
+      "weakness": "Radiant"
+    },
+    "Visage of Thorns": {
+      "behemoth": "Koshai",
+      "cells": "Finesse",
+      "description": "{{typeAlt}} protection forged from {{behemoth}} trophies.",
+      "icon": "https://cdn.jsdelivr.net/gh/atomicptr/dauntless-builder/assets/icons/armours/koshai/VisageOfThorns.png",
+      "name": "Visage of Thorns",
+      "perks": [
+        {
+          "name": "Agility",
+          "powerSurged": false,
+          "value": 2
+        },
+        {
+          "name": "Agility",
+          "powerSurged": true,
+          "value": 3
+        }
+      ],
+      "resistance": {
+        "base": 15,
+        "powerSurged": 30
+      },
+      "strength": "Terra",
+      "type": "Head",
+      "weakness": "Shock"
+    },
+    "Volcanic Aegis": {
+      "behemoth": "Charrogg",
+      "cells": "Insight",
+      "description": "{{typeAlt}} protection forged from {{behemoth}} trophies.",
+      "icon": "https://cdn.jsdelivr.net/gh/atomicptr/dauntless-builder/assets/icons/armours/charrogg/VolcanicAegis.png",
+      "name": "Volcanic Aegis",
+      "perks": [
+        {
+          "name": "Aetherhunter",
+          "powerSurged": false,
+          "value": 1
+        },
+        {
+          "name": "Aetherhunter",
+          "powerSurged": true,
+          "value": 3
+        }
+      ],
+      "resistance": {
+        "base": 10,
+        "powerSurged": 30
+      },
+      "strength": "Blaze",
+      "type": "Torso",
+      "weakness": "Frost"
+    },
+    "Volcanic Grips": {
+      "behemoth": "Charrogg",
+      "cells": "Insight",
+      "description": "{{typeAlt}} protection forged from {{behemoth}} trophies.",
+      "icon": "https://cdn.jsdelivr.net/gh/atomicptr/dauntless-builder/assets/icons/armours/charrogg/VolcanicGrips.png",
+      "name": "Volcanic Grips",
+      "perks": [
+        {
+          "name": "Rage",
+          "powerSurged": false,
+          "value": 1
+        },
+        {
+          "name": "Rage",
+          "powerSurged": true,
+          "value": 3
+        }
+      ],
+      "resistance": {
+        "base": 10,
+        "powerSurged": 30
+      },
+      "strength": "Blaze",
+      "type": "Arms",
+      "weakness": "Frost"
+    },
+    "Volcanic Helm": {
+      "behemoth": "Charrogg",
+      "cells": "Fortitude",
+      "description": "{{typeAlt}} protection forged from {{behemoth}} trophies.",
+      "icon": "https://cdn.jsdelivr.net/gh/atomicptr/dauntless-builder/assets/icons/armours/charrogg/VolcanicHelm.png",
+      "name": "Volcanic Helm",
+      "perks": [
+        {
+          "name": "Sturdy",
+          "powerSurged": false,
+          "value": 1
+        },
+        {
+          "name": "Sturdy",
+          "powerSurged": true,
+          "value": 3
+        }
+      ],
+      "resistance": {
+        "base": 10,
+        "powerSurged": 30
+      },
+      "strength": "Blaze",
+      "type": "Head",
+      "weakness": "Frost"
+    },
+    "Volcanic Treads": {
+      "behemoth": "Charrogg",
+      "cells": "Brutality",
+      "description": "{{typeAlt}} protection forged from {{behemoth}} trophies.",
+      "icon": "https://cdn.jsdelivr.net/gh/atomicptr/dauntless-builder/assets/icons/armours/charrogg/VolcanicTreads.png",
+      "name": "Volcanic Treads",
+      "perks": [
+        {
+          "name": "Tenacious",
+          "powerSurged": false,
+          "value": 1
+        },
+        {
+          "name": "Tenacious",
+          "powerSurged": true,
+          "value": 3
+        }
+      ],
+      "resistance": {
+        "base": 10,
+        "powerSurged": 30
+      },
+      "strength": "Blaze",
+      "type": "Legs",
+      "weakness": "Frost"
+    },
+    "Wülf Claws": {
+      "behemoth": "Frostwülf",
+      "cells": "Fortitude",
+      "description": "{{typeAlt}} protection forged from {{behemoth}} trophies.",
+      "icon": "https://cdn.jsdelivr.net/gh/atomicptr/dauntless-builder/assets/icons/armours/frostwulf/WulfClaws.png",
+      "name": "Wülf Claws",
+      "perks": [
+        {
+          "name": "Galvanized",
+          "powerSurged": false,
+          "value": 2
+        },
+        {
+          "name": "Galvanized",
+          "powerSurged": true,
+          "value": 3
+        }
+      ],
+      "resistance": {
+        "base": 15,
+        "powerSurged": 30
+      },
+      "strength": "Frost",
+      "type": "Arms",
+      "weakness": "Blaze"
+    },
+    "Wülf Mane": {
+      "behemoth": "Frostwülf",
+      "cells": "Brutality",
+      "description": "{{typeAlt}} protection forged from {{behemoth}} trophies.",
+      "icon": "https://cdn.jsdelivr.net/gh/atomicptr/dauntless-builder/assets/icons/armours/frostwulf/WulfMane.png",
+      "name": "Wülf Mane",
+      "perks": [
+        {
+          "name": "Aegis",
+          "powerSurged": false,
+          "value": 2
+        },
+        {
+          "name": "Aegis",
+          "powerSurged": true,
+          "value": 3
+        }
+      ],
+      "resistance": {
+        "base": 15,
+        "powerSurged": 30
+      },
+      "strength": "Frost",
+      "type": "Head",
+      "weakness": "Blaze"
+    },
+    "Wülf Paws": {
+      "behemoth": "Frostwülf",
+      "cells": "Brutality",
+      "description": "{{typeAlt}} protection forged from {{behemoth}} trophies.",
+      "icon": "https://cdn.jsdelivr.net/gh/atomicptr/dauntless-builder/assets/icons/armours/frostwulf/WulfPaws.png",
+      "name": "Wülf Paws",
+      "perks": [
+        {
+          "name": "Cascade",
+          "powerSurged": false,
+          "value": 2
+        },
+        {
+          "name": "Cascade",
+          "powerSurged": true,
+          "value": 3
+        }
+      ],
+      "resistance": {
+        "base": 15,
+        "powerSurged": 30
+      },
+      "strength": "Frost",
+      "type": "Legs",
+      "weakness": "Blaze"
+    },
+    "Wülf Plate": {
+      "behemoth": "Frostwülf",
+      "cells": "Fortitude",
+      "description": "{{typeAlt}} protection forged from {{behemoth}} trophies.",
+      "icon": "https://cdn.jsdelivr.net/gh/atomicptr/dauntless-builder/assets/icons/armours/frostwulf/WulfPlate.png",
+      "name": "Wülf Plate",
+      "perks": [
+        {
+          "name": "Aegis",
+          "powerSurged": false,
+          "value": 2
+        },
+        {
+          "name": "Aegis",
+          "powerSurged": true,
+          "value": 3
+        }
+      ],
+      "resistance": {
+        "base": 15,
+        "powerSurged": 30
+      },
+      "strength": "Frost",
+      "type": "Torso",
+      "weakness": "Blaze"
+    }
+}
