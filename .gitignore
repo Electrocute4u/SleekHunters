@@ -1,5 +1,6 @@
 commandFunctions
 commands/admin
+trial/trialScrape.js
 node_modules
 commands/database
 utils
