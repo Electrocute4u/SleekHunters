@@ -57,9 +57,8 @@ module.exports = {
          .setDescription('Get some more information about Gauntlet')
     ),
 
-    async autoComplete(interaction, bot) {
-    const tools = require(`${config.provider == true ? `/home/electrocute4u/bot` : `../..`}/utils/functions`)
-
+    async autoComplete(interaction) {
+      const tools = require(`${config.provider == true ? `/home/electrocute4u/bot` : `..`}/../utils/functions`)
       const focusedValue = interaction.options.getFocused();
       
       // return an ordered list of files in the input dir, with full paths
@@ -85,7 +84,7 @@ module.exports = {
         return tools.toUpperCase(value) })
       
 		  const choices = seasons.length > 24 ? seasons.slice(seasons.length-1-24, seasons.length-1) : seasons
-      
+
 		  const filtered = choices.filter(choice => choice.toLowerCase().startsWith(focusedValue.toLowerCase()));
       filtered.sort(function (a, b) {
         if (a.replace(/[/\d+/]/g, "$1") < b.replace(/[/\d+/]/g, "$1")) {
@@ -102,9 +101,7 @@ module.exports = {
 		  );
     },
 
-    async execute(interaction, bot) {
- 
-      const tools = require(`${config.provider == true ? `/home/electrocute4u/bot` : `../..`}/utils/functions`)
+    async execute(interaction, bot, tools) {
       
       // Acquire file name and folder name
       let dir = config.provider == true ? __dirname.split(`/`).slice(-1)[0] : __dirname.split(`\\`).slice(-1)[0]

@@ -45,92 +45,7 @@ const { stripIndents } = require("common-tags");
 
 module.exports = {
   /**
-   * Finds emote based on modifier name or returns empty string
-   * 
-   * @param {String} emoteName The Excel Serial Number
-   * @returns {String} Returns the emote if it exists from emoteName
-   */
-
- findEmoji: function(emoteName) {
-    let search = emoteName.replace(/ /gi, "_").toLowerCase()
-    let emote
-
-    if(search == "behemoths_blitz") emote = "<:behemoths_blitz:1125462873896923136>"
-    if(search == "bleedout_vines") emote = "<:bleedout_vines:1125463387288129566>"
-    if(search == "combustion") emote = "<:combustion:1125460487795126403>"
-    if(search == "deadly") emote = "<:deadly:1125463700929785867>"
-    if(search == "deep_freeze") emote = "<:deep_freeze:1125460986091012227>"
-    if(search == "desperation") emote = "<:desperation:1125463690989285456>"
-    if(search == "electrify") emote = "<:electrify:1125458014195945492>"
-    if(search == "flaming_tail") emote = "<:flaming_tail:1125462468047675523>"
-    if(search == "fortifications") emote = "<:fortifications:1125460037830185032>"
-    if(search == "frigid_touch") emote = "<:frigid_touch:1125460798660165724>"
-    if(search == "icy_grave") emote = "<:icy_grave:1125461917490749520>"
-    if(search == "fury") emote = "<:fury:1125463111420346568>"
-    if(search == "incandescent_incarceration") emote = "<:incandescent_incarceration:1125462698302390325>"
-    if(search == "inferno") emote = "<:inferno:1125460221083537408>"
-    if(search == "jagged") emote = "<:jagged:1125462094280654929>"
-    if(search == "last_stand") emote = "<:last_stand:1125459539710451732>"
-    if(search == "momentum") emote = "<:momentum:1125461707255451678>"
-    if(search == "one_chance") emote = "<:one_chance:1125459824168161401>"
-    if(search == "poison_blood") emote = "<:poison_blood:1125463397044064326>"
-    if(search == "thick_skull") emote = "<:thick_skull:1125462470077731031>"
-    if(search == "tough_hide") emote = "<:tough_hide:1125461507208130680>"
-    if(search == "umbral_instability") emote = "<:umbral_instability:1125461472428957736>"
-
-    if(search == "shock") emote = "<:shock:1217307773742874694>"
-    if(search == "blaze") emote = "<:blaze:1217307766197190686> "
-    if(search == "umbral") emote = "<:umbral:1217307776544669696>"
-    if(search == "terra") emote = "<:terra:1217307775043113071>"
-    if(search == "frost") emote = "<:frost:1217307767816196177>"
-    if(search == "radiant") emote = "<:radiant:1217307770487967784>"
-
-    if(search == "heroic_merits") emote = "<:heroic_merits:1217609291687526512>"
-    if(search == "combat_merits") emote = "<:combat_merits:1217609290886549645>"
-    if(search == "rams") emote = "<:rams:1217609258015916246>"
-    if(search == "aethersparks") emote = "<:aethersparks:1217609096329695262>"
-
-    if(search == "alacrity") emote = "<:alacrity:1218279965791883456>"
-    if(search == "brutality") emote = "<:brutality:1218279966882402304>"
-    if(search == "finesse") emote = "<:finesse:1218279968073846875>"
-    if(search == "fortitude") emote = "<:fortitude:1218279969604767906>"
-    if(search == "insight") emote = "<:insight:1218279970791620618>"
-    if(search == "prismatic") emote = "<:prismatic:1218279971894857949>"
-
-    if(search == "head") emote = "<:head:1218284902525571123>"
-    if(search == "torso") emote = "<:torso:1218286783754670081>"
-    if(search == "arms") emote = "<:arms:1218286781766701176>"
-    if(search == "legs") emote = "<:legs:1218286782723133451>"
-
-    if(search == "aetherheart") emote = "<:aetherheart:1218290212887724032>"
-    if(search == "peerless_stormplate") emote = "<:peerless_stormplate:1218289933307875358>"
-    if(search == "shard_of_the_eternal_storm") emote = "<:shard_of_the_eternal_storm:1218289935027802122>"
-    if(search == "resistance") emote = "<:resistance:1218297920017793135>"
-    if(search == "molten_morsel") emote = "<:molten_morsel:1218301981848895579>"
-    if(search == "rampaging_shard") emote = "<:rampaging_shard:1218301984373997598>"
-    if(search == "warped_chitin") emote = "<:warped_chitin:1218306228749471816>"
-    if(search == "uncanny_scale") emote = "<:uncanny_scale:1218306227138986016>"
-    if(search == "toxic_branch") emote = "<:toxic_branch:1218319249907519560>"
-    if(search == "ironroot_shard") emote = "<:ironroot_shard:1218319248821194862>"
-    if(search == "hunters_claw") emote = "<:hunters_claw:1218321892260450485>"
-    if(search == "iceheart_shard") emote = "<:iceheart_shard:1218321890540785784>"
-    if(search == "golden_heart") emote = "<:golden_heart:1218324135462047957>"
-    if(search == "sunburst_shard") emote = "<:sunburst_shard:1218324134321193000>"
-    if(search == "power") emote = "<:power:1218360461582405702>"
-
-    if(search == "aether_strikers") emote = "<:aether_strikers:1218354037863354458>"
-    if(search == "axe") emote = "<:axe:1218354039247343718>"
-    if(search == "chain_blades") emote = "<:chain_blades:1218354040656760912>"
-    if(search == "hammer") emote = "<:hammer:1218354041994612817>"
-    if(search == "repeaters") emote = "<:repeaters:1218354043387384010>"
-    if(search == "sword") emote = "<:sword:1218354044599533569>"
-    if(search == "war_pike") emote = "<:war_pike:1218354045677211768>"
-
-    if(!emote) return ""
-    else if (emote !== undefined) return `${emote} `
-},
-  /**
-   * Finds emote based on modifier name or returns empty string
+   * Finds color code based on element
    * 
    * @param {String} element The element to search for
    * @returns {String} Returns a color code corrosponding with the element
@@ -376,168 +291,172 @@ if(element == "radiant") return radiant
 findArmorInfo: function(element) {
 element = element.toLowerCase()
 
+// Deleting and reacquiring emojis from external file
+delete require.cache[require.resolve(`${config.provider == true ? `/home/electrocute4u/bot` : `..`}/utils/emoji`)];
+const emoji = require(`${config.provider == true ? `/home/electrocute4u/bot` : `..`}/utils/emoji`)
+
 const shock = 
 `> "Malkarions are supposed to be extinct. Should have known they were hiding out in the Maelstrom's heart."
 # Malkarion Armor
-You can **power surge** ${this.findEmoji("head")} ${this.findEmoji("torso")} ${this.findEmoji("arms")} and ${this.findEmoji("legs")} to upgrade its perks from **+2** to **+3**. The list below will provide the necceary items to power surge each gear.
+You can **power surge** ${emoji.findEmoji("head")} ${emoji.findEmoji("torso")} ${emoji.findEmoji("arms")} and ${emoji.findEmoji("legs")} to upgrade its perks from **+2** to **+3**. The list below will provide the necceary items to power surge each gear.
 ## Each part requires:
-- ${this.findEmoji("aetherheart")}[Aetherheart](<https://dauntless.fandom.com/wiki/Aetherhearts>) **x1**
-- ${this.findEmoji("rams")}[Rams](<https://dauntless.fandom.com/wiki/Rams>) **x10,000**
-- ${this.findEmoji("peerless_stormplate")}[Peerless Stormplate](<https://dauntless.fandom.com/wiki/Peerless_Stormplate>) **x5**
-- ${this.findEmoji("shard_of_the_eternal_storm")}[Shard of the Eternal Storm](<https://dauntless.fandom.com/wiki/Shard_of_the_Eternal_Storm>) **x2**
+- ${emoji.findEmoji("aetherheart")}[Aetherheart](<https://dauntless.fandom.com/wiki/Aetherhearts>) **x1**
+- ${emoji.findEmoji("rams")}[Rams](<https://dauntless.fandom.com/wiki/Rams>) **x10,000**
+- ${emoji.findEmoji("peerless_stormplate")}[Peerless Stormplate](<https://dauntless.fandom.com/wiki/Peerless_Stormplate>) **x5**
+- ${emoji.findEmoji("shard_of_the_eternal_storm")}[Shard of the Eternal Storm](<https://dauntless.fandom.com/wiki/Shard_of_the_Eternal_Storm>) **x2**
 ## Armor Pieces:
-### ${this.findEmoji("head")} **Head** - [Malkarion's Sight](<https://dauntless.fandom.com/wiki/Malkarion%27s_Sight>)
-- ${this.findEmoji("resistance")} **Resistance:** 25 (base), 30 (Power Surged)
-- ${this.findEmoji("alacrity")} **Perk:** +2 [Grace](<https://dauntless.fandom.com/wiki/Grace>)
-- ${this.findEmoji("alacrity")} **Cell Slot:** [Alacrity](<https://dauntless.fandom.com/wiki/Cells#Alacrity>)
-### ${this.findEmoji("torso")} **Torso** - [Malkarion's Soul](<https://dauntless.fandom.com/wiki/Malkarion%27s_Soul>)
-- ${this.findEmoji("resistance")} **Resistance:** 25 (base), 30 (Power Surged)
-- ${this.findEmoji("brutality")} **Perk:** +2 [Aetherhunter](<https://dauntless.fandom.com/wiki/Aetherhunter>)
-- ${this.findEmoji("finesse")} **Cell Slot:** [Finesse](<https://dauntless.fandom.com/wiki/Cells#Finesse>)
-### ${this.findEmoji("arms")} **Arms** - [Malkarion's Grasp](<https://dauntless.fandom.com/wiki/Malkarion%27s_Grasp>)
-- ${this.findEmoji("resistance")} **Resistance:** 25 (base), 30 (Power Surged)
-- ${this.findEmoji("finesse")} **Perk:** +2 [Predator](<https://dauntless.fandom.com/wiki/Predator>)
-- ${this.findEmoji("finesse")} **Cell Slot:** [Finesse](<https://dauntless.fandom.com/wiki/Cells#Finesse>)
-### ${this.findEmoji("legs")} **Legs** - [Malkarion's March](<https://dauntless.fandom.com/wiki/Malkarion%27s_March>)
-- ${this.findEmoji("resistance")} **Resistance:** 25 (base), 30 (Power Surged)
-- ${this.findEmoji("brutality")} **Perk:** +2 [Aetherhunter](<https://dauntless.fandom.com/wiki/Aetherhunter>)
-- ${this.findEmoji("finesse")} **Cell Slot:** [Finesse](<https://dauntless.fandom.com/wiki/Cells#Finesse>)`
+### ${emoji.findEmoji("head")} **Head** - [Malkarion's Sight](<https://dauntless.fandom.com/wiki/Malkarion%27s_Sight>)
+- ${emoji.findEmoji("resistance")} **Resistance:** 25 (base), 30 (Power Surged)
+- ${emoji.findEmoji("alacrity")} **Perk:** +2 [Grace](<https://dauntless.fandom.com/wiki/Grace>)
+- ${emoji.findEmoji("alacrity")} **Cell Slot:** [Alacrity](<https://dauntless.fandom.com/wiki/Cells#Alacrity>)
+### ${emoji.findEmoji("torso")} **Torso** - [Malkarion's Soul](<https://dauntless.fandom.com/wiki/Malkarion%27s_Soul>)
+- ${emoji.findEmoji("resistance")} **Resistance:** 25 (base), 30 (Power Surged)
+- ${emoji.findEmoji("brutality")} **Perk:** +2 [Aetherhunter](<https://dauntless.fandom.com/wiki/Aetherhunter>)
+- ${emoji.findEmoji("finesse")} **Cell Slot:** [Finesse](<https://dauntless.fandom.com/wiki/Cells#Finesse>)
+### ${emoji.findEmoji("arms")} **Arms** - [Malkarion's Grasp](<https://dauntless.fandom.com/wiki/Malkarion%27s_Grasp>)
+- ${emoji.findEmoji("resistance")} **Resistance:** 25 (base), 30 (Power Surged)
+- ${emoji.findEmoji("finesse")} **Perk:** +2 [Predator](<https://dauntless.fandom.com/wiki/Predator>)
+- ${emoji.findEmoji("finesse")} **Cell Slot:** [Finesse](<https://dauntless.fandom.com/wiki/Cells#Finesse>)
+### ${emoji.findEmoji("legs")} **Legs** - [Malkarion's March](<https://dauntless.fandom.com/wiki/Malkarion%27s_March>)
+- ${emoji.findEmoji("resistance")} **Resistance:** 25 (base), 30 (Power Surged)
+- ${emoji.findEmoji("brutality")} **Perk:** +2 [Aetherhunter](<https://dauntless.fandom.com/wiki/Aetherhunter>)
+- ${emoji.findEmoji("finesse")} **Cell Slot:** [Finesse](<https://dauntless.fandom.com/wiki/Cells#Finesse>)`
 
 const blaze = 
 `> "A roar like that can break your courage like a fist to the heart."
 # Torgodoro Armor
-You can **power surge** ${this.findEmoji("head")} ${this.findEmoji("torso")} ${this.findEmoji("arms")} and ${this.findEmoji("legs")} to upgrade its perks from **+2** to **+3**. The list below will provide the necceary items to power surge each gear.
+You can **power surge** ${emoji.findEmoji("head")} ${emoji.findEmoji("torso")} ${emoji.findEmoji("arms")} and ${emoji.findEmoji("legs")} to upgrade its perks from **+2** to **+3**. The list below will provide the necceary items to power surge each gear.
 ## Each part requires:
-- ${this.findEmoji("aetherheart")}[Aetherheart](<https://dauntless.fandom.com/wiki/Aetherhearts>) **x1**
-- ${this.findEmoji("rams")}[Rams](<https://dauntless.fandom.com/wiki/Rams>) **x10,000**
-- ${this.findEmoji("molten_morsel")}[Molten Morsel](<https://dauntless.fandom.com/wiki/Molten_Morsel>) **x5**
-- ${this.findEmoji("rampaging_shard")}[Rampaging Shard](<https://dauntless.fandom.com/wiki/Rampaging_Shard>) **x2**
+- ${emoji.findEmoji("aetherheart")}[Aetherheart](<https://dauntless.fandom.com/wiki/Aetherhearts>) **x1**
+- ${emoji.findEmoji("rams")}[Rams](<https://dauntless.fandom.com/wiki/Rams>) **x10,000**
+- ${emoji.findEmoji("molten_morsel")}[Molten Morsel](<https://dauntless.fandom.com/wiki/Molten_Morsel>) **x5**
+- ${emoji.findEmoji("rampaging_shard")}[Rampaging Shard](<https://dauntless.fandom.com/wiki/Rampaging_Shard>) **x2**
 ## Armor Pieces:
-### ${this.findEmoji("head")} **Head** - [Torgadoro's Apex](<https://dauntless.fandom.com/wiki/Torgadoro%27s_Apex>)
-- ${this.findEmoji("resistance")} **Resistance:** 25 (base), 30 (Power Surged)
-- ${this.findEmoji("insight")} **Perk:** +2 [Zeal](<https://dauntless.fandom.com/wiki/Zeal>)
-- ${this.findEmoji("insight")} **Cell Slot:** [Insight](<https://dauntless.fandom.com/wiki/Cells#Insight>)
-### ${this.findEmoji("torso")} **Torso** - [Torgadoro's Core](<https://dauntless.fandom.com/wiki/Torgadoro%27s_Core>)
-- ${this.findEmoji("resistance")} **Resistance:** 25 (base), 30 (Power Surged)
-- ${this.findEmoji("brutality")} **Perk:** +2 [Knockout King](<https://dauntless.fandom.com/wiki/Knockout_King>)
-- ${this.findEmoji("brutality")} **Cell Slot:** [Brutality](<https://dauntless.fandom.com/wiki/Cells#Brutality>)
-### ${this.findEmoji("arms")} **Arms** - [Torgadoro's Brawn](<https://dauntless.fandom.com/wiki/Torgadoro%27s_Brawn>)
-- ${this.findEmoji("resistance")} **Resistance:** 25 (base), 30 (Power Surged)
-- ${this.findEmoji("brutality")} **Perk:** +2 [Overpower](<https://dauntless.fandom.com/wiki/Overpower>)
-- ${this.findEmoji("brutality")} **Cell Slot:** [Brutality](<https://dauntless.fandom.com/wiki/Cells#Brutality>)
-### ${this.findEmoji("legs")} **Legs** - [Torgadoro's Gait](<https://dauntless.fandom.com/wiki/Torgadoro%27s_Gait>)
-- ${this.findEmoji("resistance")} **Resistance:** 25 (base), 30 (Power Surged)
-- ${this.findEmoji("brutality")} **Perk:** +2 [Knockout King](<https://dauntless.fandom.com/wiki/Knockout_King>)
-- ${this.findEmoji("brutality")} **Cell Slot:** [Brutality](<https://dauntless.fandom.com/wiki/Cells#Brutality>)`
+### ${emoji.findEmoji("head")} **Head** - [Torgadoro's Apex](<https://dauntless.fandom.com/wiki/Torgadoro%27s_Apex>)
+- ${emoji.findEmoji("resistance")} **Resistance:** 25 (base), 30 (Power Surged)
+- ${emoji.findEmoji("insight")} **Perk:** +2 [Zeal](<https://dauntless.fandom.com/wiki/Zeal>)
+- ${emoji.findEmoji("insight")} **Cell Slot:** [Insight](<https://dauntless.fandom.com/wiki/Cells#Insight>)
+### ${emoji.findEmoji("torso")} **Torso** - [Torgadoro's Core](<https://dauntless.fandom.com/wiki/Torgadoro%27s_Core>)
+- ${emoji.findEmoji("resistance")} **Resistance:** 25 (base), 30 (Power Surged)
+- ${emoji.findEmoji("brutality")} **Perk:** +2 [Knockout King](<https://dauntless.fandom.com/wiki/Knockout_King>)
+- ${emoji.findEmoji("brutality")} **Cell Slot:** [Brutality](<https://dauntless.fandom.com/wiki/Cells#Brutality>)
+### ${emoji.findEmoji("arms")} **Arms** - [Torgadoro's Brawn](<https://dauntless.fandom.com/wiki/Torgadoro%27s_Brawn>)
+- ${emoji.findEmoji("resistance")} **Resistance:** 25 (base), 30 (Power Surged)
+- ${emoji.findEmoji("brutality")} **Perk:** +2 [Overpower](<https://dauntless.fandom.com/wiki/Overpower>)
+- ${emoji.findEmoji("brutality")} **Cell Slot:** [Brutality](<https://dauntless.fandom.com/wiki/Cells#Brutality>)
+### ${emoji.findEmoji("legs")} **Legs** - [Torgadoro's Gait](<https://dauntless.fandom.com/wiki/Torgadoro%27s_Gait>)
+- ${emoji.findEmoji("resistance")} **Resistance:** 25 (base), 30 (Power Surged)
+- ${emoji.findEmoji("brutality")} **Perk:** +2 [Knockout King](<https://dauntless.fandom.com/wiki/Knockout_King>)
+- ${emoji.findEmoji("brutality")} **Cell Slot:** [Brutality](<https://dauntless.fandom.com/wiki/Cells#Brutality>)`
 
 const umbral = 
 `> "Old [Arkan](<https://dauntless.fandom.com/wiki/Arkan_Drew>) said he's not even sure the Thrax is from our reality. The skin of the universe has been punctured far too many times by denizens of the Umbral Deeps, my dear [Markus](<https://dauntless.fandom.com/wiki/Markus_Boehr>).”
 # Thrax Armor
-You can **power surge** ${this.findEmoji("head")} ${this.findEmoji("torso")} ${this.findEmoji("arms")} and ${this.findEmoji("legs")} to upgrade its perks from **+2** to **+3**. The list below will provide the necceary items to power surge each gear.
+You can **power surge** ${emoji.findEmoji("head")} ${emoji.findEmoji("torso")} ${emoji.findEmoji("arms")} and ${emoji.findEmoji("legs")} to upgrade its perks from **+2** to **+3**. The list below will provide the necceary items to power surge each gear.
 ## Each part requires:
-- ${this.findEmoji("aetherheart")}[Aetherheart](<https://dauntless.fandom.com/wiki/Aetherhearts>) **x1**
-- ${this.findEmoji("rams")}[Rams](<https://dauntless.fandom.com/wiki/Rams>) **x10,000**
-- ${this.findEmoji("warped_chitin")}[Warped Chitin](<https://dauntless.fandom.com/wiki/Warped_Chitin>) **x5**
-- ${this.findEmoji("uncanny_scale")}[Uncanny Scale](<https://dauntless.fandom.com/wiki/Uncanny_Scale>) **x2**
+- ${emoji.findEmoji("aetherheart")}[Aetherheart](<https://dauntless.fandom.com/wiki/Aetherhearts>) **x1**
+- ${emoji.findEmoji("rams")}[Rams](<https://dauntless.fandom.com/wiki/Rams>) **x10,000**
+- ${emoji.findEmoji("warped_chitin")}[Warped Chitin](<https://dauntless.fandom.com/wiki/Warped_Chitin>) **x5**
+- ${emoji.findEmoji("uncanny_scale")}[Uncanny Scale](<https://dauntless.fandom.com/wiki/Uncanny_Scale>) **x2**
 ## Armor Pieces:
-### ${this.findEmoji("head")} **Head** - [Thrax's Scream](<https://dauntless.fandom.com/wiki/Thrax%27s_Scream>)
-- ${this.findEmoji("resistance")} **Resistance:** 25 (base), 30 (Power Surged)
-- ${this.findEmoji("insight")} **Perk:** +2 [Catalyst](<https://dauntless.fandom.com/wiki/Catalyst>)
-- ${this.findEmoji("insight")} **Cell Slot:** [Insight](<https://dauntless.fandom.com/wiki/Cells#Insight>)
-### ${this.findEmoji("torso")} **Torso** - [Thrax's Shadow](<https://dauntless.fandom.com/wiki/Thrax%27s_Shadow>)
-- ${this.findEmoji("resistance")} **Resistance:** 25 (base), 30 (Power Surged)
-- ${this.findEmoji("finesse")} **Perk:** +2 [Cunning](<https://dauntless.fandom.com/wiki/Cunning>)
-- ${this.findEmoji("finesse")} **Cell Slot:** [Finesse](<https://dauntless.fandom.com/wiki/Cells#Finesse>)
-### ${this.findEmoji("arms")} **Arms** - [Thrax's Embrace](<https://dauntless.fandom.com/wiki/Thrax%27s_Embrace>)
-- ${this.findEmoji("resistance")} **Resistance:** 25 (base), 30 (Power Surged)
-- ${this.findEmoji("fortitude")} **Perk:** +2 [Nine Lives](<https://dauntless.fandom.com/wiki/Nine_Lives>)
-- ${this.findEmoji("brutality")} **Cell Slot:** [Brutality](<https://dauntless.fandom.com/wiki/Cells#Brutality>)
-### ${this.findEmoji("legs")} **Legs** - [Thrax's Guile](<https://dauntless.fandom.com/wiki/Thrax%27s_Guile>)
-- ${this.findEmoji("resistance")} **Resistance:** 25 (base), 30 (Power Surged)
-- ${this.findEmoji("finesse")} **Perk:** +2 [Cunning](<https://dauntless.fandom.com/wiki/Cunning>)
-- ${this.findEmoji("finesse")} **Cell Slot:** [Finesse](<https://dauntless.fandom.com/wiki/Cells#Finesse>)`
+### ${emoji.findEmoji("head")} **Head** - [Thrax's Scream](<https://dauntless.fandom.com/wiki/Thrax%27s_Scream>)
+- ${emoji.findEmoji("resistance")} **Resistance:** 25 (base), 30 (Power Surged)
+- ${emoji.findEmoji("insight")} **Perk:** +2 [Catalyst](<https://dauntless.fandom.com/wiki/Catalyst>)
+- ${emoji.findEmoji("insight")} **Cell Slot:** [Insight](<https://dauntless.fandom.com/wiki/Cells#Insight>)
+### ${emoji.findEmoji("torso")} **Torso** - [Thrax's Shadow](<https://dauntless.fandom.com/wiki/Thrax%27s_Shadow>)
+- ${emoji.findEmoji("resistance")} **Resistance:** 25 (base), 30 (Power Surged)
+- ${emoji.findEmoji("finesse")} **Perk:** +2 [Cunning](<https://dauntless.fandom.com/wiki/Cunning>)
+- ${emoji.findEmoji("finesse")} **Cell Slot:** [Finesse](<https://dauntless.fandom.com/wiki/Cells#Finesse>)
+### ${emoji.findEmoji("arms")} **Arms** - [Thrax's Embrace](<https://dauntless.fandom.com/wiki/Thrax%27s_Embrace>)
+- ${emoji.findEmoji("resistance")} **Resistance:** 25 (base), 30 (Power Surged)
+- ${emoji.findEmoji("fortitude")} **Perk:** +2 [Nine Lives](<https://dauntless.fandom.com/wiki/Nine_Lives>)
+- ${emoji.findEmoji("brutality")} **Cell Slot:** [Brutality](<https://dauntless.fandom.com/wiki/Cells#Brutality>)
+### ${emoji.findEmoji("legs")} **Legs** - [Thrax's Guile](<https://dauntless.fandom.com/wiki/Thrax%27s_Guile>)
+- ${emoji.findEmoji("resistance")} **Resistance:** 25 (base), 30 (Power Surged)
+- ${emoji.findEmoji("finesse")} **Perk:** +2 [Cunning](<https://dauntless.fandom.com/wiki/Cunning>)
+- ${emoji.findEmoji("finesse")} **Cell Slot:** [Finesse](<https://dauntless.fandom.com/wiki/Cells#Finesse>)`
 
 const terra = 
 `> "The doc says she's never seen anything like the Agarus before. No one had, until it caught our Farslayer friends with their loincloths down. I can tell you one thing: I can see its spore trails from here."
 # Agarus Armor
-You can **power surge** ${this.findEmoji("head")} ${this.findEmoji("torso")} ${this.findEmoji("arms")} and ${this.findEmoji("legs")} to upgrade its perks from **+2** to **+3**. The list below will provide the necceary items to power surge each gear.
+You can **power surge** ${emoji.findEmoji("head")} ${emoji.findEmoji("torso")} ${emoji.findEmoji("arms")} and ${emoji.findEmoji("legs")} to upgrade its perks from **+2** to **+3**. The list below will provide the necceary items to power surge each gear.
 ## Each part requires:
-- ${this.findEmoji("aetherheart")}[Aetherheart](<https://dauntless.fandom.com/wiki/Aetherhearts>) **x1**
-- ${this.findEmoji("rams")}[Rams](<https://dauntless.fandom.com/wiki/Rams>) **x10,000**
-- ${this.findEmoji("toxic_branch")}[Toxic Branch](<https://dauntless.fandom.com/wiki/Toxic_Branch>) **x5**
-- ${this.findEmoji("ironroot_shard")}[Ironroot Shard](<https://dauntless.fandom.com/wiki/Ironroot_Shard>) **x2**
+- ${emoji.findEmoji("aetherheart")}[Aetherheart](<https://dauntless.fandom.com/wiki/Aetherhearts>) **x1**
+- ${emoji.findEmoji("rams")}[Rams](<https://dauntless.fandom.com/wiki/Rams>) **x10,000**
+- ${emoji.findEmoji("toxic_branch")}[Toxic Branch](<https://dauntless.fandom.com/wiki/Toxic_Branch>) **x5**
+- ${emoji.findEmoji("ironroot_shard")}[Ironroot Shard](<https://dauntless.fandom.com/wiki/Ironroot_Shard>) **x2**
 ## Armor Pieces:
-### ${this.findEmoji("head")} **Head** - [Agaric Canopy](<https://dauntless.fandom.com/wiki/Agaric_Canopy>)
-- ${this.findEmoji("resistance")} **Resistance:** 25 (base), 30 (Power Surged)
-- ${this.findEmoji("fortitude")} **Perk:** +2 [Parasitic](<https://dauntless.fandom.com/wiki/Parasitic>)
-- ${this.findEmoji("fortitude")} **Cell Slot:** [Fortitude](<https://dauntless.fandom.com/wiki/Cells#Fortitude>)
-### ${this.findEmoji("torso")} **Torso** - [Agaric Bole](<https://dauntless.fandom.com/wiki/Agaric_Bole>)
-- ${this.findEmoji("resistance")} **Resistance:** 25 (base), 30 (Power Surged)
-- ${this.findEmoji("fortitude")} **Perk:** +2 [Parasitic](<https://dauntless.fandom.com/wiki/Parasitic>)
-- ${this.findEmoji("insight")} **Cell Slot:** [Insight](<https://dauntless.fandom.com/wiki/Cells#Insight>)
-### ${this.findEmoji("arms")} **Arms** - [Agaric Branches](<https://dauntless.fandom.com/wiki/Agaric_Branches>)
-- ${this.findEmoji("resistance")} **Resistance:** 25 (base), 30 (Power Surged)
-- ${this.findEmoji("fortitude")} **Perk:** +2 [Sturdy](<https://dauntless.fandom.com/wiki/Sturdy>)
-- ${this.findEmoji("fortitude")} **Cell Slot:** [Fortitude](<https://dauntless.fandom.com/wiki/Cells#Fortitude>)
-### ${this.findEmoji("legs")} **Legs** - [Agaric Roots](<https://dauntless.fandom.com/wiki/Agaric_Roots>)
-- ${this.findEmoji("resistance")} **Resistance:** 25 (base), 30 (Power Surged)
-- ${this.findEmoji("fortitude")} **Perk:** +2 [Fortress](<https://dauntless.fandom.com/wiki/Fortress>)
-- ${this.findEmoji("fortitude")} **Cell Slot:** [Fortitude](<https://dauntless.fandom.com/wiki/Cells#Fortitude>)`
+### ${emoji.findEmoji("head")} **Head** - [Agaric Canopy](<https://dauntless.fandom.com/wiki/Agaric_Canopy>)
+- ${emoji.findEmoji("resistance")} **Resistance:** 25 (base), 30 (Power Surged)
+- ${emoji.findEmoji("fortitude")} **Perk:** +2 [Parasitic](<https://dauntless.fandom.com/wiki/Parasitic>)
+- ${emoji.findEmoji("fortitude")} **Cell Slot:** [Fortitude](<https://dauntless.fandom.com/wiki/Cells#Fortitude>)
+### ${emoji.findEmoji("torso")} **Torso** - [Agaric Bole](<https://dauntless.fandom.com/wiki/Agaric_Bole>)
+- ${emoji.findEmoji("resistance")} **Resistance:** 25 (base), 30 (Power Surged)
+- ${emoji.findEmoji("fortitude")} **Perk:** +2 [Parasitic](<https://dauntless.fandom.com/wiki/Parasitic>)
+- ${emoji.findEmoji("insight")} **Cell Slot:** [Insight](<https://dauntless.fandom.com/wiki/Cells#Insight>)
+### ${emoji.findEmoji("arms")} **Arms** - [Agaric Branches](<https://dauntless.fandom.com/wiki/Agaric_Branches>)
+- ${emoji.findEmoji("resistance")} **Resistance:** 25 (base), 30 (Power Surged)
+- ${emoji.findEmoji("fortitude")} **Perk:** +2 [Sturdy](<https://dauntless.fandom.com/wiki/Sturdy>)
+- ${emoji.findEmoji("fortitude")} **Cell Slot:** [Fortitude](<https://dauntless.fandom.com/wiki/Cells#Fortitude>)
+### ${emoji.findEmoji("legs")} **Legs** - [Agaric Roots](<https://dauntless.fandom.com/wiki/Agaric_Roots>)
+- ${emoji.findEmoji("resistance")} **Resistance:** 25 (base), 30 (Power Surged)
+- ${emoji.findEmoji("fortitude")} **Perk:** +2 [Fortress](<https://dauntless.fandom.com/wiki/Fortress>)
+- ${emoji.findEmoji("fortitude")} **Cell Slot:** [Fortitude](<https://dauntless.fandom.com/wiki/Cells#Fortitude>)`
 
 const frost = 
 `> "l am called the queen of Skaldeskar, but there remain hidden caverns there steeped in cold, grim power where no human holds sway. Such places are ruled only by the Urska."
 > — [Linnea Silver](<https://dauntless.fandom.com/wiki/Linnea_Silver>)
 # Urska Armor
-You can **power surge** ${this.findEmoji("head")} ${this.findEmoji("torso")} ${this.findEmoji("arms")} and ${this.findEmoji("legs")} to upgrade its perks from **+2** to **+3**. The list below will provide the necceary items to power surge each gear.
+You can **power surge** ${emoji.findEmoji("head")} ${emoji.findEmoji("torso")} ${emoji.findEmoji("arms")} and ${emoji.findEmoji("legs")} to upgrade its perks from **+2** to **+3**. The list below will provide the necceary items to power surge each gear.
 ## Each part requires:
-- ${this.findEmoji("aetherheart")}[Aetherheart](<https://dauntless.fandom.com/wiki/Aetherhearts>) **x1**
-- ${this.findEmoji("rams")}[Rams](<https://dauntless.fandom.com/wiki/Rams>) **x10,000**
-- ${this.findEmoji("hunters_claw")}[Hunter's Claw](<https://dauntless.fandom.com/wiki/Hunter%27s_Claw>) **x5**
-- ${this.findEmoji("iceheart_shard")}[Iceheart Shard](<https://dauntless.fandom.com/wiki/Iceheart_Shard>) **x2**
+- ${emoji.findEmoji("aetherheart")}[Aetherheart](<https://dauntless.fandom.com/wiki/Aetherhearts>) **x1**
+- ${emoji.findEmoji("rams")}[Rams](<https://dauntless.fandom.com/wiki/Rams>) **x10,000**
+- ${emoji.findEmoji("hunters_claw")}[Hunter's Claw](<https://dauntless.fandom.com/wiki/Hunter%27s_Claw>) **x5**
+- ${emoji.findEmoji("iceheart_shard")}[Iceheart Shard](<https://dauntless.fandom.com/wiki/Iceheart_Shard>) **x2**
 ## Armor Pieces:
-### ${this.findEmoji("head")} **Head** - [Adversary's Guile](<https://dauntless.fandom.com/wiki/Adversary%27s_Guile>)
-- ${this.findEmoji("resistance")} **Resistance:** 25 (base), 30 (Power Surged)
-- ${this.findEmoji("insight")} **Perk:** +2 [Cascade](<https://dauntless.fandom.com/wiki/Cascade>)
-- ${this.findEmoji("insight")} **Cell Slot:** [Insight](<https://dauntless.fandom.com/wiki/Cells#Insight>)
-### ${this.findEmoji("torso")} **Torso** - [Adversary's Pride](<https://dauntless.fandom.com/wiki/Adversary%27s_Pride>)
-- ${this.findEmoji("resistance")} **Resistance:** 25 (base), 30 (Power Surged)
-- ${this.findEmoji("insight")} **Perk:** +2 [Cascade](<https://dauntless.fandom.com/wiki/Cascade>)
-- ${this.findEmoji("alacrity")} **Cell Slot:** [Alacrity](<https://dauntless.fandom.com/wiki/Cells#Alacrity>)
-### ${this.findEmoji("arms")} **Arms** - [Adversary's Wrath](<https://dauntless.fandom.com/wiki/Adversary%27s_Wrath>)
-- ${this.findEmoji("resistance")} **Resistance:** 25 (base), 30 (Power Surged)
-- ${this.findEmoji("insight")} **Perk:** +2 [Aetheric Evasion](<https://dauntless.fandom.com/wiki/Aetheric_Evasion>)
-- ${this.findEmoji("finesse")} **Cell Slot:** [Finesse](<https://dauntless.fandom.com/wiki/Cells#Finesse>)
-### ${this.findEmoji("legs")} **Legs** - [Adversary's Drive](<https://dauntless.fandom.com/wiki/Adversary%27s_Drive>)
-- ${this.findEmoji("resistance")} **Resistance:** 25 (base), 30 (Power Surged)
-- ${this.findEmoji("fortitude")} **Perk:** +2 [Guardian](<https://dauntless.fandom.com/wiki/Guardian>)
-- ${this.findEmoji("insight")} **Cell Slot:** [Insight](<https://dauntless.fandom.com/wiki/Cells#Insight>)`
+### ${emoji.findEmoji("head")} **Head** - [Adversary's Guile](<https://dauntless.fandom.com/wiki/Adversary%27s_Guile>)
+- ${emoji.findEmoji("resistance")} **Resistance:** 25 (base), 30 (Power Surged)
+- ${emoji.findEmoji("insight")} **Perk:** +2 [Cascade](<https://dauntless.fandom.com/wiki/Cascade>)
+- ${emoji.findEmoji("insight")} **Cell Slot:** [Insight](<https://dauntless.fandom.com/wiki/Cells#Insight>)
+### ${emoji.findEmoji("torso")} **Torso** - [Adversary's Pride](<https://dauntless.fandom.com/wiki/Adversary%27s_Pride>)
+- ${emoji.findEmoji("resistance")} **Resistance:** 25 (base), 30 (Power Surged)
+- ${emoji.findEmoji("insight")} **Perk:** +2 [Cascade](<https://dauntless.fandom.com/wiki/Cascade>)
+- ${emoji.findEmoji("alacrity")} **Cell Slot:** [Alacrity](<https://dauntless.fandom.com/wiki/Cells#Alacrity>)
+### ${emoji.findEmoji("arms")} **Arms** - [Adversary's Wrath](<https://dauntless.fandom.com/wiki/Adversary%27s_Wrath>)
+- ${emoji.findEmoji("resistance")} **Resistance:** 25 (base), 30 (Power Surged)
+- ${emoji.findEmoji("insight")} **Perk:** +2 [Aetheric Evasion](<https://dauntless.fandom.com/wiki/Aetheric_Evasion>)
+- ${emoji.findEmoji("finesse")} **Cell Slot:** [Finesse](<https://dauntless.fandom.com/wiki/Cells#Finesse>)
+### ${emoji.findEmoji("legs")} **Legs** - [Adversary's Drive](<https://dauntless.fandom.com/wiki/Adversary%27s_Drive>)
+- ${emoji.findEmoji("resistance")} **Resistance:** 25 (base), 30 (Power Surged)
+- ${emoji.findEmoji("fortitude")} **Perk:** +2 [Guardian](<https://dauntless.fandom.com/wiki/Guardian>)
+- ${emoji.findEmoji("insight")} **Cell Slot:** [Insight](<https://dauntless.fandom.com/wiki/Cells#Insight>)`
 
 const radiant = 
 `> "We don't even know if the Chronovore's a single individual from a thousand different points in time, or an entire species swimming the timestream. Hell, before this I don't even know there was a 'timestream.' What else is Old Arkan keeping to himself?"
 # Chronovore Armor
-You can **power surge** ${this.findEmoji("head")} ${this.findEmoji("torso")} ${this.findEmoji("arms")} and ${this.findEmoji("legs")} to upgrade its perks from **+2** to **+3**. The list below will provide the necceary items to power surge each gear.
+You can **power surge** ${emoji.findEmoji("head")} ${emoji.findEmoji("torso")} ${emoji.findEmoji("arms")} and ${emoji.findEmoji("legs")} to upgrade its perks from **+2** to **+3**. The list below will provide the necceary items to power surge each gear.
 ## Each part requires:
-- ${this.findEmoji("aetherheart")}[Aetherheart](<https://dauntless.fandom.com/wiki/Aetherhearts>) **x1**
-- ${this.findEmoji("rams")}[Rams](<https://dauntless.fandom.com/wiki/Rams>) **x10,000**
-- ${this.findEmoji("golden_heart")}[Golden Heart](<https://dauntless.fandom.com/wiki/Golden_Heart>) **x5**
-- ${this.findEmoji("sunburst_shard")}[Sunburst Shard](<https://dauntless.fandom.com/wiki/Sunburst_Shard>) **x2**
+- ${emoji.findEmoji("aetherheart")}[Aetherheart](<https://dauntless.fandom.com/wiki/Aetherhearts>) **x1**
+- ${emoji.findEmoji("rams")}[Rams](<https://dauntless.fandom.com/wiki/Rams>) **x10,000**
+- ${emoji.findEmoji("golden_heart")}[Golden Heart](<https://dauntless.fandom.com/wiki/Golden_Heart>) **x5**
+- ${emoji.findEmoji("sunburst_shard")}[Sunburst Shard](<https://dauntless.fandom.com/wiki/Sunburst_Shard>) **x2**
 ## Armor Pieces:
-### ${this.findEmoji("head")} **Head** - [Chronohelm](<https://dauntless.fandom.com/wiki/Chronohelm>)
-- ${this.findEmoji("resistance")} **Resistance:** 25 (base), 30 (Power Surged)
-- ${this.findEmoji("insight")} **Perk:** +2 [Zeal](<https://dauntless.fandom.com/wiki/Zeal>)
-- ${this.findEmoji("brutality")} **Cell Slot:** [Brutality](<https://dauntless.fandom.com/wiki/Cells#Brutality>)
-### ${this.findEmoji("torso")} **Torso** - [Chronoplate](<https://dauntless.fandom.com/wiki/Chronoplate>)
-- ${this.findEmoji("resistance")} **Resistance:** 25 (base), 30 (Power Surged)
-- ${this.findEmoji("alacrity")} **Perk:** +2 [Grace](<https://dauntless.fandom.com/wiki/Grace>)
-- ${this.findEmoji("finesse")} **Cell Slot:** [Finesse](<https://dauntless.fandom.com/wiki/Cells#Finesse>)
-### ${this.findEmoji("arms")} **Arms** - [Chronogrips](<https://dauntless.fandom.com/wiki/Chronogrips>)
-- ${this.findEmoji("resistance")} **Resistance:** 25 (base), 30 (Power Surged)
-- ${this.findEmoji("finesse")} **Perk:** +2 [Pulse](<https://dauntless.fandom.com/wiki/Pulse>)
-- ${this.findEmoji("fortitude")} **Cell Slot:** [Fortitude](<https://dauntless.fandom.com/wiki/Cells#Fortitude>)
-### ${this.findEmoji("legs")} **Legs** - [Chronotreads](<https://dauntless.fandom.com/wiki/Chronotreads>)
-- ${this.findEmoji("resistance")} **Resistance:** 25 (base), 30 (Power Surged)
-- ${this.findEmoji("finesse")} **Perk:** +2 [Pulse](<https://dauntless.fandom.com/wiki/Pulse>)
-- ${this.findEmoji("finesse")} **Cell Slot:** [Finesse](<https://dauntless.fandom.com/wiki/Cells#Finesse>)`
+### ${emoji.findEmoji("head")} **Head** - [Chronohelm](<https://dauntless.fandom.com/wiki/Chronohelm>)
+- ${emoji.findEmoji("resistance")} **Resistance:** 25 (base), 30 (Power Surged)
+- ${emoji.findEmoji("insight")} **Perk:** +2 [Zeal](<https://dauntless.fandom.com/wiki/Zeal>)
+- ${emoji.findEmoji("brutality")} **Cell Slot:** [Brutality](<https://dauntless.fandom.com/wiki/Cells#Brutality>)
+### ${emoji.findEmoji("torso")} **Torso** - [Chronoplate](<https://dauntless.fandom.com/wiki/Chronoplate>)
+- ${emoji.findEmoji("resistance")} **Resistance:** 25 (base), 30 (Power Surged)
+- ${emoji.findEmoji("alacrity")} **Perk:** +2 [Grace](<https://dauntless.fandom.com/wiki/Grace>)
+- ${emoji.findEmoji("finesse")} **Cell Slot:** [Finesse](<https://dauntless.fandom.com/wiki/Cells#Finesse>)
+### ${emoji.findEmoji("arms")} **Arms** - [Chronogrips](<https://dauntless.fandom.com/wiki/Chronogrips>)
+- ${emoji.findEmoji("resistance")} **Resistance:** 25 (base), 30 (Power Surged)
+- ${emoji.findEmoji("finesse")} **Perk:** +2 [Pulse](<https://dauntless.fandom.com/wiki/Pulse>)
+- ${emoji.findEmoji("fortitude")} **Cell Slot:** [Fortitude](<https://dauntless.fandom.com/wiki/Cells#Fortitude>)
+### ${emoji.findEmoji("legs")} **Legs** - [Chronotreads](<https://dauntless.fandom.com/wiki/Chronotreads>)
+- ${emoji.findEmoji("resistance")} **Resistance:** 25 (base), 30 (Power Surged)
+- ${emoji.findEmoji("finesse")} **Perk:** +2 [Pulse](<https://dauntless.fandom.com/wiki/Pulse>)
+- ${emoji.findEmoji("finesse")} **Cell Slot:** [Finesse](<https://dauntless.fandom.com/wiki/Cells#Finesse>)`
           
 // Return correct armor information if element match
 if(element == "shock") return shock
@@ -557,198 +476,202 @@ if(element == "radiant") return radiant
 
 findWeaponInfo: function(element) {
 element = element.toLowerCase()
-    
+
+// Deleting and reacquiring emojis from external file
+delete require.cache[require.resolve(`${config.provider == true ? `/home/electrocute4u/bot` : `..`}/utils/emoji`)];
+const emoji = require(`${config.provider == true ? `/home/electrocute4u/bot` : `..`}/utils/emoji`)
+
 const shock = 
 `> "Malkarions are supposed to be extinct. Should have known they were hiding out in the Maelstrom's heart."
 # Malkarion Weapons
-You can **power surge** ${this.findEmoji("aether_strikers")} ${this.findEmoji("axe")} ${this.findEmoji("chain_blades")} ${this.findEmoji("hammer")} ${this.findEmoji("repeaters")} ${this.findEmoji("sword")} and ${this.findEmoji("war_pike")} to upgrade its perks from **+2** to **+3**. The list below will provide the necceary items to power surge each weapon.
+You can **power surge** ${emoji.findEmoji("aether_strikers")} ${emoji.findEmoji("axe")} ${emoji.findEmoji("chain_blades")} ${emoji.findEmoji("hammer")} ${emoji.findEmoji("repeaters")} ${emoji.findEmoji("sword")} and ${emoji.findEmoji("war_pike")} to upgrade its perks from **+2** to **+3**. The list below will provide the necceary items to power surge each weapon.
 ## Each part requires:
-- ${this.findEmoji("aetherheart")}[Aetherheart](<https://dauntless.fandom.com/wiki/Aetherhearts>) **x1**
-- ${this.findEmoji("rams")}[Rams](<https://dauntless.fandom.com/wiki/Rams>) **x10,000**
-- ${this.findEmoji("peerless_stormplate")}[Peerless Stormplate](<https://dauntless.fandom.com/wiki/Peerless_Stormplate>) **x5**
-- ${this.findEmoji("shard_of_the_eternal_storm")}[Shard of the Eternal Storm](<https://dauntless.fandom.com/wiki/Shard_of_the_Eternal_Storm>) **x2**
+- ${emoji.findEmoji("aetherheart")}[Aetherheart](<https://dauntless.fandom.com/wiki/Aetherhearts>) **x1**
+- ${emoji.findEmoji("rams")}[Rams](<https://dauntless.fandom.com/wiki/Rams>) **x10,000**
+- ${emoji.findEmoji("peerless_stormplate")}[Peerless Stormplate](<https://dauntless.fandom.com/wiki/Peerless_Stormplate>) **x5**
+- ${emoji.findEmoji("shard_of_the_eternal_storm")}[Shard of the Eternal Storm](<https://dauntless.fandom.com/wiki/Shard_of_the_Eternal_Storm>) **x2**
 ## Weapons:
-### ${this.findEmoji("aether_strikers")} **Aether Strikers** - [Mistral Currents](<https://dauntless.fandom.com/wiki/Mistral_Currents>)
-- ${this.findEmoji("power")} **Power:** 100 (base), 120 (Power Surged)
-- ${this.findEmoji("Prismatic")} **Cell Slots:** [Prismatic](<https://dauntless.fandom.com/wiki/Cells#Prismatic>) (any cell) **x2**
-### ${this.findEmoji("axe")} **Axe** - [Terminal Voltage](<https://dauntless.fandom.com/wiki/Terminal_Voltage>)
-- ${this.findEmoji("power")} **Power:** 100 (base), 120 (Power Surged)
-- ${this.findEmoji("Prismatic")} **Cell Slots:** [Prismatic](<https://dauntless.fandom.com/wiki/Cells#Prismatic>) (any cell) **x2**
-### ${this.findEmoji("chain_blades")} **Chain Blades** - [Electric Cruelties](<https://dauntless.fandom.com/wiki/Electric_Cruelties>)
-- ${this.findEmoji("power")} **Power:** 100 (base), 120 (Power Surged)
-- ${this.findEmoji("Prismatic")} **Cell Slots:** [Prismatic](<https://dauntless.fandom.com/wiki/Cells#Prismatic>) (any cell) **x2**
-### ${this.findEmoji("hammer")} **Hammer** - [Galvanic Impact](<https://dauntless.fandom.com/wiki/Galvanic_Impact>)
-- ${this.findEmoji("power")} **Power:** 100 (base), 120 (Power Surged)
-- ${this.findEmoji("Prismatic")} **Cell Slots:** [Prismatic](<https://dauntless.fandom.com/wiki/Cells#Prismatic>) (any cell) **x2**
-### ${this.findEmoji("repeaters")} **Repeaters** - [Dynamic Deadlights](<https://dauntless.fandom.com/wiki/Dynamic_Deadlights>)
-- ${this.findEmoji("power")} **Power:** 100 (base), 120 (Power Surged)
-- ${this.findEmoji("Prismatic")} **Cell Slots:** [Prismatic](<https://dauntless.fandom.com/wiki/Cells#Prismatic>) (any cell) **x2**
-### ${this.findEmoji("sword")} **Sword** - [Cyclonic Fury](<https://dauntless.fandom.com/wiki/Cyclonic_Fury>)
-- ${this.findEmoji("power")} **Power:** 100 (base), 120 (Power Surged)
-- ${this.findEmoji("Prismatic")} **Cell Slots:** [Prismatic](<https://dauntless.fandom.com/wiki/Cells#Prismatic>) (any cell) **x2**
-### ${this.findEmoji("war_pike")} **War Pike** - [The Conductor](<https://dauntless.fandom.com/wiki/The_Conductor>)
-- ${this.findEmoji("power")} **Power:** 100 (base), 120 (Power Surged)
-- ${this.findEmoji("Prismatic")} **Cell Slots:** [Prismatic](<https://dauntless.fandom.com/wiki/Cells#Prismatic>) (any cell) **x2**`
+### ${emoji.findEmoji("aether_strikers")} **Aether Strikers** - [Mistral Currents](<https://dauntless.fandom.com/wiki/Mistral_Currents>)
+- ${emoji.findEmoji("power")} **Power:** 100 (base), 120 (Power Surged)
+- ${emoji.findEmoji("Prismatic")} **Cell Slots:** [Prismatic](<https://dauntless.fandom.com/wiki/Cells#Prismatic>) (any cell) **x2**
+### ${emoji.findEmoji("axe")} **Axe** - [Terminal Voltage](<https://dauntless.fandom.com/wiki/Terminal_Voltage>)
+- ${emoji.findEmoji("power")} **Power:** 100 (base), 120 (Power Surged)
+- ${emoji.findEmoji("Prismatic")} **Cell Slots:** [Prismatic](<https://dauntless.fandom.com/wiki/Cells#Prismatic>) (any cell) **x2**
+### ${emoji.findEmoji("chain_blades")} **Chain Blades** - [Electric Cruelties](<https://dauntless.fandom.com/wiki/Electric_Cruelties>)
+- ${emoji.findEmoji("power")} **Power:** 100 (base), 120 (Power Surged)
+- ${emoji.findEmoji("Prismatic")} **Cell Slots:** [Prismatic](<https://dauntless.fandom.com/wiki/Cells#Prismatic>) (any cell) **x2**
+### ${emoji.findEmoji("hammer")} **Hammer** - [Galvanic Impact](<https://dauntless.fandom.com/wiki/Galvanic_Impact>)
+- ${emoji.findEmoji("power")} **Power:** 100 (base), 120 (Power Surged)
+- ${emoji.findEmoji("Prismatic")} **Cell Slots:** [Prismatic](<https://dauntless.fandom.com/wiki/Cells#Prismatic>) (any cell) **x2**
+### ${emoji.findEmoji("repeaters")} **Repeaters** - [Dynamic Deadlights](<https://dauntless.fandom.com/wiki/Dynamic_Deadlights>)
+- ${emoji.findEmoji("power")} **Power:** 100 (base), 120 (Power Surged)
+- ${emoji.findEmoji("Prismatic")} **Cell Slots:** [Prismatic](<https://dauntless.fandom.com/wiki/Cells#Prismatic>) (any cell) **x2**
+### ${emoji.findEmoji("sword")} **Sword** - [Cyclonic Fury](<https://dauntless.fandom.com/wiki/Cyclonic_Fury>)
+- ${emoji.findEmoji("power")} **Power:** 100 (base), 120 (Power Surged)
+- ${emoji.findEmoji("Prismatic")} **Cell Slots:** [Prismatic](<https://dauntless.fandom.com/wiki/Cells#Prismatic>) (any cell) **x2**
+### ${emoji.findEmoji("war_pike")} **War Pike** - [The Conductor](<https://dauntless.fandom.com/wiki/The_Conductor>)
+- ${emoji.findEmoji("power")} **Power:** 100 (base), 120 (Power Surged)
+- ${emoji.findEmoji("Prismatic")} **Cell Slots:** [Prismatic](<https://dauntless.fandom.com/wiki/Cells#Prismatic>) (any cell) **x2**`
 
 const blaze = 
 `> "A roar like that can break your courage like a fist to the heart."
 # Torgodoro Weapons
-You can **power surge** ${this.findEmoji("aether_strikers")} ${this.findEmoji("axe")} ${this.findEmoji("chain_blades")} ${this.findEmoji("hammer")} ${this.findEmoji("repeaters")} ${this.findEmoji("sword")} and ${this.findEmoji("war_pike")} to upgrade its perks from **+2** to **+3**. The list below will provide the necceary items to power surge each weapon.
+You can **power surge** ${emoji.findEmoji("aether_strikers")} ${emoji.findEmoji("axe")} ${emoji.findEmoji("chain_blades")} ${emoji.findEmoji("hammer")} ${emoji.findEmoji("repeaters")} ${emoji.findEmoji("sword")} and ${emoji.findEmoji("war_pike")} to upgrade its perks from **+2** to **+3**. The list below will provide the necceary items to power surge each weapon.
 ## Each weapon requires:
-- ${this.findEmoji("aetherheart")}[Aetherheart](<https://dauntless.fandom.com/wiki/Aetherhearts>) **x1**
-- ${this.findEmoji("rams")}[Rams](<https://dauntless.fandom.com/wiki/Rams>) **x10,000**
-- ${this.findEmoji("molten_morsel")}[Molten Morsel](<https://dauntless.fandom.com/wiki/Molten_Morsel>) **x5**
-- ${this.findEmoji("rampaging_shard")}[Rampaging Shard](<https://dauntless.fandom.com/wiki/Rampaging_Shard>) **x2**
+- ${emoji.findEmoji("aetherheart")}[Aetherheart](<https://dauntless.fandom.com/wiki/Aetherhearts>) **x1**
+- ${emoji.findEmoji("rams")}[Rams](<https://dauntless.fandom.com/wiki/Rams>) **x10,000**
+- ${emoji.findEmoji("molten_morsel")}[Molten Morsel](<https://dauntless.fandom.com/wiki/Molten_Morsel>) **x5**
+- ${emoji.findEmoji("rampaging_shard")}[Rampaging Shard](<https://dauntless.fandom.com/wiki/Rampaging_Shard>) **x2**
 ## Weapons:
-### ${this.findEmoji("aether_strikers")} **Aether Strikers** - [Tectonic Faults](<https://dauntless.fandom.com/wiki/Tectonic_Faults>)
-- ${this.findEmoji("power")} **Power:** 100 (base), 120 (Power Surged)
-- ${this.findEmoji("Prismatic")} **Cell Slots:** [Prismatic](<https://dauntless.fandom.com/wiki/Cells#Prismatic>) (any cell) **x2**
-### ${this.findEmoji("axe")} **Axe** - [Incinerator's Song](<https://dauntless.fandom.com/wiki/Incinerator%27s_Song>)
-- ${this.findEmoji("power")} **Power:** 100 (base), 120 (Power Surged)
-- ${this.findEmoji("Prismatic")} **Cell Slots:** [Prismatic](<https://dauntless.fandom.com/wiki/Cells#Prismatic>) (any cell) **x2**
-### ${this.findEmoji("chain_blades")} **Chain Blades** - [Scorching Agonies](<https://dauntless.fandom.com/wiki/Scorching_Agonies>)
-- ${this.findEmoji("power")} **Power:** 100 (base), 120 (Power Surged)
-- ${this.findEmoji("Prismatic")} **Cell Slots:** [Prismatic](<https://dauntless.fandom.com/wiki/Cells#Prismatic>) (any cell) **x2**
-### ${this.findEmoji("hammer")} **Hammer** - [Magma Quake](<https://dauntless.fandom.com/wiki/Magma_Quake>)
-- ${this.findEmoji("power")} **Power:** 100 (base), 120 (Power Surged)
-- ${this.findEmoji("Prismatic")} **Cell Slots:** [Prismatic](<https://dauntless.fandom.com/wiki/Cells#Prismatic>) (any cell) **x2**
-### ${this.findEmoji("repeaters")} **Repeaters** - [Volcanic Eruptions](<https://dauntless.fandom.com/wiki/Volcanic_Eruptions>)
-- ${this.findEmoji("power")} **Power:** 100 (base), 120 (Power Surged)
-- ${this.findEmoji("Prismatic")} **Cell Slots:** [Prismatic](<https://dauntless.fandom.com/wiki/Cells#Prismatic>) (any cell) **x2**
-### ${this.findEmoji("sword")} **Sword** - [The Cauterizer](<https://dauntless.fandom.com/wiki/The_Cauterizer>)
-- ${this.findEmoji("power")} **Power:** 100 (base), 120 (Power Surged)
-- ${this.findEmoji("Prismatic")} **Cell Slots:** [Prismatic](<https://dauntless.fandom.com/wiki/Cells#Prismatic>) (any cell) **x2**
-### ${this.findEmoji("war_pike")} **War Pike** - [Pyroclastic Envoy](<https://dauntless.fandom.com/wiki/Pyroclastic_Envoy>)
-- ${this.findEmoji("power")} **Power:** 100 (base), 120 (Power Surged)
-- ${this.findEmoji("Prismatic")} **Cell Slots:** [Prismatic](<https://dauntless.fandom.com/wiki/Cells#Prismatic>) (any cell) **x2**`
+### ${emoji.findEmoji("aether_strikers")} **Aether Strikers** - [Tectonic Faults](<https://dauntless.fandom.com/wiki/Tectonic_Faults>)
+- ${emoji.findEmoji("power")} **Power:** 100 (base), 120 (Power Surged)
+- ${emoji.findEmoji("Prismatic")} **Cell Slots:** [Prismatic](<https://dauntless.fandom.com/wiki/Cells#Prismatic>) (any cell) **x2**
+### ${emoji.findEmoji("axe")} **Axe** - [Incinerator's Song](<https://dauntless.fandom.com/wiki/Incinerator%27s_Song>)
+- ${emoji.findEmoji("power")} **Power:** 100 (base), 120 (Power Surged)
+- ${emoji.findEmoji("Prismatic")} **Cell Slots:** [Prismatic](<https://dauntless.fandom.com/wiki/Cells#Prismatic>) (any cell) **x2**
+### ${emoji.findEmoji("chain_blades")} **Chain Blades** - [Scorching Agonies](<https://dauntless.fandom.com/wiki/Scorching_Agonies>)
+- ${emoji.findEmoji("power")} **Power:** 100 (base), 120 (Power Surged)
+- ${emoji.findEmoji("Prismatic")} **Cell Slots:** [Prismatic](<https://dauntless.fandom.com/wiki/Cells#Prismatic>) (any cell) **x2**
+### ${emoji.findEmoji("hammer")} **Hammer** - [Magma Quake](<https://dauntless.fandom.com/wiki/Magma_Quake>)
+- ${emoji.findEmoji("power")} **Power:** 100 (base), 120 (Power Surged)
+- ${emoji.findEmoji("Prismatic")} **Cell Slots:** [Prismatic](<https://dauntless.fandom.com/wiki/Cells#Prismatic>) (any cell) **x2**
+### ${emoji.findEmoji("repeaters")} **Repeaters** - [Volcanic Eruptions](<https://dauntless.fandom.com/wiki/Volcanic_Eruptions>)
+- ${emoji.findEmoji("power")} **Power:** 100 (base), 120 (Power Surged)
+- ${emoji.findEmoji("Prismatic")} **Cell Slots:** [Prismatic](<https://dauntless.fandom.com/wiki/Cells#Prismatic>) (any cell) **x2**
+### ${emoji.findEmoji("sword")} **Sword** - [The Cauterizer](<https://dauntless.fandom.com/wiki/The_Cauterizer>)
+- ${emoji.findEmoji("power")} **Power:** 100 (base), 120 (Power Surged)
+- ${emoji.findEmoji("Prismatic")} **Cell Slots:** [Prismatic](<https://dauntless.fandom.com/wiki/Cells#Prismatic>) (any cell) **x2**
+### ${emoji.findEmoji("war_pike")} **War Pike** - [Pyroclastic Envoy](<https://dauntless.fandom.com/wiki/Pyroclastic_Envoy>)
+- ${emoji.findEmoji("power")} **Power:** 100 (base), 120 (Power Surged)
+- ${emoji.findEmoji("Prismatic")} **Cell Slots:** [Prismatic](<https://dauntless.fandom.com/wiki/Cells#Prismatic>) (any cell) **x2**`
 const umbral = 
 `> "Old [Arkan](<https://dauntless.fandom.com/wiki/Arkan_Drew>) said he's not even sure the Thrax is from our reality. The skin of the universe has been punctured far too many times by denizens of the Umbral Deeps, my dear [Markus](<https://dauntless.fandom.com/wiki/Markus_Boehr>)."
 # Thrax Weapons
-You can **power surge** ${this.findEmoji("aether_strikers")} ${this.findEmoji("axe")} ${this.findEmoji("chain_blades")} ${this.findEmoji("hammer")} ${this.findEmoji("repeaters")} ${this.findEmoji("sword")} and ${this.findEmoji("war_pike")} to upgrade its perks from **+2** to **+3**. The list below will provide the necceary items to power surge each weapon.
+You can **power surge** ${emoji.findEmoji("aether_strikers")} ${emoji.findEmoji("axe")} ${emoji.findEmoji("chain_blades")} ${emoji.findEmoji("hammer")} ${emoji.findEmoji("repeaters")} ${emoji.findEmoji("sword")} and ${emoji.findEmoji("war_pike")} to upgrade its perks from **+2** to **+3**. The list below will provide the necceary items to power surge each weapon.
 ## Each weapon requires:
-- ${this.findEmoji("aetherheart")}[Aetherheart](<https://dauntless.fandom.com/wiki/Aetherhearts>) **x1**
-- ${this.findEmoji("rams")}[Rams](<https://dauntless.fandom.com/wiki/Rams>) **x10,000**
-- ${this.findEmoji("warped_chitin")}[Warped Chitin](<https://dauntless.fandom.com/wiki/Warped_Chitin>) **x5**
-- ${this.findEmoji("uncanny_scale")}[Uncanny Scale](<https://dauntless.fandom.com/wiki/Uncanny_Scale>) **x2**
+- ${emoji.findEmoji("aetherheart")}[Aetherheart](<https://dauntless.fandom.com/wiki/Aetherhearts>) **x1**
+- ${emoji.findEmoji("rams")}[Rams](<https://dauntless.fandom.com/wiki/Rams>) **x10,000**
+- ${emoji.findEmoji("warped_chitin")}[Warped Chitin](<https://dauntless.fandom.com/wiki/Warped_Chitin>) **x5**
+- ${emoji.findEmoji("uncanny_scale")}[Uncanny Scale](<https://dauntless.fandom.com/wiki/Uncanny_Scale>) **x2**
 ## Weapons:
-### ${this.findEmoji("aether_strikers")} **Aether Strikers** - [Fractured Realities](<https://dauntless.fandom.com/wiki/Fractured_Realities>)
-- ${this.findEmoji("power")} **Power:** 100 (base), 120 (Power Surged)
-- ${this.findEmoji("Prismatic")} **Cell Slots:** [Prismatic](<https://dauntless.fandom.com/wiki/Cells#Prismatic>) (any cell) **x2**
-### ${this.findEmoji("axe")} **Axe** - [Mindsplitter](<https://dauntless.fandom.com/wiki/Mindsplitter)
-- ${this.findEmoji("power")} **Power:** 100 (base), 120 (Power Surged)
-- ${this.findEmoji("Prismatic")} **Cell Slots:** [Prismatic](<https://dauntless.fandom.com/wiki/Cells#Prismatic>) (any cell) **x2**
-### ${this.findEmoji("chain_blades")} **Chain Blades** - [Night Terrors](<https://dauntless.fandom.com/wiki/Night_Terrors>)
-- ${this.findEmoji("power")} **Power:** 100 (base), 120 (Power Surged)
-- ${this.findEmoji("Prismatic")} **Cell Slots:** [Prismatic](<https://dauntless.fandom.com/wiki/Cells#Prismatic>) (any cell) **x2**
-### ${this.findEmoji("hammer")} **Hammer** - [Sanity Check](<https://dauntless.fandom.com/wiki/Sanity_Check>)
-- ${this.findEmoji("power")} **Power:** 100 (base), 120 (Power Surged)
-- ${this.findEmoji("Prismatic")} **Cell Slots:** [Prismatic](<https://dauntless.fandom.com/wiki/Cells#Prismatic>) (any cell) **x2**
-### ${this.findEmoji("repeaters")} **Repeaters** - [Eldritch Torments](<https://dauntless.fandom.com/wiki/Eldritch_Torments>)
-- ${this.findEmoji("power")} **Power:** 100 (base), 120 (Power Surged)
-- ${this.findEmoji("Prismatic")} **Cell Slots:** [Prismatic](<https://dauntless.fandom.com/wiki/Cells#Prismatic>) (any cell) **x2**
-### ${this.findEmoji("sword")} **Sword** - [Voidbane](<https://dauntless.fandom.com/wiki/Voidbane>)
-- ${this.findEmoji("power")} **Power:** 100 (base), 120 (Power Surged)
-- ${this.findEmoji("Prismatic")} **Cell Slots:** [Prismatic](<https://dauntless.fandom.com/wiki/Cells#Prismatic>) (any cell) **x2**
-### ${this.findEmoji("war_pike")} **War Pike** - [The Apocalypse Needle](<https://dauntless.fandom.com/wiki/The_Apocalypse_Needle>)
-- ${this.findEmoji("power")} **Power:** 100 (base), 120 (Power Surged)
-- ${this.findEmoji("Prismatic")} **Cell Slots:** [Prismatic](<https://dauntless.fandom.com/wiki/Cells#Prismatic>) (any cell) **x2**`
+### ${emoji.findEmoji("aether_strikers")} **Aether Strikers** - [Fractured Realities](<https://dauntless.fandom.com/wiki/Fractured_Realities>)
+- ${emoji.findEmoji("power")} **Power:** 100 (base), 120 (Power Surged)
+- ${emoji.findEmoji("Prismatic")} **Cell Slots:** [Prismatic](<https://dauntless.fandom.com/wiki/Cells#Prismatic>) (any cell) **x2**
+### ${emoji.findEmoji("axe")} **Axe** - [Mindsplitter](<https://dauntless.fandom.com/wiki/Mindsplitter)
+- ${emoji.findEmoji("power")} **Power:** 100 (base), 120 (Power Surged)
+- ${emoji.findEmoji("Prismatic")} **Cell Slots:** [Prismatic](<https://dauntless.fandom.com/wiki/Cells#Prismatic>) (any cell) **x2**
+### ${emoji.findEmoji("chain_blades")} **Chain Blades** - [Night Terrors](<https://dauntless.fandom.com/wiki/Night_Terrors>)
+- ${emoji.findEmoji("power")} **Power:** 100 (base), 120 (Power Surged)
+- ${emoji.findEmoji("Prismatic")} **Cell Slots:** [Prismatic](<https://dauntless.fandom.com/wiki/Cells#Prismatic>) (any cell) **x2**
+### ${emoji.findEmoji("hammer")} **Hammer** - [Sanity Check](<https://dauntless.fandom.com/wiki/Sanity_Check>)
+- ${emoji.findEmoji("power")} **Power:** 100 (base), 120 (Power Surged)
+- ${emoji.findEmoji("Prismatic")} **Cell Slots:** [Prismatic](<https://dauntless.fandom.com/wiki/Cells#Prismatic>) (any cell) **x2**
+### ${emoji.findEmoji("repeaters")} **Repeaters** - [Eldritch Torments](<https://dauntless.fandom.com/wiki/Eldritch_Torments>)
+- ${emoji.findEmoji("power")} **Power:** 100 (base), 120 (Power Surged)
+- ${emoji.findEmoji("Prismatic")} **Cell Slots:** [Prismatic](<https://dauntless.fandom.com/wiki/Cells#Prismatic>) (any cell) **x2**
+### ${emoji.findEmoji("sword")} **Sword** - [Voidbane](<https://dauntless.fandom.com/wiki/Voidbane>)
+- ${emoji.findEmoji("power")} **Power:** 100 (base), 120 (Power Surged)
+- ${emoji.findEmoji("Prismatic")} **Cell Slots:** [Prismatic](<https://dauntless.fandom.com/wiki/Cells#Prismatic>) (any cell) **x2**
+### ${emoji.findEmoji("war_pike")} **War Pike** - [The Apocalypse Needle](<https://dauntless.fandom.com/wiki/The_Apocalypse_Needle>)
+- ${emoji.findEmoji("power")} **Power:** 100 (base), 120 (Power Surged)
+- ${emoji.findEmoji("Prismatic")} **Cell Slots:** [Prismatic](<https://dauntless.fandom.com/wiki/Cells#Prismatic>) (any cell) **x2**`
 
 const terra = 
 `> "The doc says she's never seen anything like the Agarus before. No one had, until it caught our Farslayer friends with their loincloths down. I can tell you one thing: I can see its spore trails from here."
 # Agarus Weapons
-You can **power surge** ${this.findEmoji("aether_strikers")} ${this.findEmoji("axe")} ${this.findEmoji("chain_blades")} ${this.findEmoji("hammer")} ${this.findEmoji("repeaters")} ${this.findEmoji("sword")} and ${this.findEmoji("war_pike")} to upgrade its perks from **+2** to **+3**. The list below will provide the necceary items to power surge each weapon.
+You can **power surge** ${emoji.findEmoji("aether_strikers")} ${emoji.findEmoji("axe")} ${emoji.findEmoji("chain_blades")} ${emoji.findEmoji("hammer")} ${emoji.findEmoji("repeaters")} ${emoji.findEmoji("sword")} and ${emoji.findEmoji("war_pike")} to upgrade its perks from **+2** to **+3**. The list below will provide the necceary items to power surge each weapon.
 ## Each weapon requires:
-- ${this.findEmoji("aetherheart")}[Aetherheart](<https://dauntless.fandom.com/wiki/Aetherhearts>) **x1**
-- ${this.findEmoji("rams")}[Rams](<https://dauntless.fandom.com/wiki/Rams>) **x10,000**
-- ${this.findEmoji("toxic_branch")}[Toxic Branch](<https://dauntless.fandom.com/wiki/Toxic_Branch>) **x5**
-- ${this.findEmoji("ironroot_shard")}[Ironroot Shard](<https://dauntless.fandom.com/wiki/Ironroot_Shard>) **x2**
+- ${emoji.findEmoji("aetherheart")}[Aetherheart](<https://dauntless.fandom.com/wiki/Aetherhearts>) **x1**
+- ${emoji.findEmoji("rams")}[Rams](<https://dauntless.fandom.com/wiki/Rams>) **x10,000**
+- ${emoji.findEmoji("toxic_branch")}[Toxic Branch](<https://dauntless.fandom.com/wiki/Toxic_Branch>) **x5**
+- ${emoji.findEmoji("ironroot_shard")}[Ironroot Shard](<https://dauntless.fandom.com/wiki/Ironroot_Shard>) **x2**
 ## Weapons:
-### ${this.findEmoji("aether_strikers")} **Aether Strikers** - [Agents of Decay](<https://dauntless.fandom.com/wiki/Agents_of_Decay>)
-- ${this.findEmoji("power")} **Power:** 100 (base), 120 (Power Surged)
-- ${this.findEmoji("Prismatic")} **Cell Slots:** [Prismatic](<https://dauntless.fandom.com/wiki/Cells#Prismatic>) (any cell) **x2**
-### ${this.findEmoji("axe")} **Axe** - [Malignant Scourge](<https://dauntless.fandom.com/wiki/Malignant_Scourge)
-- ${this.findEmoji("power")} **Power:** 100 (base), 120 (Power Surged)
-- ${this.findEmoji("Prismatic")} **Cell Slots:** [Prismatic](<https://dauntless.fandom.com/wiki/Cells#Prismatic>) (any cell) **x2**
-### ${this.findEmoji("chain_blades")} **Chain Blades** - [Death Blossoms](<https://dauntless.fandom.com/wiki/Death_Blossoms>)
-- ${this.findEmoji("power")} **Power:** 100 (base), 120 (Power Surged)
-- ${this.findEmoji("Prismatic")} **Cell Slots:** [Prismatic](<https://dauntless.fandom.com/wiki/Cells#Prismatic>) (any cell) **x2**
-### ${this.findEmoji("hammer")} **Hammer** - [Sanity Check](<https://dauntless.fandom.com/wiki/Unsteady_Ground>)
-- ${this.findEmoji("power")} **Power:** 100 (base), 120 (Power Surged)
-- ${this.findEmoji("Prismatic")} **Cell Slots:** [Prismatic](<https://dauntless.fandom.com/wiki/Cells#Prismatic>) (any cell) **x2**
-### ${this.findEmoji("repeaters")} **Repeaters** - [Tainted Needles](<https://dauntless.fandom.com/wiki/Tainted_Needles>)
-- ${this.findEmoji("power")} **Power:** 100 (base), 120 (Power Surged)
-- ${this.findEmoji("Prismatic")} **Cell Slots:** [Prismatic](<https://dauntless.fandom.com/wiki/Cells#Prismatic>) (any cell) **x2**
-### ${this.findEmoji("sword")} **Sword** - [Poisonous Thorn](<https://dauntless.fandom.com/wiki/Poisonous_Thorn>)
-- ${this.findEmoji("power")} **Power:** 100 (base), 120 (Power Surged)
-- ${this.findEmoji("Prismatic")} **Cell Slots:** [Prismatic](<https://dauntless.fandom.com/wiki/Cells#Prismatic>) (any cell) **x2**
-### ${this.findEmoji("war_pike")} **War Pike** - [Parasitic Curse](<https://dauntless.fandom.com/wiki/Parasitic_Curse>)
-- ${this.findEmoji("power")} **Power:** 100 (base), 120 (Power Surged)
-- ${this.findEmoji("Prismatic")} **Cell Slots:** [Prismatic](<https://dauntless.fandom.com/wiki/Cells#Prismatic>) (any cell) **x2**`
+### ${emoji.findEmoji("aether_strikers")} **Aether Strikers** - [Agents of Decay](<https://dauntless.fandom.com/wiki/Agents_of_Decay>)
+- ${emoji.findEmoji("power")} **Power:** 100 (base), 120 (Power Surged)
+- ${emoji.findEmoji("Prismatic")} **Cell Slots:** [Prismatic](<https://dauntless.fandom.com/wiki/Cells#Prismatic>) (any cell) **x2**
+### ${emoji.findEmoji("axe")} **Axe** - [Malignant Scourge](<https://dauntless.fandom.com/wiki/Malignant_Scourge)
+- ${emoji.findEmoji("power")} **Power:** 100 (base), 120 (Power Surged)
+- ${emoji.findEmoji("Prismatic")} **Cell Slots:** [Prismatic](<https://dauntless.fandom.com/wiki/Cells#Prismatic>) (any cell) **x2**
+### ${emoji.findEmoji("chain_blades")} **Chain Blades** - [Death Blossoms](<https://dauntless.fandom.com/wiki/Death_Blossoms>)
+- ${emoji.findEmoji("power")} **Power:** 100 (base), 120 (Power Surged)
+- ${emoji.findEmoji("Prismatic")} **Cell Slots:** [Prismatic](<https://dauntless.fandom.com/wiki/Cells#Prismatic>) (any cell) **x2**
+### ${emoji.findEmoji("hammer")} **Hammer** - [Sanity Check](<https://dauntless.fandom.com/wiki/Unsteady_Ground>)
+- ${emoji.findEmoji("power")} **Power:** 100 (base), 120 (Power Surged)
+- ${emoji.findEmoji("Prismatic")} **Cell Slots:** [Prismatic](<https://dauntless.fandom.com/wiki/Cells#Prismatic>) (any cell) **x2**
+### ${emoji.findEmoji("repeaters")} **Repeaters** - [Tainted Needles](<https://dauntless.fandom.com/wiki/Tainted_Needles>)
+- ${emoji.findEmoji("power")} **Power:** 100 (base), 120 (Power Surged)
+- ${emoji.findEmoji("Prismatic")} **Cell Slots:** [Prismatic](<https://dauntless.fandom.com/wiki/Cells#Prismatic>) (any cell) **x2**
+### ${emoji.findEmoji("sword")} **Sword** - [Poisonous Thorn](<https://dauntless.fandom.com/wiki/Poisonous_Thorn>)
+- ${emoji.findEmoji("power")} **Power:** 100 (base), 120 (Power Surged)
+- ${emoji.findEmoji("Prismatic")} **Cell Slots:** [Prismatic](<https://dauntless.fandom.com/wiki/Cells#Prismatic>) (any cell) **x2**
+### ${emoji.findEmoji("war_pike")} **War Pike** - [Parasitic Curse](<https://dauntless.fandom.com/wiki/Parasitic_Curse>)
+- ${emoji.findEmoji("power")} **Power:** 100 (base), 120 (Power Surged)
+- ${emoji.findEmoji("Prismatic")} **Cell Slots:** [Prismatic](<https://dauntless.fandom.com/wiki/Cells#Prismatic>) (any cell) **x2**`
 
 const frost = 
 `> "l am called the queen of Skaldeskar, but there remain hidden caverns there steeped in cold, grim power where no human holds sway. Such places are ruled only by the Urska."
 > — [Linnea Silver](<https://dauntless.fandom.com/wiki/Linnea_Silver>)
 # Urska Weapons
-You can **power surge** ${this.findEmoji("aether_strikers")} ${this.findEmoji("axe")} ${this.findEmoji("chain_blades")} ${this.findEmoji("hammer")} ${this.findEmoji("repeaters")} ${this.findEmoji("sword")} and ${this.findEmoji("war_pike")} to upgrade its perks from **+2** to **+3**. The list below will provide the necceary items to power surge each weapon.
+You can **power surge** ${emoji.findEmoji("aether_strikers")} ${emoji.findEmoji("axe")} ${emoji.findEmoji("chain_blades")} ${emoji.findEmoji("hammer")} ${emoji.findEmoji("repeaters")} ${emoji.findEmoji("sword")} and ${emoji.findEmoji("war_pike")} to upgrade its perks from **+2** to **+3**. The list below will provide the necceary items to power surge each weapon.
 ## Each weapon requires:
-- ${this.findEmoji("aetherheart")}[Aetherheart](<https://dauntless.fandom.com/wiki/Aetherhearts>) **x1**
-- ${this.findEmoji("rams")}[Rams](<https://dauntless.fandom.com/wiki/Rams>) **x10,000**
-- ${this.findEmoji("hunters_claw")}[Hunter's Claw](<https://dauntless.fandom.com/wiki/Hunter%27s_Claw>) **x5**
-- ${this.findEmoji("iceheart_shard")}[Iceheart Shard](<https://dauntless.fandom.com/wiki/Iceheart_Shard>) **x2**
+- ${emoji.findEmoji("aetherheart")}[Aetherheart](<https://dauntless.fandom.com/wiki/Aetherhearts>) **x1**
+- ${emoji.findEmoji("rams")}[Rams](<https://dauntless.fandom.com/wiki/Rams>) **x10,000**
+- ${emoji.findEmoji("hunters_claw")}[Hunter's Claw](<https://dauntless.fandom.com/wiki/Hunter%27s_Claw>) **x5**
+- ${emoji.findEmoji("iceheart_shard")}[Iceheart Shard](<https://dauntless.fandom.com/wiki/Iceheart_Shard>) **x2**
 ## Weapons:
-### ${this.findEmoji("aether_strikers")} **Aether Strikers** - [Ice Breakers](<https://dauntless.fandom.com/wiki/Ice_Breakers>)
-- ${this.findEmoji("power")} **Power:** 100 (base), 120 (Power Surged)
-- ${this.findEmoji("Prismatic")} **Cell Slots:** [Prismatic](<https://dauntless.fandom.com/wiki/Cells#Prismatic>) (any cell) **x2**
-### ${this.findEmoji("axe")} **Axe** - [Permanent Frost](<https://dauntless.fandom.com/wiki/Permanent_Frost)
-- ${this.findEmoji("power")} **Power:** 100 (base), 120 (Power Surged)
-- ${this.findEmoji("Prismatic")} **Cell Slots:** [Prismatic](<https://dauntless.fandom.com/wiki/Cells#Prismatic>) (any cell) **x2**
-### ${this.findEmoji("chain_blades")} **Chain Blades** - [Blizzard's Teeth](<https://dauntless.fandom.com/wiki/Blizzard%27s_Teeth>)
-- ${this.findEmoji("power")} **Power:** 100 (base), 120 (Power Surged)
-- ${this.findEmoji("Prismatic")} **Cell Slots:** [Prismatic](<https://dauntless.fandom.com/wiki/Cells#Prismatic>) (any cell) **x2**
-### ${this.findEmoji("hammer")} **Hammer** - [Bomb Cyclone](<https://dauntless.fandom.com/wiki/Bomb_Cyclone>)
-- ${this.findEmoji("power")} **Power:** 100 (base), 120 (Power Surged)
-- ${this.findEmoji("Prismatic")} **Cell Slots:** [Prismatic](<https://dauntless.fandom.com/wiki/Cells#Prismatic>) (any cell) **x2**
-### ${this.findEmoji("repeaters")} **Repeaters** - [Cryo-Cannons](<https://dauntless.fandom.com/wiki/Cryo-Cannons>)
-- ${this.findEmoji("power")} **Power:** 100 (base), 120 (Power Surged)
-- ${this.findEmoji("Prismatic")} **Cell Slots:** [Prismatic](<https://dauntless.fandom.com/wiki/Cells#Prismatic>) (any cell) **x2**
-### ${this.findEmoji("sword")} **Sword** - [Hypothermica](<https://dauntless.fandom.com/wiki/Hypothermica>)
-- ${this.findEmoji("power")} **Power:** 100 (base), 120 (Power Surged)
-- ${this.findEmoji("Prismatic")} **Cell Slots:** [Prismatic](<https://dauntless.fandom.com/wiki/Cells#Prismatic>) (any cell) **x2**
-### ${this.findEmoji("war_pike")} **War Pike** - [Cold Hell](<https://dauntless.fandom.com/wiki/Cold_Hell>)
-- ${this.findEmoji("power")} **Power:** 100 (base), 120 (Power Surged)
-- ${this.findEmoji("Prismatic")} **Cell Slots:** [Prismatic](<https://dauntless.fandom.com/wiki/Cells#Prismatic>) (any cell) **x2**`
+### ${emoji.findEmoji("aether_strikers")} **Aether Strikers** - [Ice Breakers](<https://dauntless.fandom.com/wiki/Ice_Breakers>)
+- ${emoji.findEmoji("power")} **Power:** 100 (base), 120 (Power Surged)
+- ${emoji.findEmoji("Prismatic")} **Cell Slots:** [Prismatic](<https://dauntless.fandom.com/wiki/Cells#Prismatic>) (any cell) **x2**
+### ${emoji.findEmoji("axe")} **Axe** - [Permanent Frost](<https://dauntless.fandom.com/wiki/Permanent_Frost)
+- ${emoji.findEmoji("power")} **Power:** 100 (base), 120 (Power Surged)
+- ${emoji.findEmoji("Prismatic")} **Cell Slots:** [Prismatic](<https://dauntless.fandom.com/wiki/Cells#Prismatic>) (any cell) **x2**
+### ${emoji.findEmoji("chain_blades")} **Chain Blades** - [Blizzard's Teeth](<https://dauntless.fandom.com/wiki/Blizzard%27s_Teeth>)
+- ${emoji.findEmoji("power")} **Power:** 100 (base), 120 (Power Surged)
+- ${emoji.findEmoji("Prismatic")} **Cell Slots:** [Prismatic](<https://dauntless.fandom.com/wiki/Cells#Prismatic>) (any cell) **x2**
+### ${emoji.findEmoji("hammer")} **Hammer** - [Bomb Cyclone](<https://dauntless.fandom.com/wiki/Bomb_Cyclone>)
+- ${emoji.findEmoji("power")} **Power:** 100 (base), 120 (Power Surged)
+- ${emoji.findEmoji("Prismatic")} **Cell Slots:** [Prismatic](<https://dauntless.fandom.com/wiki/Cells#Prismatic>) (any cell) **x2**
+### ${emoji.findEmoji("repeaters")} **Repeaters** - [Cryo-Cannons](<https://dauntless.fandom.com/wiki/Cryo-Cannons>)
+- ${emoji.findEmoji("power")} **Power:** 100 (base), 120 (Power Surged)
+- ${emoji.findEmoji("Prismatic")} **Cell Slots:** [Prismatic](<https://dauntless.fandom.com/wiki/Cells#Prismatic>) (any cell) **x2**
+### ${emoji.findEmoji("sword")} **Sword** - [Hypothermica](<https://dauntless.fandom.com/wiki/Hypothermica>)
+- ${emoji.findEmoji("power")} **Power:** 100 (base), 120 (Power Surged)
+- ${emoji.findEmoji("Prismatic")} **Cell Slots:** [Prismatic](<https://dauntless.fandom.com/wiki/Cells#Prismatic>) (any cell) **x2**
+### ${emoji.findEmoji("war_pike")} **War Pike** - [Cold Hell](<https://dauntless.fandom.com/wiki/Cold_Hell>)
+- ${emoji.findEmoji("power")} **Power:** 100 (base), 120 (Power Surged)
+- ${emoji.findEmoji("Prismatic")} **Cell Slots:** [Prismatic](<https://dauntless.fandom.com/wiki/Cells#Prismatic>) (any cell) **x2**`
 
 const radiant = 
 `> "We don't even know if the Chronovore's a single individual from a thousand different points in time, or an entire species swimming the timestream. Hell, before this I don't even know there was a 'timestream.' What else is Old Arkan keeping to himself?"
 # The Chronovore Weapons
-You can **power surge** ${this.findEmoji("aether_strikers")} ${this.findEmoji("axe")} ${this.findEmoji("chain_blades")} ${this.findEmoji("hammer")} ${this.findEmoji("repeaters")} ${this.findEmoji("sword")} and ${this.findEmoji("war_pike")} to upgrade its perks from **+2** to **+3**. The list below will provide the necceary items to power surge each weapon.
+You can **power surge** ${emoji.findEmoji("aether_strikers")} ${emoji.findEmoji("axe")} ${emoji.findEmoji("chain_blades")} ${emoji.findEmoji("hammer")} ${emoji.findEmoji("repeaters")} ${emoji.findEmoji("sword")} and ${emoji.findEmoji("war_pike")} to upgrade its perks from **+2** to **+3**. The list below will provide the necceary items to power surge each weapon.
 ## Each weapon requires:
-- ${this.findEmoji("aetherheart")}[Aetherheart](<https://dauntless.fandom.com/wiki/Aetherhearts>) **x1**
-- ${this.findEmoji("rams")}[Rams](<https://dauntless.fandom.com/wiki/Rams>) **x10,000**
-- ${this.findEmoji("golden_heart")}[Golden Heart](<https://dauntless.fandom.com/wiki/Golden_Heart>) **x5**
-- ${this.findEmoji("sunburst_shard")}[Sunburst Shard](<https://dauntless.fandom.com/wiki/Sunburst_Shard>) **x2**
+- ${emoji.findEmoji("aetherheart")}[Aetherheart](<https://dauntless.fandom.com/wiki/Aetherhearts>) **x1**
+- ${emoji.findEmoji("rams")}[Rams](<https://dauntless.fandom.com/wiki/Rams>) **x10,000**
+- ${emoji.findEmoji("golden_heart")}[Golden Heart](<https://dauntless.fandom.com/wiki/Golden_Heart>) **x5**
+- ${emoji.findEmoji("sunburst_shard")}[Sunburst Shard](<https://dauntless.fandom.com/wiki/Sunburst_Shard>) **x2**
 ## Weapons:
-### ${this.findEmoji("aether_strikers")} **Aether Strikers** - [Chaos & Entropy](<https://dauntless.fandom.com/wiki/Chaos_%26_Entropy>)
-- ${this.findEmoji("power")} **Power:** 100 (base), 120 (Power Surged)
-- ${this.findEmoji("Prismatic")} **Cell Slots:** [Prismatic](<https://dauntless.fandom.com/wiki/Cells#Prismatic>) (any cell) **x2**
-### ${this.findEmoji("axe")} **Axe** - [Existential Crisis](<https://dauntless.fandom.com/wiki/Existential_Crisis)
-- ${this.findEmoji("power")} **Power:** 100 (base), 120 (Power Surged)
-- ${this.findEmoji("Prismatic")} **Cell Slots:** [Prismatic](<https://dauntless.fandom.com/wiki/Cells#Prismatic>) (any cell) **x2**
-### ${this.findEmoji("chain_blades")} **Chain Blades** - [The Weeping Hours](<https://dauntless.fandom.com/wiki/The_Weeping_Hours>)
-- ${this.findEmoji("power")} **Power:** 100 (base), 120 (Power Surged)
-- ${this.findEmoji("Prismatic")} **Cell Slots:** [Prismatic](<https://dauntless.fandom.com/wiki/Cells#Prismatic>) (any cell) **x2**
-### ${this.findEmoji("hammer")} **Hammer** - [History's Burden](<https://dauntless.fandom.com/wiki/History%27s_Burden>)
-- ${this.findEmoji("power")} **Power:** 100 (base), 120 (Power Surged)
-- ${this.findEmoji("Prismatic")} **Cell Slots:** [Prismatic](<https://dauntless.fandom.com/wiki/Cells#Prismatic>) (any cell) **x2**
-### ${this.findEmoji("repeaters")} **Repeaters** - [Temporal Mechanics](<https://dauntless.fandom.com/wiki/Temporal_Mechanics>)
-- ${this.findEmoji("power")} **Power:** 100 (base), 120 (Power Surged)
-- ${this.findEmoji("Prismatic")} **Cell Slots:** [Prismatic](<https://dauntless.fandom.com/wiki/Cells#Prismatic>) (any cell) **x2**
-### ${this.findEmoji("sword")} **Sword** - [Edge of Tomorrow](<https://dauntless.fandom.com/wiki/Edge_of_Tomorrow>)
-- ${this.findEmoji("power")} **Power:** 100 (base), 120 (Power Surged)
-- ${this.findEmoji("Prismatic")} **Cell Slots:** [Prismatic](<https://dauntless.fandom.com/wiki/Cells#Prismatic>) (any cell) **x2**
-### ${this.findEmoji("war_pike")} **War Pike** - [Millennium's End](<https://dauntless.fandom.com/wiki/Millennium%27s_End>)
-- ${this.findEmoji("power")} **Power:** 100 (base), 120 (Power Surged)
-- ${this.findEmoji("Prismatic")} **Cell Slots:** [Prismatic](<https://dauntless.fandom.com/wiki/Cells#Prismatic>) (any cell) **x2**`
+### ${emoji.findEmoji("aether_strikers")} **Aether Strikers** - [Chaos & Entropy](<https://dauntless.fandom.com/wiki/Chaos_%26_Entropy>)
+- ${emoji.findEmoji("power")} **Power:** 100 (base), 120 (Power Surged)
+- ${emoji.findEmoji("Prismatic")} **Cell Slots:** [Prismatic](<https://dauntless.fandom.com/wiki/Cells#Prismatic>) (any cell) **x2**
+### ${emoji.findEmoji("axe")} **Axe** - [Existential Crisis](<https://dauntless.fandom.com/wiki/Existential_Crisis)
+- ${emoji.findEmoji("power")} **Power:** 100 (base), 120 (Power Surged)
+- ${emoji.findEmoji("Prismatic")} **Cell Slots:** [Prismatic](<https://dauntless.fandom.com/wiki/Cells#Prismatic>) (any cell) **x2**
+### ${emoji.findEmoji("chain_blades")} **Chain Blades** - [The Weeping Hours](<https://dauntless.fandom.com/wiki/The_Weeping_Hours>)
+- ${emoji.findEmoji("power")} **Power:** 100 (base), 120 (Power Surged)
+- ${emoji.findEmoji("Prismatic")} **Cell Slots:** [Prismatic](<https://dauntless.fandom.com/wiki/Cells#Prismatic>) (any cell) **x2**
+### ${emoji.findEmoji("hammer")} **Hammer** - [History's Burden](<https://dauntless.fandom.com/wiki/History%27s_Burden>)
+- ${emoji.findEmoji("power")} **Power:** 100 (base), 120 (Power Surged)
+- ${emoji.findEmoji("Prismatic")} **Cell Slots:** [Prismatic](<https://dauntless.fandom.com/wiki/Cells#Prismatic>) (any cell) **x2**
+### ${emoji.findEmoji("repeaters")} **Repeaters** - [Temporal Mechanics](<https://dauntless.fandom.com/wiki/Temporal_Mechanics>)
+- ${emoji.findEmoji("power")} **Power:** 100 (base), 120 (Power Surged)
+- ${emoji.findEmoji("Prismatic")} **Cell Slots:** [Prismatic](<https://dauntless.fandom.com/wiki/Cells#Prismatic>) (any cell) **x2**
+### ${emoji.findEmoji("sword")} **Sword** - [Edge of Tomorrow](<https://dauntless.fandom.com/wiki/Edge_of_Tomorrow>)
+- ${emoji.findEmoji("power")} **Power:** 100 (base), 120 (Power Surged)
+- ${emoji.findEmoji("Prismatic")} **Cell Slots:** [Prismatic](<https://dauntless.fandom.com/wiki/Cells#Prismatic>) (any cell) **x2**
+### ${emoji.findEmoji("war_pike")} **War Pike** - [Millennium's End](<https://dauntless.fandom.com/wiki/Millennium%27s_End>)
+- ${emoji.findEmoji("power")} **Power:** 100 (base), 120 (Power Surged)
+- ${emoji.findEmoji("Prismatic")} **Cell Slots:** [Prismatic](<https://dauntless.fandom.com/wiki/Cells#Prismatic>) (any cell) **x2**`
           
 // Return correct slogan if element match
 if(element == "shock") return shock

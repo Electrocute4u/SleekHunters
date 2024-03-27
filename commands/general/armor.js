@@ -12,7 +12,8 @@ module.exports = {
     .addStringOption(option =>
 			option.setName('name')
 				.setDescription('The name for the armor to look up')
-				.setAutocomplete(true))
+				.setAutocomplete(true)
+        .setRequired(true))
     )
     .addSubcommand(subcommand =>
       subcommand
@@ -21,7 +22,8 @@ module.exports = {
       .addStringOption(option =>
 			  option.setName('element')
 				  .setDescription('Returns all the armor crafted from the given element')
-				  .setAutocomplete(true))
+				  .setAutocomplete(true)
+          .setRequired(true))
     )
     .addSubcommand(subcommand =>
       subcommand
@@ -30,49 +32,57 @@ module.exports = {
 		  .addStringOption(option =>
 			  option.setName('behemoth')
 				  .setDescription('Returns all the armor crafted from the given Behemoth')
-				  .setAutocomplete(true))
+				  .setAutocomplete(true)
+          .setRequired(true))
     ),
-	async autocomplete(interaction) {
-    
+	async autoComplete(interaction) {
+    const tools = require(`${config.provider == true ? `/home/electrocute4u/bot` : `..`}/../utils/functions`)
 		const focusedOption = interaction.options.getFocused(true);
 		let choices;
 		
     if (focusedOption.name === 'name') {
       // Calling the armor.json file
-      const armoursData = JSON.parse(readFileSync(`./armor/armor.json`, 'utf8'))
-      const armorNameArray = Object.values(armoursData).map(armour => armour.name).filter(Boolean);
-      
+      const armorsData = JSON.parse(readFileSync('./gear/armor.json', 'utf8'));
+  
       if (focusedOption.value === '') {
-        choices = armorNameArray.slice(0, 25)
+          choices = Object.values(armorsData).map(armor => armor.name).slice(0, 25);
+      } else {
+          const inputName = tools.toUpperCaseAll(focusedOption.value);
+          const similarNames = new Set();
+  
+          // Check for exact matches with armor names
+          Object.values(armorsData)
+              .filter(armor => tools.toUpperCaseAll(armor.name) === inputName)
+              .forEach(armor => similarNames.add(armor.name));
+  
+          // Check for partial matches with armor names
+          Object.values(armorsData)
+              .filter(armor => tools.toUpperCaseAll(armor.name).includes(inputName))
+              .forEach(armor => similarNames.add(armor.name));
+  
+          // Check for partial matches with behemoth names
+          Object.values(armorsData)
+              .filter(armor => armor.behemoth && tools.toUpperCaseAll(armor.behemoth).includes(inputName))
+              .forEach(armor => similarNames.add(armor.name));
+  
+          // Check for partial matches with 3 or more characters in armor names
+          if (inputName.length >= 3) {
+              Object.values(armorsData)
+                  .filter(armor => armor.name.split(' ').some(part => tools.toUpperCaseAll(part).startsWith(inputName)))
+                  .forEach(armor => similarNames.add(armor.name));
+          }
+  
+          choices = [...similarNames].slice(0, 25);
       }
-    if (focusedOption.value !== '') {
-      // Function to filter armor names similar to the input name
-      function getSimilarArmorNames(inputName) {
-        const similarNames = [];
-      
-        // Loop through armor names and check for similarity
-        Object.values(armoursData).forEach(armor => {
-            if (armor.name.includes(inputName)) {
-                similarNames.push(armor.name);
-            }
-        });
-
-        // Limit the result to 25 choices
-        return similarNames.slice(0, 25);
-      }
-
-      // Get similar armor names
-      choices = getSimilarArmorNames(focusedOption.value);
-    }
-		}
+  }
 
 		if (focusedOption.name === 'element') {
-			choices = ["Neautral", "Shock", "Blaze", "Umbral", "Terra", "Frost", "Radiant"]
+			choices = ["Neutral", "Shock", "Blaze", "Umbral", "Terra", "Frost", "Radiant"]
 		}
 
     if (focusedOption.name === 'behemoth') {
 			// Calling the armor.json file
-      const armoursData = JSON.parse(readFileSync(`./armor/armor.json`, 'utf8'))
+      const armoursData = JSON.parse(readFileSync(`./gear/armor.json`, 'utf8'))
        
       // Set to store unique behemoth names
       var behemothSet = new Set();
@@ -91,17 +101,18 @@ module.exports = {
 
 		}
     
-		const filtered = choices.length > 0 ? choices.filter(choice => choice.startsWith(focusedOption.value)) : choices
+		let filtered;
+    if(focusedOption.name === 'name') filtered = choices.slice(0, 25)
+		else filtered = choices.length > 0 ? choices.filter(choice => choice.startsWith(tools.toUpperCaseAll(focusedOption.value))).slice(0, 25) : choices.slice(0, 25)
 	
     await interaction.respond(
 			filtered.map(choice => ({ name: choice, value: choice })),
 		);
 	},
-    async execute(interaction, bot) {
+    async execute(interaction, bot, tools) {
       
       // Calling config and utils file
       const config = JSON.parse(readFileSync(`./config.json`, 'utf8'))
-      const tools = require(`${config.provider == true ? `/home/electrocute4u/bot` : `../..`}/utils/functions`)
       
       // Acquire file name and folder name
       let dir = config.provider == true ? __dirname.split(`/`).slice(-1)[0] : __dirname.split(`\\`).slice(-1)[0]

@@ -16,7 +16,8 @@ if (config.dev == false) token = publicToken
 if (config.dev == true) token = devToken
 
 const bot = new discordClient.Client({
-    intents: [GatewayIntentBits.Guilds, GatewayIntentBits.DirectMessages, GatewayIntentBits.GuildMembers, GatewayIntentBits.GuildMessages, GatewayIntentBits.GuildMessageReactions],
+    intents: [GatewayIntentBits.Guilds, GatewayIntentBits.DirectMessages, GatewayIntentBits.GuildMembers, GatewayIntentBits.GuildMessages, GatewayIntentBits.GuildMessageReactions, GatewayIntentBits.MessageContent],
+    allowedMentions: { parse: ['users', 'roles'], repliedUser: true }
 })
 
 // Utilize the Hybrid Sharding instead of 
@@ -89,10 +90,6 @@ bot.pickPresence = async () => {
     })
 }
 
-// App (ticket) ongoing deletion collection
-bot.appDeletes = new Collection();
-bot.ticketCreateCooldown = new Collection();
-
 // Require functions for handlers (commands, components and events)
 const functionFolders = readdirSync(`${config.provider == true ? `/home/electrocute4u/bot` : `.`}/functions`)
 for (const folder of functionFolders) {
@@ -106,8 +103,8 @@ bot.handleCommands();
 
 // Bot login
 bot.login(token);
-let epicClient
 
+let epicClient
 async function signIntoEpic() {
 
 try {
@@ -129,8 +126,9 @@ try {
     await epicClient.login();
     console.log(`Logged into Epic Games API as ${epicClient.user.displayName}`);
     } catch (e) {
+      tools.CustomLog("Something happened with Epic Games API", "Error")
         // handle error
-        console.error(e)
+        // console.error(e)
     }
 }
 

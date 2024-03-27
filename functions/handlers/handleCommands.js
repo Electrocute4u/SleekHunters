@@ -91,6 +91,7 @@ module.exports = (bot) => {
             tools.CustomLog("Successfully reloaded all Application (/) commands.", "Info")
             
         } catch (error) {
+            console.log(error)
             tools.CustomLog(error, "Error");
         }
     };
