@@ -4,7 +4,6 @@ node_modules
 commands/database
 utils
 eng.traineddata
-submissions.json
 config.json
 .env
 logger
@@ -15,3 +14,4 @@ google_sheets/
 deviceAuth.json
 ticket-system.json
 unfinished
+submissions.json
