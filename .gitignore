@@ -1,6 +1,5 @@
 commandFunctions
 commands/admin
-trial/trialScrape.js
 node_modules
 commands/database
 utils
@@ -16,3 +15,4 @@ deviceAuth.json
 ticket-system.json
 unfinished
 submissions.json
+trial/trialScrape.js
