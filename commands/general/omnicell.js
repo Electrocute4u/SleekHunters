@@ -1,33 +1,28 @@
 const { SlashCommandBuilder } = require("discord.js")
-
+const { readFileSync } = require("fs")
 module.exports = {
     data: new SlashCommandBuilder()
-    .setName("trials")
-    .setDescription("Get information about Lady Luck's Trials")
+    .setName("omnicell")
     .setDMPermission(false)
-    .addSubcommand(subcommand =>
-      subcommand
-        .setName('info')
-        .setDescription('Get some information about Trials')
-    )
-    .addSubcommand(subcommand =>
-      subcommand
-        .setName('current')
-        .setDescription(`This week's Trial Behemoth`)
-    )
-    .addSubcommand(subcommand =>
-      subcommand
-        .setName('next')
-        .setDescription(`Next week's Trial Behemoth`)
-    
+    .setDescription("Get information about a specific omnicell or retrieve a list with all")
+    .addStringOption(option =>
+			option.setName('name')
+				.setDescription('The name for the omnicell')
+        .setRequired(false)
+        .setChoices(
+          { name: 'Bastion', value: 'Bastion' },
+				  { name: 'Iceborne', value: 'Iceborne' },
+				  { name: 'Discipline', value: 'Discipline' },
+          { name: 'Tempest', value: 'Tempest' },
+          { name: 'Revenant', value: 'Revenant' },
+          { name: 'Artificer', value: 'Artificer' },
+        )
     ),
-    async execute(interaction, bot) {
-      const {readFileSync} = require("fs")
-
+    async execute(interaction, bot, tools) {
+      
       // Calling config and utils file
       const config = JSON.parse(readFileSync(`./config.json`, 'utf8'))
-      const tools = require(`${config.provider == true ? `/home/electrocute4u/bot` : `../..`}/utils/functions`)
-      
+
       // Acquire file name and folder name
       let dir = config.provider == true ? __dirname.split(`/`).slice(-1)[0] : __dirname.split(`\\`).slice(-1)[0]
       let fileName = config.provider == true ? __filename.split(`/`).slice(-1)[0] : __filename.split(`\\`).slice(-1)[0]

@@ -138,10 +138,20 @@ signIntoEpic().then(() => {
 }).catch(() => null)
 
 // Handle and log rejection errors without crashing process
-// process.on('uncaughtException', (err, origin) => {
-//     console.log(err.stack)
-//     tools.CustomLog(`Caught exception: ${err}\n` + `Exception origin: ${origin}`);
-// });
+process.on('uncaughtException', (err, origin) => {
+    console.log(err.stack)
+    tools.CustomLog(`Caught exception: ${err}\n` + `Exception origin: ${origin}`);
+});
+
+// Handle and log rejection errors without crashing process
+process.on('uncaughtExceptionMonitor', (err, origin) => {
+  console.log(`Uncaught Exception Monitor:`, err, origin)
+});
+
+// Handle and log rejection errors without crashing process
+process.on('unhandledRejection', async (reason, promise) => {
+  console.log(`Unhandled rejection at:`, promise, `reason:`, reason)
+});
 
 // Connect to the Database Cluster
 // (async () => { 

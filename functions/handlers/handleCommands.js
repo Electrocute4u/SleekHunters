@@ -34,6 +34,7 @@ module.exports = (bot) => {
         }
         // Call a synched version of config.json
         const {dev, slashGuildID} = JSON.parse(readFileSync(`./config.json`, 'utf8'))
+
         // Assign token depending on bot version
         let token = dev == false ? process.env.publicToken : process.env.devToken
   

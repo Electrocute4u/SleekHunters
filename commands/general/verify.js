@@ -40,6 +40,6 @@ module.exports = {
       
       // Executing the command file
       const commandFile = require(`${config.provider == true ? `/home/electrocute4u/bot` : `../..`}/commandFunctions/${dir}/${fileName}`)
-      await commandFile.command(interaction, tools, bot)
+      await commandFile.command(interaction, tools, bot, config)
     } 
 }

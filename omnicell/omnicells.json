@@ -1,0 +1,112 @@
+{
+    "Bastion": {
+        "name": "Bastion",
+        "color": "#20ecf4",
+        "description": {
+            "active": "## Active:\n### Shield Nova:\n> Consume your Shields and deal 200% of the amount consumed to nearby enemies.",
+            "passive": "## Passive:\n> Increase all Shield applied to you by 15%.\n> Upon dealing damage, chance to grant yourself Shield for 25s (maximum 500 Shields)",
+            "cooldown": "20s"
+        },
+        "unlock": "Unlock it in the {elementalEmoji} **VII Elemental Mastery** in [Slayer's Path](<https://dauntless.fandom.com/wiki/Slayer%27s_Path>).",
+        "crafting": [
+            {"name": "Sporestruck Rockhide", "amount": "x5", "description": "A common drop from the Leg of a [Sporestruck Charrogg](<https://dauntless.fandom.com/wiki/Sporestruck_Charrogg>)"},
+            {"name": "Apocalypse Horn", "amount": "x2", "description": "A common drop from the Horns of any [Valomyr](<https://dauntless.fandom.com/wiki/Valomyr>)"},
+            {"name": "Dewspine", "amount": "x4", "description": "A Common drop from the Leg of any [Quillshot](<https://dauntless.fandom.com/wiki/Quillshot>)"},
+            {"name": "Adamantine Scale", "amount": "x1", "description": "A Rare drop from slaying a [Rockfall Skarn](<https://dauntless.fandom.com/wiki/Rockfall_Skarn>)"},
+            {"name": "Phoenix Opal", "amount": "x15", "description": "An ingredient in many potions and aetheric devices"},
+            {"name": "Rams", "amount": "x1.5k", "description": "The common currency of the Shattered Isles."}
+        ]
+    },
+    "Iceborne": {
+        "name": "Iceborne",
+        "color": "#bbd1f2",
+        "description": {
+            "active": "## Active:\n### Ice Lance:\n> 750 frost damage (double damage at full health). Gain Stagger Protection and +10% Lifesteal for 8s.",
+            "passive": "## Passive:\n> +100 Health\n> +1% Lifesteal and +5% Damage Reduction for every 150 missing health.\n> When taking damage, reduce Ice Lance cooldown by 5s (once every 5s).",
+            "cooldown": "60s"
+        },
+        "unlock": "Unlock it in the  {elementalEmoji} **VII Elemental Mastery** in [Slayer's Path](<https://dauntless.fandom.com/wiki/Slayer%27s_Path>).",
+        "crafting": [
+            {"name": "Deepfrost Stonehide", "amount": "x5", "description": "A common drop from the Limbs of a [Deepfrost Skarn](<https://dauntless.fandom.com/wiki/Deepfrost_Skarn>)"},
+            {"name": "Hoof Chip", "amount": "x4", "description": "A common drop from the Leg of any [Boreus](<https://dauntless.fandom.com/wiki/Boreus>)"},
+            {"name": "Shattered Frostbeak", "amount": "x2", "description": "A Common drop from the Head of any [Skraev](<https://dauntless.fandom.com/wiki/Skraev>)"},
+            {"name": "Icy Frostback Scale", "amount": "x1", "description": "A Rare drop from slaying a [Frostback Pengar](<https://dauntless.fandom.com/wiki/Frostback_Pengar>)"},
+            {"name": "Omnistone", "amount": "x15", "description": "A key component in aetheric pylon construction"},
+            {"name": "Rams", "amount": "x1.5k", "description": "The common currency of the Shattered Isles."}
+        ]
+    },
+    "Discipline": {
+        "name": "Discipline",
+        "color": "#be391a",
+        "description": {
+            "active": "## Active:\n### Flame Fist:\n> 200 blaze damage. Parry incoming attacks.\n### Inner Fire:\n> When parrying, deal +300% damage and gain 1 Inner Fire, which grants +4% Critical Damage",
+            "passive": "## Passive:\n> +8% Critical Chance, +8% Critical Damage, -50% Healing\n### Disciplined State:\n> Enter upon gaining 4 Inner Fire.\n> +50% Critical Chance and +100% Damage Received for 40s. Lose all Inner Fire",
+            "cooldown": "17s"
+        },
+        "unlock": "Discipline is purchased from [The Lucky Break](<https://dauntless.fandom.com/wiki/Lady_Luck#The_Lucky_Break>) (Lady Luck's store) for 500 {steelmarksEmoji} [Steel Marks](<https://dauntless.fandom.com/wiki/Steel_Marks>)",
+        "crafting": [
+            {"name": "Flameborn Quillshard", "amount": "x2", "description": "A common drop from the Quills of a [Flameborn Quillshot](<https://dauntless.fandom.com/wiki/Flameborn_Quillshot>)"},
+            {"name": "Flameborn Shinplate", "amount": "x5", "description": "A Common drop from the Leg of a [Flameborn Gnasher](<https://dauntless.fandom.com/wiki/Flameborn_Gnasher>)"},
+            {"name": "Scorched Rockhide", "amount": "x4", "description": "A common drop from the Leg of any [Charrogg](<https://dauntless.fandom.com/wiki/Charrogg>)"},
+            {"name": "Smoldering Bloodhide", "amount": "x1", "description": "A Rare drop from slaying a [Bloodfire Embermane](<https://dauntless.fandom.com/wiki/Bloodfire_Embermane>)"},
+            {"name": "Phoenix Opal", "amount": "x15", "description": "An ingredient in many potions and aetheric devices"},
+            {"name": "Rams", "amount": "x1.5k", "description": "The common currency of the Shattered Isles."}
+        ]
+    },
+    "Tempest": {
+        "name": "Tempest",
+        "color": "#efbb58",
+        "description": {
+            "active": "## Active:\n### Storm Dash:\n> 450 shock damage. +3% damage to unbroken parts for every 1% increase in Movement Speed. Prioritizes unbroken parts. Consumes one Velocity.",
+            "passive": "## Passive:\n> +10% Attack Speed\n### Velocity:\n> Gain a Velocity when you dodge through an attack. +3% movement speed for 45s (maximum 5 stacks).",
+            "cooldown": "6s"
+        },
+        "unlock": "Unlock it in the {elementalEmoji} **VII Elemental Mastery** in [Slayer's Path](<https://dauntless.fandom.com/wiki/Slayer%27s_Path>).",
+        "crafting": [
+            {"name": "Sparkclaw", "amount": "x4", "description": "A Common drop from the Leg of any [Nayzaga](<https://dauntless.fandom.com/wiki/Nayzaga>)"},
+            {"name": "Volthoof", "amount": "x5", "description": "A common Drop from the Limbs of any [Stormclaw](<https://dauntless.fandom.com/wiki/Stormclaw>)"},
+            {"name": "Deepscale Shard", "amount": "x2", "description": "A rare drop from [Thunderdeep Drask](<https://dauntless.fandom.com/wiki/Thunderdeep_Drask>)"},
+            {"name": "Thundering Scale", "amount": "x1", "description": "A Rare drop from slaying a [Drask](<https://dauntless.fandom.com/wiki/Drask>)"},
+            {"name": "Omnistone", "amount": "x15", "description": "A key component in aetheric pylon construction"},
+            {"name": "Rams", "amount": "x1.5k", "description": "The common currency of the Shattered Isles."}
+        ]
+    },
+    "Revenant": {
+        "name": "Revenant",
+        "color": "#6612a9",
+        "description": {
+            "active": "## Active:\n### Umbral Pact:\n> Enter Revenant State, create a Void Orb and sacrifice up to 500 Health. For every 100 Health lost, create a tendril that deals 700 umbral damage and spawns a Void Orb on impact.\n### Void Orb:\n> Touch to gain a Void Energy, which grants +4% damage and increases Revenant State duration by 1s.",
+            "passive": "## Passive:\n> +2% Lifesteal\n### Revenant State:\n> Prevents all healing for 15s. When Revenant State ends, recover 115 Health over 10s for each Void Energy you have.",
+            "cooldown": "10s"
+        },
+        "unlock": "Unlock it in the {elementalEmoji} **VII Elemental Mastery** in [Slayer's Path](<https://dauntless.fandom.com/wiki/Slayer%27s_Path>).",
+        "crafting": [
+            {"name": "Shadowtouched Shocktooth", "amount": "x2", "description": "A common drop from the Head of a [Shadowtouched Nayzaga](<https://dauntless.fandom.com/wiki/Shadowtouched_Nayzaga>)"},
+            {"name": "Shadowtouched Sparkscale", "amount": "x5", "description": "A Common drop from the Leg of a [Shadowtouched Drask](<https://dauntless.fandom.com/wiki/Shadowtouched_Drask>)"},
+            {"name": "Twisted Shadowspur", "amount": "x4", "description": "A common drop from the Leg of any [Shrowd](<https://dauntless.fandom.com/wiki/Shrowd>)"},
+            {"name": "Tenebrous Tailplume", "amount": "x2", "description": "A drop from the tail of an aether-charged [Bloodshot Shrowd](<https://dauntless.fandom.com/wiki/Bloodshot_Shrowd>)"},
+            {"name": "Unstable Nullhide", "amount": "x1", "description": "A Rare drop from slaying a [Riftstalker](<https://dauntless.fandom.com/wiki/Riftstalker>)"},
+            {"name": "Phoenix Opal", "amount": "x15", "description": "An ingredient in many potions and aetheric devices"},
+            {"name": "Rams", "amount": "x1.5k", "description": "The common currency of the Shattered Isles."}
+        ]
+    },
+    "Artificer": {
+        "name": "Artificer",
+        "color": "#f0a3cb",
+        "description": {
+            "active": "# Active:\n### Command:\n> Your drone acts based on the target.\n### 1. Slayer:\n> Remove negative status effects and grant Artificer Aura for 15s.\n### 2. Ground:\n> Create a wall that blocks hostile projectiles and grants Artificer Aura to nearby Slayers for 15s.\n### 3. Behemoth:\n> Mark a part to take +15% damage for 15s\n### 4. Downed Slayer:\n> Revive and grant Artificer Aura for 15s (once every 90s).\n### Artificer Aura:\n> Retore 10 health/second. At full health, grants 10 Shields/second that last for 25s (maximum 400 Shields).",
+            "passive": "# Passive:\n> Increase the amount of Health and Shields granted by Artificer Aura by 1 for every 150 health you have when activated.",
+            "cooldown": "20s"
+        },
+        "unlock": "Unlock it in the {elementalEmoji} **VII Elemental Mastery** in [Slayer's Path](<https://dauntless.fandom.com/wiki/Slayer%27s_Path>).",
+        "crafting": [
+            {"name": "Lustrous Tailplate", "amount": "x4", "description": "A Common drop from the tail of any [Rezakiri](<https://dauntless.fandom.com/wiki/Rezakiri>)"},
+            {"name": "Radiant Aethergem", "amount": "x2", "description": "A common drop from the tailgem of any [Rezakiri](<https://dauntless.fandom.com/wiki/Rezakiri>)"},
+            {"name": "Radiant Dewclaw", "amount": "x5", "description": "A Common drop from the Leg of a [Valomyr](<https://dauntless.fandom.com/wiki/Valomyr>)"},
+            {"name": "Fractal Hide", "amount": "x1", "description": "A Rare drop from slaying a [Valomyr](<https://dauntless.fandom.com/wiki/Valomyr>)"},
+            {"name": "Brilliant Plume", "amount": "x2", "description": "A Rare drop from the tail of an aether-charged [Lightbound Koshai](<https://dauntless.fandom.com/wiki/Lightbound_Koshai>)"},
+            {"name": "Omnistone", "amount": "x15", "description": "A key component in aetheric pylon construction."},
+            {"name": "Rams", "amount": "x1.5k", "description": "The common currency of the Shattered Isles."}
+        ]
+    }
+}

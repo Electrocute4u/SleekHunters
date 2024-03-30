@@ -1,6 +1,7 @@
 const { SlashCommandBuilder } = require("discord.js")
 const { readFileSync } = require("fs")
 module.exports = {
+
     data: new SlashCommandBuilder()
     .setName("armor")
     .setDMPermission(false)
@@ -123,6 +124,6 @@ module.exports = {
       
       // Executing the command file
       const commandFile = require(`${config.provider == true ? `/home/electrocute4u/bot` : `../..`}/commandFunctions/${dir}/${fileName}`)
-      await commandFile.command(interaction, tools, bot)
+      await commandFile.command(interaction, tools, bot, config)
     } 
 }
