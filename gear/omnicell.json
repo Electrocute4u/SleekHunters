@@ -1,0 +1,123 @@
+{
+  "Artificer": {
+    "ability_icon": "/assets/icons/omnicells/ArtificerAbility.png",
+    "active": "<b>Command:</b> Your drone acts based on the target.{{NL}} <b>1. Slayer:</b> Remove negative status effects and grant Artificer Aura for {{statusRemovalTime}}s.{{NL}} <b>2. Ground:</b> Create a wall that blocks hostile projectiles and grants Artificer Aura to nearby Slayers for {{wallTime}}s.{{NL}} <b>3. Behemoth:</b> Make a part to take +{{percentDamage}}% damage for {{damageTime}}s.{{NL}} <b>4. Downed Slayer:</b> Revive and grant Artificer Aura for {{reviveAuraTime}}s (once every {{reviveCooldown}}s).{{NL}} <b>Artificer Aura:</b> Restore {{auraHeal}} health/second. At full health, grants {{auraShield}} Shields/second that last for {{shieldTime}}s (maximum {{maxShields}} Shields){{NL}} <b>Cooldown:</b> {{cooldown}}s",
+    "active_values": {
+      "auraHeal": 10,
+      "auraShield": 10,
+      "cooldown": 20,
+      "damageTime": 15,
+      "maxShields": 400,
+      "percentDamage": 15,
+      "reviveAuraTime": 15,
+      "reviveCooldown": 90,
+      "shieldTime": 25,
+      "statusRemovalTime": 15,
+      "wallTime": 15
+    },
+    "icon": "/assets/icons/omnicells/Artificer.png",
+    "name": "Artificer",
+    "passive": "Amount of healing and shielding granted per second is increased by {{healingAndShielding}} for every {{currentHealth}} current health when activated.",
+    "passive_values": {
+      "currentHealth": 150,
+      "healingAndShielding": 1
+    }
+  },
+  "Bastion": {
+    "ability_icon": "/assets/icons/omnicells/BastionAbility.png",
+    "active": "Leap forward and slam the ground consuming all shields in a blast of energy that deals damage to nearby targets equal to {{percentShieldDamage}}% the amount of shields consumed. {{damageCooldown}} second cooldown.",
+    "active_values": {
+      "damageCooldown": 20,
+      "percentShieldDamage": 200
+    },
+    "icon": "/assets/icons/omnicells/Bastion.png",
+    "name": "Bastion",
+    "passive": "Increase all shields received by {{percentShieldIncrease}}%. Dealing damage has a chance to grant a stacking, refreshing {{shield}} health shield that lasts for {{shieldTime}} seconds (max {{maxShields}} shields).",
+    "passive_values": {
+      "maxShields": 500,
+      "percentShieldIncrease": 15,
+      "shield": 25,
+      "shieldTime": 25
+    }
+  },
+  "Discipline": {
+    "ability_icon": "/assets/icons/omnicells/DisciplineAbility.png",
+    "active": "Perform a quick parrying punch that deals {{blazeDamage}} blaze damage. Parrying an attack does +{{percentParryDamage}}% damage and grants a stack of Flaming Fist,  giving +{{percentCritDamage}}% critical strike damage. This can stack {{stacks}} times.  {{cooldown}} second cooldown.",
+    "active_values": {
+      "blazeDamage": 200,
+      "cooldown": 17,
+      "percentCritDamage": 4,
+      "percentParryDamage": 300,
+      "stacks": 4
+    },
+    "icon": "/assets/icons/omnicells/Discipline.png",
+    "name": "Discipline",
+    "passive": "Critical strike chance and damage increased by {{percentCritChanceAndCritDamage}}%. Healing is reduced by {{percentHealingReduction}}%. Reaching max stacks of Flaming Fist makes you Disciplined, increasing your critical strike chance by {{percentCritChance}}% for {{critChanceTime}} seconds  but increased damage received by {{percentDamageReceived}}%. When Disciplined ends, stacks are cleared.",
+    "passive_values": {
+      "critChanceTime": 40,
+      "percentCritChance": 50,
+      "percentCritChanceAndCritDamage": 8,
+      "percentDamageReceived": 100,
+      "percentHealingReduction": 50
+    }
+  },
+  "Iceborne": {
+    "ability_icon": "/assets/icons/omnicells/IceborneAbility.png",
+    "active": "Throw an ice lance that does {{frostDamage}} frost damage, double damage if thrown at full health. Also prevents you from being staggered and grants +{{percentLifesteal}}% lifesteal  for {{lifestealTime}} seconds. {{cooldown}} second cooldown.",
+    "active_values": {
+      "cooldown": 60,
+      "frostDamage": 750,
+      "lifestealTime": 8,
+      "percentLifesteal": 10
+    },
+    "icon": "/assets/icons/omnicells/Iceborne.png",
+    "name": "Iceborne",
+    "passive": "Increase max health by {{maxHealth}}. Gain {{percentLifesteal}}% lifesteal and {{percentDamageReduction}}% reduced damage, then again for every {{missingHealth}} missing health. Taking damage reduces cooldown of the Active Ability by {{cooldownReduction}} seconds (only once every {{cooldown}} seconds).",
+    "passive_values": {
+      "cooldown": 5,
+      "cooldownReduction": 5,
+      "maxHealth": 100,
+      "missingHealth": 150,
+      "percentDamageReduction": 5,
+      "percentLifesteal": 1
+    }
+  },
+  "Revenant": {
+    "ability_icon": "/assets/icons/omnicells/RevenantAbility.png",
+    "active": "Drain up to {{healthDrain}} health to enter Revenant state and spawn a Void Orb. For every {{drainedHealth}} health drained, summon an Umbral Tendril that deals {{umbralDamage}} umbral damage. If an Umbral Tendril hits a target, it spawns an additional Void Orb upon impact. Picking up a Void Orb grants a stack of Void Energy,  which gives +{{percentDamage}}% damage and extends Revenant state by {{revenantDurationExtend}}  second. Revenant state lasts for {{revenantTime}} seconds and prevents all healing.",
+    "active_values": {
+      "drainedHealth": 100,
+      "healthDrain": 500,
+      "percentDamage": 4,
+      "revenantDurationExtend": 1,
+      "revenantTime": 15,
+      "umbralDamage": 700
+    },
+    "icon": "/assets/icons/omnicells/Revenant.png",
+    "name": "Revenant",
+    "passive": "Lifesteal +{{percentLifesteal}}%. When Revenant state ends, each stack of Void Energy grants {{health}} health per second for {{healthTime}} seconds.",
+    "passive_values": {
+      "health": 115,
+      "healthTime": 10,
+      "percentLifesteal": 2
+    }
+  },
+  "Tempest": {
+    "ability_icon": "/assets/icons/omnicells/TempestAbility.png",
+    "active": "Consume a stack of Velocity to dash ahead and deal {{shockDamage}} shock damage to a nearby target, prioritizing unbroken behemoth parts. For every {{percentMovementIncreaseThreshold}}% increase in movement speed, deal +{{percentDamageToUnbrokenPart}}% damage to unbroken parts. Stacks are refreshed on use. {{cooldown}} second cooldown.",
+    "active_values": {
+      "cooldown": 6,
+      "percentDamageToUnbrokenPart": 3,
+      "percentMovementIncreaseThreshold": 1,
+      "shockDamage": 450
+    },
+    "icon": "/assets/icons/omnicells/Tempest.png",
+    "name": "Tempest",
+    "passive": "Attack speed +{{percentAttackSpeed}}%. Dodging through an attack grants a stack of Velocity. Each stack lasts {{stackTime}} seconds and increases movement speed by {{percentMovespeed}}%",
+    "passive_values": {
+      "percentAttackSpeed": 10,
+      "percentMovespeed": 3,
+      "stackTime": 45
+    }
+  }
+}
