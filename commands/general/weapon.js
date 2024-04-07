@@ -34,6 +34,27 @@ module.exports = {
 				  .setDescription('Returns all weapons crafted from the given Behemoth')
 				  .setAutocomplete(true)
           .setRequired(true))
+    )
+    .addSubcommand(subcommand =>
+      subcommand
+      .setName('all')
+      .setDescription('Returns all weapons in a paginated embed')
+          .addStringOption(option =>
+            option
+            .setName("type")
+            .setDescription("Return all weapons from the given weapon type.")
+            .setRequired(false)
+            .addChoices
+            (
+                {name: "Aether Strikers", value: "aether_strikers"},
+                {name: "Axe", value: "axe"},
+                {name: "Chain Blades", value: "chain_blades"},
+                {name: "Hammer", value: "hammer"},
+                {name: "Repeaters", value: "repeaters"},
+                {name: "Sword", value: "sword"},
+                {name: "War Pike", value: "war_pike"},
+            )
+            )
     ),
 	async autoComplete(interaction) {
     const tools = require(`${config.provider == true ? `/home/electrocute4u/bot` : `..`}/../utils/functions`)
@@ -59,7 +80,7 @@ module.exports = {
           Object.values(weaponsData)
               .filter(weapon => tools.toUpperCaseAll(weapon.name).includes(inputName))
               .forEach(weapon => similarNames.add(weapon.name));
-  
+
           // Check for partial matches with behemoth names
           Object.values(weaponsData)
               .filter(weapon => weapon.behemoth && tools.toUpperCaseAll(weapon.behemoth).includes(inputName))

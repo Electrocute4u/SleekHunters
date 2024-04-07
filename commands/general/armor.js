@@ -35,6 +35,24 @@ module.exports = {
 				  .setDescription('Returns all the armor crafted from the given Behemoth')
 				  .setAutocomplete(true)
           .setRequired(true))
+    )
+    .addSubcommand(subcommand =>
+      subcommand
+      .setName('all')
+      .setDescription('Returns all armors in a paginated embed')
+          .addStringOption(option =>
+            option
+            .setName("type")
+            .setDescription("Return all armors from a given type.")
+            .setRequired(false)
+            .addChoices
+            (
+                {name: "Head", value: "head"},
+                {name: "Torso", value: "torso"},
+                {name: "Arms", value: "arms"},
+                {name: "Legs", value: "legs"},
+            )
+            )
     ),
 	async autoComplete(interaction) {
     const tools = require(`${config.provider == true ? `/home/electrocute4u/bot` : `..`}/../utils/functions`)
