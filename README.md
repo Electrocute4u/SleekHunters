@@ -32,6 +32,7 @@ Slash commands below having `< >` are optional, while `[ ]` are required fields.
 - `/armor name` - Returns a armor based on name
 - `/armor behemoth` - Returns all armor pieces from a given behemoth
 - `/armor element` - Returns all armor pieces from a given element
+- `/armor all <type>` - Returns all armor or from a given type.
 ### Cell commands:
 - `/cell name` - Returns information about a cell from the given name
 - `/cell type` - Returns all cells with the given type
@@ -39,5 +40,6 @@ Slash commands below having `< >` are optional, while `[ ]` are required fields.
 - `/weapon name` - Returns a weapon based on name
 - `/weapon behemoth` - Returns all weapons from a given behemoth
 - `/weapon element` - Returns all weapons from a given element
+- `/weapon all <type>` - Returns all weapons, or from a given type (i.e Repeaters, Hammer, Axe, etc...)
 
 *This project is a personal hobby project and all artwork re-used/and or edited in this Discord bot belong to their respective copyright holders. This bot is not meant to gain or populate any income, as the bot is designed to be in accosiated bot-necceary servers. If you have any inquires about the artwork used or have a complaint, please refer your complaint/question on Github or through a Private Message on Discord at @Milim, formally known as Milim#0001*
