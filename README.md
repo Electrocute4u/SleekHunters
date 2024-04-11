@@ -1,4 +1,5 @@
-![Discord Bot Github](https://github.com/Electrocute4u/SleekHunters/assets/25005864/35ea6f16-8093-481e-9525-a898baaf53a2)
+![github](https://github.com/Electrocute4u/SleekHunters/assets/25005864/ecb4f253-f732-4bb3-b0c6-17cb51d408c9)
+
 
 
 # Sleekhunters
@@ -10,8 +11,6 @@ This project was originally built to one day be added to the official Discord se
 Slash commands below having `< >` are optional, while `[ ]` are required fields.
 ### General commands:
 - `/github` - Get a link to the bot's Github repository
-- `/hunting-grounds` \<map\> - Get information about a specific hunting ground or obtain a list of all hunting grounds
-- `/leveling` \<element\> - Find the best ways to level up your weapon fast
 - `/lookup` \[input\] - Finds a Epic Games profile based on ID or username, if they exist
 - `/pick` \[choices\] - Let the bot pick a choice for you!
 - `/terminology` - A paginated table with all currently known Dauntless terminologies/terms
@@ -20,7 +19,7 @@ Slash commands below having `< >` are optional, while `[ ]` are required fields.
 - `/gauntlet find` \[season\] \[name\] - Search for a guild by name (or tag) and retrieve their current spot
 - `/gauntlet leaderboard` \<season\> - View the Gauntlet leaderboard for this or a previous season
 - `/gauntlet info` - Get some more information about Gauntlet
-### Escalation commands:
+### Heroic + Escalation commands:
 - `/escalation` \<element\> - Get information about a specific escalation or obtain a list of all escalations
 - `/hesca current` - This week's Heroic Escalation
 - `/hesca next` - Next week's Heroic Escalation
@@ -41,5 +40,11 @@ Slash commands below having `< >` are optional, while `[ ]` are required fields.
 - `/weapon behemoth` - Returns all weapons from a given behemoth
 - `/weapon element` - Returns all weapons from a given element
 - `/weapon all <type>` - Returns all weapons, or from a given type (i.e Repeaters, Hammer, Axe, etc...)
+### Hunting Grounds command:
+- `/hunting-grounds` \<map\> - Get information about a specific hunting ground or obtain a list of all hunting grounds
+### Leveling command:
+- `/leveling` \<element\> - Find the best ways to level up your weapon fast
+### Omnicell command:
+- `/omnicell <name>` - Returns a paginated embed with all Omnicells or a single omnicell from input
 
 *This project is a personal hobby project and all artwork re-used/and or edited in this Discord bot belong to their respective copyright holders. This bot is not meant to gain or populate any income, as the bot is designed to be in accosiated bot-necceary servers. If you have any inquires about the artwork used or have a complaint, please refer your complaint/question on Github or through a Private Message on Discord at @Milim, formally known as Milim#0001*
