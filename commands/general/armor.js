@@ -14,7 +14,8 @@ module.exports = {
 			option.setName('name')
 				.setDescription('The name for the armor to look up')
 				.setAutocomplete(true)
-        .setRequired(true))
+        .setRequired(true)
+      )
     )
     .addSubcommand(subcommand =>
       subcommand
@@ -24,7 +25,8 @@ module.exports = {
 			  option.setName('element')
 				  .setDescription('Returns all the armor crafted from the given element')
 				  .setAutocomplete(true)
-          .setRequired(true))
+          .setRequired(true)
+        )
     )
     .addSubcommand(subcommand =>
       subcommand
@@ -34,7 +36,8 @@ module.exports = {
 			  option.setName('behemoth')
 				  .setDescription('Returns all the armor crafted from the given Behemoth')
 				  .setAutocomplete(true)
-          .setRequired(true))
+          .setRequired(true)
+        )
     )
     .addSubcommand(subcommand =>
       subcommand

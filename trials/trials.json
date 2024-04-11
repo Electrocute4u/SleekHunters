@@ -1,31 +1,31 @@
 {
   "this_week": {
-    "behemoth": "Gnasher",
-    "avatar": "https://playdauntless.com/assets/media/layout/pages/trials/behemoths/gnasher.png",
-    "date": "NOW - Mar 14",
+    "behemoth": "Stormclaw",
+    "avatar": "https://playdauntless.com/assets/media/layout/pages/trials/behemoths/stormclaw.png",
+    "date": "NOW - Apr 11",
     "modifiers": [
       {
-        "name": "Fury",
-        "description": "Behemoth rage lasts longer, and empowers the Behemoth's defense and attack."
+        "name": "Fortifications",
+        "description": "Objects created by Behemoths have increased health."
       },
       {
-        "name": "Jagged",
-        "description": "Attacks that would cause wound now cause crippling wound."
+        "name": "Combustion",
+        "description": "Behemoths' physical attacks set Slayers on fire."
       }
     ]
   },
   "next_week": {
-    "behemoth": "Skraev",
-    "avatar": "https://playdauntless.com/assets/media/layout/pages/trials/behemoths/skraev.png",
-    "date": "Mar 14 - Mar 21",
+    "behemoth": "Malkarion",
+    "avatar": "https://playdauntless.com/assets/media/layout/pages/trials/behemoths/malkarion.png",
+    "date": "Apr 11 - Apr 18",
     "modifiers": [
       {
-        "name": "Tough Hide",
-        "description": "Behemoth parts take less damage, but wounded parts take much more damage."
+        "name": "Deep Freeze",
+        "description": "Frost damage is increased. Player stamina costs are increased."
       },
       {
-        "name": "Icy Grave",
-        "description": "When Slayers are frozen, a deadly trap starts to spring."
+        "name": "Desperation",
+        "description": "Behemoths are unable to enter rage. Once below half health, they become enraged until defeated."
       }
     ]
   }
