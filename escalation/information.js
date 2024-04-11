@@ -175,11 +175,14 @@ Torgadoro primarily uses its massive fists to deliver powerful punches and slams
 Torgadoro can pick up and throw large rocks at players from a distance. These rocks can deal area-of-effect damage upon impact and may cause knockdowns.
 ## Fire Breath: 
 Torgadoro may breathe fire in a cone-shaped area in front of it, dealing fire damage to anyone caught within the range of the attack. This attack may also leave behind burning pools of fire on the ground.
-## Ground Pound: 
-Torgadoro can slam its fists into the ground, causing shockwaves that travel outward and deal damage to nearby players. This attack happens when its HP reaches below half. When it slams the ground it will damage any slayer near it, or if you get too close to it when its about to release the shockwave(s).
-### Heroic version:\n In the Heroic version, it has two back to back shockwaves.
+## Ground Pound (Heroic): 
+Torgadoro can slam its body into the ground and cause moderate damage to any slayers in its AoE.
+### Heroic version:\n In the Heroic version, upon hitting the ground, Torgodoro will begin charging a shockwave that travels outward and deal damage to nearby players.
 ## Enrage Mode:
 When Torgadoro becomes enraged, its attacks may become more frequent and powerful. It may also gain new abilities or variations of existing attacks.
+## Vulcano Leap:
+When Torgodoro have less then half its HP remaining, it will run away to the top of the Vulcano and slam down into the middle. This attack will cause small damage upon contact with the ground. And Torgodoro will charge up a shockwave that travels outwards.
+### Heroic version: The shockwave amount is increased by 1. The second shockwave is now released shortly after the first one. So make sure to have enough stamina to dodge both!
 ## Rage Lava Fists:
 Torgodoro can strengten their fists if they get hurt with a brand new set of Lava Fists, destroying these will temporarily stun it for a brief moment. During its animation to get these, it will damage any slayers in a small AoE around during two phases of it.
 ## Charge Attacks: 
