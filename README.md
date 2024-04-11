@@ -15,12 +15,12 @@ Slash commands below having `< >` are optional, while `[ ]` are required fields.
 - `/pick` \[choices\] - Let the bot pick a choice for you!
 - `/terminology` - A paginated table with all currently known Dauntless terminologies/terms
 ### Gauntlet commands:
-- `/gauntlet spot` \<season\> - Retrieve SleekHunters's current leaderboard spot or from a previous season
-- `/gauntlet find` \[season\] \[name\] - Search for a guild by name (or tag) and retrieve their current spot
-- `/gauntlet leaderboard` \<season\> - View the Gauntlet leaderboard for this or a previous season
+- `/gauntlet spot <season>` - Retrieve SleekHunters's current leaderboard spot or from a previous season
+- `/gauntlet find [season] [name]` - Search for a guild by name (or tag) and retrieve their current spot
+- `/gauntlet leaderboard <season>` - View the Gauntlet leaderboard for this or a previous season
 - `/gauntlet info` - Get some more information about Gauntlet
 ### Heroic + Escalation commands:
-- `/escalation` \<element\> - Get information about a specific escalation or obtain a list of all escalations
+- `/escalation <element>` - Get information about a specific escalation or obtain a list of all escalations
 - `/hesca current` - This week's Heroic Escalation
 - `/hesca next` - Next week's Heroic Escalation
 ### Trials commands:
@@ -41,9 +41,9 @@ Slash commands below having `< >` are optional, while `[ ]` are required fields.
 - `/weapon element` - Returns all weapons from a given element
 - `/weapon all <type>` - Returns all weapons, or from a given type (i.e Repeaters, Hammer, Axe, etc...)
 ### Hunting Grounds command:
-- `/hunting-grounds` \<map\> - Get information about a specific hunting ground or obtain a list of all hunting grounds
+- `/hunting-grounds <map>`- Get information about a specific hunting ground or obtain a list of all hunting grounds
 ### Leveling command:
-- `/leveling` \<element\> - Find the best ways to level up your weapon fast
+- `/leveling <element>` - Find the best ways to level up your weapon fast
 ### Omnicell command:
 - `/omnicell <name>` - Returns a paginated embed with all Omnicells or a single omnicell from input
 
