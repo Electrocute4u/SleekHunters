@@ -55,7 +55,12 @@ module.exports = {
        subcommand
          .setName('info')
          .setDescription('Get some more information about Gauntlet')
-    ),
+    )
+    .addSubcommand(subcommand =>
+      subcommand
+        .setName('stats')
+        .setDescription('Get some Gauntlet statistics about SleekHunters')
+   ),
 
     async autoComplete(interaction) {
       const tools = require(`${config.provider == true ? `/home/electrocute4u/bot` : `..`}/../utils/functions`)

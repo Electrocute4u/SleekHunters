@@ -125,6 +125,7 @@ try {
     
     await epicClient.login();
     console.log(`Logged into Epic Games API as ${epicClient.user.displayName}`);
+    
     } catch (e) {
       tools.CustomLog("Something happened with Epic Games API", "Error")
         // handle error
@@ -132,10 +133,11 @@ try {
     }
 }
 
-
-signIntoEpic().then(() => {
+// Login to Epic client
+  signIntoEpic().then(() => {
     bot.epicClient = epicClient
 }).catch(() => null)
+
 
 // Handle and log rejection errors without crashing process
 process.on('uncaughtException', (err, origin) => {

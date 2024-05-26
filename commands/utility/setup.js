@@ -1,35 +1,29 @@
-const { SlashCommandBuilder } = require("discord.js")
-const { readFileSync } = require("fs")
+const { SlashCommandBuilder, PermissionFlagsBits, ChannelType } = require("discord.js")
 
 module.exports = {
     data: new SlashCommandBuilder()
-    .setName('verify')
-    .setDescription('Verify an image containing text')
-    .addSubcommand(subcommand =>
-        subcommand
-            .setName('attachment')
-            .setDescription('Verify an image attachment')
-            .addAttachmentOption(option =>
-                option.setName('attachment')
-                    .setDescription('Image attachment to verify')
-                    .setRequired(true)
-            )
-    )
+    .setName("setup")
+    .setDescription("I wonder what this butto- Oh, better not touch that!")
+    .setDMPermission(false)
+    .setDefaultMemberPermissions(PermissionFlagsBits.Administrator)
     .addSubcommand(subcommand =>
       subcommand
-          .setName('url')
-          .setDescription('Verify an image from a URL')
-          .addStringOption(option =>
-              option.setName('url')
-                  .setDescription('URL of the image to verify')
-                  .setRequired(true)
-                  
-          )
-  ),
-    async execute(interaction, bot, tools) {
-      
+          .setName('applications')
+          .setDescription('I wonder what this butto- Oh, better not touch that!')
+      .addChannelOption(option => option.setName("category").setDescription("The category to setup the application embed in").addChannelTypes(ChannelType.GuildText).setRequired(true)
+  ))
+    //.addSubcommand(subcommand =>
+    //  subcommand
+    //      .setName('verify')
+    //      .setDescription('I wonder what this butto- Oh, better not touch that!')
+    //)
+    ,
+    async execute(interaction, bot) {
+      const {readFileSync} = require("fs")
+
       // Calling config and utils file
       const config = JSON.parse(readFileSync(`./config.json`, 'utf8'))
+      const tools = require(`${config.provider == true ? `/home/electrocute4u/bot` : `../..`}/utils/functions`)
       
       // Acquire file name and folder name
       let dir = config.provider == true ? __dirname.split(`/`).slice(-1)[0] : __dirname.split(`\\`).slice(-1)[0]

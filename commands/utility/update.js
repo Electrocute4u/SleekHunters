@@ -1,17 +1,24 @@
-const { SlashCommandBuilder, PermissionFlagsBits } = require("discord.js")
+const { SlashCommandBuilder, PermissionFlagsBits, ChannelType } = require("discord.js")
 
 module.exports = {
     data: new SlashCommandBuilder()
-    .setName("setup")
-    .setDescription("I wonder what this butto- Oh, better not touch that!")
+    .setName("update")
+    .setDescription("Force update a mode")
     .setDMPermission(false)
     .setDefaultMemberPermissions(PermissionFlagsBits.Administrator)
-    .addSubcommand(subcommand =>
-      subcommand
-          .setName('verify')
-          .setDescription('I wonder what this butto- Oh, better not touch that!')
-    )
-    ,
+    .addStringOption(option =>
+      option
+      .setName("mode")
+      .setDescription("The mode to force update")
+      .setRequired(true)
+      .addChoices
+      (
+          {name: "Hesca", value: "hesca"},
+          {name: "Gauntlet", value: "gauntlet"},
+          {name: "Trials Leaderboard", value: "trials-leaderboard"},
+          {name: "Trials Weekly", value: "trials-weekly"},
+      )
+    ),
     async execute(interaction, bot) {
       const {readFileSync} = require("fs")
 
