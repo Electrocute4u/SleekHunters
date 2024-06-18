@@ -9,8 +9,16 @@ This project was originally built to one day be added to the official Discord se
 ## Table of Contents
 - [Bot Commands](#bot-commands)
   - [General Commands](#general-commands)
+  - [Action Commands](#action-commands)
   - [Gauntlet Commands](#gauntlet-commands)
-  - [Hunting Grounds Commands](#hunting-grounds-commands)
+  - [Heroic + Escalation Commands](#heroic--escalation-commands)
+  - [Trials Commands](#trials-commands)
+  - [Armor Commands](#armor-commands)
+  - [Cell Commands](#armor-commands)
+  - [Weapon Commands](#weapon-commands)
+  - [Hunting Grounds Commands](#hunting-grounds-command)
+  - [Leveling Command](#leveling-command)
+  - [Omnicell Command](#omnicell-command)
 
 ## Bot Commands
 Slash commands below having `< >` are optional, while `[ ]` are required fields.
