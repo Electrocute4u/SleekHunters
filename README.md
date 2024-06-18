@@ -6,6 +6,12 @@
 ## What is this project?
 This project was originally built to one day be added to the official Discord server for SleekHunters, a Dauntless guild. It grew from just a few Dauntless related information slash commands, to be covering Gauntlet, update Gauntlet leaderboard every 30 minutes, as long as covering Trials and scraping website after every reset, allowing users to find current week's behemoths, as long as seeing what's to come next week.
 
+## Table of Contents
+- [Bot Commands](#bot-commands)
+  - [General Commands](#general-commands)
+  - [Gauntlet Commands](#gauntlet-commands)
+  - [Hunting Grounds Commands](#hunting-grounds-commands)
+
 ## Bot Commands
 Slash commands below having `< >` are optional, while `[ ]` are required fields.
 ### General commands:
