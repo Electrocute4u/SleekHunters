@@ -18,7 +18,7 @@ Slash commands below having `< >` are optional, while `[ ]` are required fields.
 The action command system uses a self-made advanced Mention System, taken from a past project and improved for this one.
 <details>
 
-<summary>"Preview of the command on Discord (click me to open)" </summary>
+<summary>[Preview GIF - click me to open] </summary>
 
 ![action command](https://github.com/Electrocute4u/SleekHunters/assets/25005864/a796b309-726a-40ec-871e-1521c9181347)
 </details>
@@ -28,7 +28,7 @@ The action command system uses a self-made advanced Mention System, taken from a
 ### Gauntlet commands:
 <details>
   
-<summary>"Preview of the command on Discord (click me to open)" </summary>
+<summary>[Preview GIF - click me to open] </summary>
 
 ![gauntlet command](https://github.com/Electrocute4u/SleekHunters/assets/25005864/66d6e67b-c0ef-4b97-8a87-f66630207d30)
 </details>
@@ -40,7 +40,7 @@ The action command system uses a self-made advanced Mention System, taken from a
 ### Heroic + Escalation commands:
 <details>
 
-<summary>"Preview of the command on Discord (click me to open)" </summary>
+<summary>[Preview GIF - click me to open] </summary>
 
 ![escalation+hesca command](https://github.com/Electrocute4u/SleekHunters/assets/25005864/97149ade-9a74-4111-9daf-c74101521187)
 </details>
@@ -51,7 +51,7 @@ The action command system uses a self-made advanced Mention System, taken from a
 ### Trials commands:
 <details>
 
-<summary>"Preview of the command on Discord (click me to open)" </summary>
+<summary>[Preview GIF - click me to open] </summary>
 
 ![trials command](https://github.com/Electrocute4u/SleekHunters/assets/25005864/171bbed0-03fd-441b-b0ae-a0735e1bcd48)
 </details>
@@ -68,7 +68,7 @@ This is basically the `/trials leaderboard search`, where the user's displayname
 ### Armor commands:
 <details>
 
-<summary>"Preview of the command on Discord (click me to open)" </summary>
+<summary>[Preview GIF - click me to open] </summary>
 
 ![armor command](https://github.com/Electrocute4u/SleekHunters/assets/25005864/09f580e3-2cfe-4d2f-a763-261a6f98e043)
 </details>
@@ -80,7 +80,7 @@ This is basically the `/trials leaderboard search`, where the user's displayname
 ### Cell commands:
 <details>
 
-<summary>"Preview of the command on Discord (click me to open)" </summary>
+<summary>[Preview GIF - click me to open] </summary>
 
 ![cell command](https://github.com/Electrocute4u/SleekHunters/assets/25005864/1bcc1294-897c-4ff7-bc58-6d85788376dc)
 </details>
@@ -90,7 +90,7 @@ This is basically the `/trials leaderboard search`, where the user's displayname
 ### Weapon commands:
 <details>
 
-<summary>"Preview of the command on Discord (click me to open)" </summary>
+<summary>[Preview GIF - click me to open] </summary>
 
 ![weapon command](https://github.com/Electrocute4u/SleekHunters/assets/25005864/f5557577-1627-495a-bf39-1085acbbafe8)
 </details>
@@ -102,7 +102,7 @@ This is basically the `/trials leaderboard search`, where the user's displayname
 ### Hunting Grounds command:
 <details>
 
-<summary>"Preview of the command on Discord (click me to open)" </summary>
+<summary>[Preview GIF - click me to open] </summary>
 
 ![hunting-grounds command](https://github.com/Electrocute4u/SleekHunters/assets/25005864/af87c5c4-5a77-42c2-9418-ed9357ec0eaa)
 </details>
@@ -111,7 +111,7 @@ This is basically the `/trials leaderboard search`, where the user's displayname
 ### Leveling command:
 <details>
 
-<summary>"Preview of the command on Discord (click me to open)" </summary>
+<summary>[Preview GIF - click me to open] </summary>
 
 ![leveling command](https://github.com/Electrocute4u/SleekHunters/assets/25005864/fd264bf5-0e4b-4e5f-a0b6-3f65638f9c9f)
 </details>
@@ -120,7 +120,7 @@ This is basically the `/trials leaderboard search`, where the user's displayname
 ### Omnicell command:
 <details>
 
-<summary>"Preview of the command on Discord (click me to open)" </summary>
+<summary>[Preview GIF - click me to open] </summary>
 
 ![omnicell command](https://github.com/Electrocute4u/SleekHunters/assets/25005864/679ffa76-b801-4bd0-b98d-69ea38b9070b)
 
