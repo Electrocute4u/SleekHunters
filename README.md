@@ -1,4 +1,5 @@
-![Github Banner Main Page](https://github.com/Electrocute4u/SleekHunters/assets/25005864/63cc45ae-a19a-481e-a3c8-8a8727aa1c90)
+![Github Banner Main Page](https://github.com/Electrocute4u/SleekHunters/assets/25005864/4f61d93d-9ad0-412d-a7dd-2d9bece6d6db)
+
 
 # Sleekhunters
 
