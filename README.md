@@ -1,6 +1,4 @@
-![github](https://github.com/Electrocute4u/SleekHunters/assets/25005864/ecb4f253-f732-4bb3-b0c6-17cb51d408c9)
-
-
+![Github Banner Main Page](https://github.com/Electrocute4u/SleekHunters/assets/25005864/63cc45ae-a19a-481e-a3c8-8a8727aa1c90)
 
 # Sleekhunters
 
@@ -15,6 +13,10 @@ Slash commands below having `< >` are optional, while `[ ]` are required fields.
 - `/pick` \[choices\] - Let the bot pick a choice for you! (seperate choices with a comma, have as many as you want!)
 - `/terminology` - A paginated table with all currently known Dauntless terminologies/terms
 - `/info` - Display some information about the Discord bot
+### Action commands:
+The action command system uses a self-made advanced Mention System, taken from a past project and improved for this one.
+- `/action list` - Get a list of all available actions to use on user(s)
+- `/action use [type] [users seperated by comma (i.e user1, id1, @mention]` - Sends a embed with a action to the user(s) selected (i.e pat, hug, kiss, etc)
 ### Gauntlet commands:
 - `/gauntlet spot <season>` - Retrieve SleekHunters's current leaderboard spot or from a previous season
 - `/gauntlet find [season] [name]` - Search for a guild by name (or tag) and retrieve their current spot
@@ -25,16 +27,19 @@ Slash commands below having `< >` are optional, while `[ ]` are required fields.
 - `/hesca current` - This week's Heroic Escalation
 - `/hesca next` - Next week's Heroic Escalation
 ### Trials commands:
+`Current Trials placement` is a User Context Menu Command available if you right click a user. \
+This is basically the `/trials leaderboard search`, where the user's displayname is used as query.
 - `/trials info` - Get some information about Trials
 - `/trials currently` - This week's Trial Behemoth
 - `/trials next` - Next week's Trial Behemoth
 - `/trials leaderboard me` - Get your own placement for this week (server nickname)
 - `/trials leaderboard search [player] <category>` - Search for a player's placement
 - `/trials leaderboard current` - Get the current trials leaderboard for this week
+
 ### Armor commands:
 - `/armor name [name]` - Returns a armor based on the given armor name
 - `/armor behemoth [behemoth]` - Returns all armor pieces from a given behemoth
-- `/armor element [element]` - Returns all armor pieces from a given element
+- `/armor element [element] <type>` - Returns all armor pieces from a given element, and weapon type if passed in
 - `/armor all <type>` - Returns all armor or from a given type.
 ### Cell commands:
 - `/cell name` - Returns information about a cell from the given name

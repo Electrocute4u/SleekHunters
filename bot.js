@@ -16,7 +16,15 @@ if (config.dev == false) token = publicToken
 if (config.dev == true) token = devToken
 
 const bot = new discordClient.Client({
-    intents: [GatewayIntentBits.Guilds, GatewayIntentBits.DirectMessages, GatewayIntentBits.GuildMembers, GatewayIntentBits.GuildMessages, GatewayIntentBits.GuildMessageReactions, GatewayIntentBits.MessageContent],
+    intents: [
+      GatewayIntentBits.Guilds, 
+      GatewayIntentBits.GuildMembers, 
+      GatewayIntentBits.GuildMessages, 
+      GatewayIntentBits.GuildMessageReactions, 
+      GatewayIntentBits.MessageContent,
+      GatewayIntentBits.GuildMessagePolls,
+      GatewayIntentBits.GuildModeration
+    ],
     allowedMentions: { parse: ['users', 'roles'], repliedUser: true }
 })
 
@@ -104,6 +112,7 @@ bot.handleCommands();
 // Bot login
 bot.login(token);
 
+if(config.dev == false) {
 let epicClient
 async function signIntoEpic() {
 
@@ -134,10 +143,10 @@ try {
 }
 
 // Login to Epic client
-  signIntoEpic().then(() => {
-    bot.epicClient = epicClient
+signIntoEpic().then(() => {
+  bot.epicClient = epicClient
 }).catch(() => null)
-
+}
 
 // Handle and log rejection errors without crashing process
 process.on('uncaughtException', (err, origin) => {

@@ -4,16 +4,17 @@ module.exports = {
     data: new SlashCommandBuilder()
     .setName("weapon")
     .setDMPermission(false)
-    .setDescription("Get information about a specific weapon")
+    .setDescription("Retrieve information about a specific weapon from name")
     .addSubcommand(subcommand =>
       subcommand
-    .setName("name")
-    .setDescription("Get information about a specific weapon")
+    .setName("find")
+    .setDescription("Retrieve information about a specific weapon")
     .addStringOption(option =>
 			option.setName('name')
 				.setDescription('The name for the weapon to look up')
 				.setAutocomplete(true)
-        .setRequired(true))
+        .setRequired(true)
+      )
     )
     .addSubcommand(subcommand =>
       subcommand
@@ -22,8 +23,34 @@ module.exports = {
       .addStringOption(option =>
 			  option.setName('element')
 				  .setDescription('Returns all weapons crafted from the given element')
-				  .setAutocomplete(true)
-          .setRequired(true))
+				  .addChoices
+              (
+                  {name: "Neutral", value: "Neutral"},
+                  {name: "Shock", value: "Shock"},
+                  {name: "Blaze", value: "Blaze"},
+                  {name: "Umbral", value: "Umbral"},
+                  {name: "Terra", value: "Terra"},
+                  {name: "Frost", value: "Frost"},
+                  {name: "Radiant", value: "Radiant"},
+              )
+          .setRequired(true)
+        )
+      .addStringOption(option =>
+        option
+        .setName("type")
+        .setDescription("Return all weapons from the given weapon type.")
+        .setRequired(false)
+        .addChoices
+          (
+              {name: "Aether Strikers", value: "aether_strikers"},
+              {name: "Axe", value: "axe"},
+              {name: "Chain Blades", value: "chain_blades"},
+              {name: "Hammer", value: "hammer"},
+              {name: "Repeaters", value: "repeater"},
+              {name: "Sword", value: "sword"},
+              {name: "War Pike", value: "war_pike"},
+          )
+        )
     )
     .addSubcommand(subcommand =>
       subcommand
@@ -33,7 +60,8 @@ module.exports = {
 			  option.setName('behemoth')
 				  .setDescription('Returns all weapons crafted from the given Behemoth')
 				  .setAutocomplete(true)
-          .setRequired(true))
+          .setRequired(true)
+        )
     )
     .addSubcommand(subcommand =>
       subcommand
@@ -45,15 +73,15 @@ module.exports = {
             .setDescription("Return all weapons from the given weapon type.")
             .setRequired(false)
             .addChoices
-            (
-                {name: "Aether Strikers", value: "aether_strikers"},
-                {name: "Axe", value: "axe"},
-                {name: "Chain Blades", value: "chain_blades"},
-                {name: "Hammer", value: "hammer"},
-                {name: "Repeaters", value: "repeaters"},
-                {name: "Sword", value: "sword"},
-                {name: "War Pike", value: "war_pike"},
-            )
+              (
+                  {name: "Aether Strikers", value: "aether_strikers"},
+                  {name: "Axe", value: "axe"},
+                  {name: "Chain Blades", value: "chain_blades"},
+                  {name: "Hammer", value: "hammer"},
+                  {name: "Repeaters", value: "repeater"},
+                  {name: "Sword", value: "sword"},
+                  {name: "War Pike", value: "war_pike"},
+              )
             )
     ),
 	async autoComplete(interaction) {
@@ -135,8 +163,8 @@ module.exports = {
       const config = JSON.parse(readFileSync(`./config.json`, 'utf8'))
       
       // Acquire file name and folder name
-      let dir = config.provider == true ? __dirname.split(`/`).slice(-1)[0] : __dirname.split(`\\`).slice(-1)[0]
-      let fileName = config.provider == true ? __filename.split(`/`).slice(-1)[0] : __filename.split(`\\`).slice(-1)[0]
+      let dir = config.dev == true ? __dirname.split(`\\`).slice(-1)[0] : __dirname.split(`/`).slice(-1)[0]
+      let fileName = config.dev == true ? __filename.split(`\\`).slice(-1)[0] : __filename.split(`/`).slice(-1)[0]
  
       // Delete and reacquire the cache of command function
       delete require.cache[require.resolve(`${config.provider == true ? `/home/electrocute4u/bot` : `../..`}/commandFunctions/${dir}/${fileName}`)];

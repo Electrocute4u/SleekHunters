@@ -84,8 +84,8 @@ module.exports = {
       let seasons = (listFilesSync(`${config.provider == true ? `/home/electrocute4u/bot` : `.`}/gauntlet`))
       
       seasons = seasons.map((value, index) => {
-        if(config.provider == true) value = value.replace(`/home/electrocute4u/bot/gauntlet/`, "").replace(/.json/gi, "").replace(/_/gi, " ")
-        if(config.provider == false) value = value.split(`gauntlet\\`)[1].replace(/.json/gi, "").replace(/_/gi, " ")
+        if(config.dev == false) value = value.split(`gauntlet/`)[1].replace(/.json/gi, "").replace(/_/gi, " ")
+        if(config.dev == true) value = value.split(`gauntlet\\`)[1].replace(/.json/gi, "").replace(/_/gi, " ")
         return tools.toUpperCase(value) })
       
 		  const choices = seasons.length > 24 ? seasons.slice(seasons.length-1-24, seasons.length-1) : seasons
@@ -109,8 +109,8 @@ module.exports = {
     async execute(interaction, bot, tools) {
       
       // Acquire file name and folder name
-      let dir = config.provider == true ? __dirname.split(`/`).slice(-1)[0] : __dirname.split(`\\`).slice(-1)[0]
-      let fileName = config.provider == true ? __filename.split(`/`).slice(-1)[0] : __filename.split(`\\`).slice(-1)[0]
+      let dir = config.dev == true ? __dirname.split(`\\`).slice(-1)[0] : __dirname.split(`/`).slice(-1)[0]
+      let fileName = config.dev == true ? __filename.split(`\\`).slice(-1)[0] : __filename.split(`/`).slice(-1)[0]
  
       // Delete and reacquire the cache of command function
       delete require.cache[require.resolve(`${config.provider == true ? `/home/electrocute4u/bot` : `../..`}/commandFunctions/${dir}/${fileName}`)];

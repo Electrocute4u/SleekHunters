@@ -26,4 +26,7 @@ omnicell
 trials
 gauntlet-stats
 activity.json
-timeouts.json
+timeouts
+polls.json
+polls
+userCache.json

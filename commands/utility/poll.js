@@ -2,16 +2,23 @@ const { SlashCommandBuilder, PermissionFlagsBits, ChannelType } = require("disco
 
 module.exports = {
     data: new SlashCommandBuilder()
-    .setName("setup")
-    .setDescription("I wonder what this butto- Oh, better not touch that!")
+    .setName("poll")
+    .setDescription("Creating, managing and monitoring monthly polls")
     .setDMPermission(false)
     .setDefaultMemberPermissions(PermissionFlagsBits.Administrator)
     .addSubcommand(subcommand =>
       subcommand
-          .setName('applications')
-          .setDescription('I wonder what this butto- Oh, better not touch that!')
-      .addChannelOption(option => option.setName("category").setDescription("The category to setup the application embed in").addChannelTypes(ChannelType.GuildText).setRequired(true)
-  ))
+          .setName('create')
+          .setDescription('Sends a activity check poll in the selected channel')
+      .addChannelOption(option => option.setName("category").setDescription("The category to setup the application embed in").addChannelTypes(ChannelType.GuildText, ChannelType.GuildAnnouncement).setRequired(true))
+      .addIntegerOption(option => option.setName("hours").setDescription("How many hours to run poll (1 = 1 hour and 168 = 1 week)").setMinValue(1).setMaxValue(168).setRequired(true))
+      .addStringOption(option => option.setName("title").setDescription(`The poll title (i.e "Monthly Activity Check!"`).setMaxLength(300).setMinLength(1).setRequired(true))
+      .addStringOption(option => option.setName("text").setDescription("If you want to include any text/post above the poll.").setMinLength(1).setMaxLength(2000))
+    )
+    .addSubcommand(subcommand =>
+      subcommand.setName('close').setDescription('Close the ongoing poll and choose to announce the results or not')
+      .addBooleanOption(option => option.setName("log-results").setDescription("Send the poll results to #logs").setRequired(true))
+    )
     //.addSubcommand(subcommand =>
     //  subcommand
     //      .setName('verify')
